@@ -11,8 +11,6 @@
   <p align="center">
     YOUR_SHORT_DESCRIPTION
     <br />
-    <a href="https://github.com/Frankie1996/Visu5"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/Frankie1996/Visu5">View Demo</a>
   </p>

@@ -1,9 +1,23 @@
-<?php require_once('templates/header.php'); ?>
+<!-- Head -->
+<?php require_once('templates/head.php'); ?>
 
-<div class="container">
+<nav>
+<!-- Navbar -->
+</nav>
+
+<header>
+<!-- Slideshow -->
+</header>
+
+<section class="container">
     <h1>Hello, world!</h1>
-</div>
+    <article>
+        <!-- Artikel 1-->
+    </article>
+    <article>
+        <!-- Artikel 2 -->
+    </article>
+</section>
 
-<div class="container">
-    <?php require_once('templates/footer.php'); ?>
-</div>
+<!-- Footer -->
+<?php require_once('templates/footer.php'); ?>

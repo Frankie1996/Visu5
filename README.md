@@ -1,2 +1,2 @@
 # Visu5
-Dieses Repository wurde im Rahmen des Moduls Visualisieren V erstellt. Es beinhalted die Programmierung der Website zur Information und Stützung der Erreichung des SDG 12.
+This repository was created within the Visualization V module. It includes the programming of the website for information and support of the achievement of SDG 12.

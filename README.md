@@ -15,10 +15,6 @@
     <br />
     <br />
     <a href="https://github.com/Frankie1996/Visu5">View Demo</a>
-    ·
-    <a href="https://github.com/Frankie1996/Visu5/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Frankie1996/Visu5/issues">Request Feature</a>
   </p>
 </p>
 
@@ -91,7 +87,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Frankie1996/Visu5/issues) for a list of proposed features (and known issues).
 
 
 

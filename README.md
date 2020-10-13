@@ -118,7 +118,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Frank Zinsli - [frank.zinsli@gmail.com](mailto:frank.zinsli@gmail.com ) -  [frankzinsli.ch](https://frankzinsli.ch)
-Sandro Anderes - [sandroanderes@outlook.com](mailto:sandroanderes@outlook.com ) -  [sandroanderes.ch](https://sandroanderes.ch)
+* Frank Zinsli - [frank.zinsli@gmail.com](mailto:frank.zinsli@gmail.com ) -  [frankzinsli.ch](https://frankzinsli.ch)
+* Sandro Anderes - [sandroanderes@outlook.com](mailto:sandroanderes@outlook.com ) -  [sandroanderes.ch](https://sandroanderes.ch)
 
 Project Link: [https://github.com/Frankie1996/Visu5](https://github.com/Frankie1996/Visu5)

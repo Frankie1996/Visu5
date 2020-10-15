@@ -116,3 +116,147 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * Sandro Anderes - [sandroanderes@outlook.com](mailto:sandroanderes@outlook.com ) -  [sandroanderes.ch](https://sandroanderes.ch)
 
 Project Link: [https://github.com/Frankie1996/Visu5](https://github.com/Frankie1996/Visu5)
+
+<!-- CONTACT -->
+## Project Structure
+```
+Visu5
+├─ .gitignore
+├─ LICENSE
+├─ README.md
+├─ assets
+│  ├─ .DS_Store
+│  ├─ js
+│  │  └─ script.js
+│  ├─ logo
+│  │  └─ logo.png
+│  └─ scss
+│     ├─ .DS_Store
+│     ├─ abstracts
+│     │  ├─ _fonts.scss
+│     │  ├─ _mixins.scss
+│     │  └─ _variables.scss
+│     ├─ base
+│     │  ├─ _base.scss
+│     │  └─ _typography.scss
+│     ├─ components
+│     │  └─ _header-accordion.scss
+│     ├─ layouts
+│     │  ├─ _footer.scss
+│     │  ├─ _header.scss
+│     │  └─ _navigation.scss
+│     ├─ main.css
+│     ├─ main.css.map
+│     ├─ main.scss
+│     ├─ pages
+│     │  ├─ _about.scss
+│     │  ├─ _lessons.scss
+│     │  └─ _start.scss
+│     └─ vendors
+│        ├─ .DS_Store
+│        ├─ bootstrap
+│        │  ├─ _alert.scss
+│        │  ├─ _badge.scss
+│        │  ├─ _bootstrap-grid.scss
+│        │  ├─ _bootstrap-reboot.scss
+│        │  ├─ _bootstrap.scss
+│        │  ├─ _breadcrumb.scss
+│        │  ├─ _button-group.scss
+│        │  ├─ _buttons.scss
+│        │  ├─ _card.scss
+│        │  ├─ _carousel.scss
+│        │  ├─ _close.scss
+│        │  ├─ _code.scss
+│        │  ├─ _custom-forms.scss
+│        │  ├─ _dropdown.scss
+│        │  ├─ _forms.scss
+│        │  ├─ _functions.scss
+│        │  ├─ _grid.scss
+│        │  ├─ _images.scss
+│        │  ├─ _input-group.scss
+│        │  ├─ _jumbotron.scss
+│        │  ├─ _list-group.scss
+│        │  ├─ _media.scss
+│        │  ├─ _mixins.scss
+│        │  ├─ _modal.scss
+│        │  ├─ _nav.scss
+│        │  ├─ _navbar.scss
+│        │  ├─ _pagination.scss
+│        │  ├─ _popover.scss
+│        │  ├─ _print.scss
+│        │  ├─ _progress.scss
+│        │  ├─ _reboot.scss
+│        │  ├─ _root.scss
+│        │  ├─ _spinners.scss
+│        │  ├─ _tables.scss
+│        │  ├─ _toasts.scss
+│        │  ├─ _tooltip.scss
+│        │  ├─ _transitions.scss
+│        │  ├─ _type.scss
+│        │  ├─ _utilities.scss
+│        │  ├─ _variables.scss
+│        │  ├─ mixins
+│        │  │  ├─ _alert.scss
+│        │  │  ├─ _background-variant.scss
+│        │  │  ├─ _badge.scss
+│        │  │  ├─ _border-radius.scss
+│        │  │  ├─ _box-shadow.scss
+│        │  │  ├─ _breakpoints.scss
+│        │  │  ├─ _buttons.scss
+│        │  │  ├─ _caret.scss
+│        │  │  ├─ _clearfix.scss
+│        │  │  ├─ _deprecate.scss
+│        │  │  ├─ _float.scss
+│        │  │  ├─ _forms.scss
+│        │  │  ├─ _gradients.scss
+│        │  │  ├─ _grid-framework.scss
+│        │  │  ├─ _grid.scss
+│        │  │  ├─ _hover.scss
+│        │  │  ├─ _image.scss
+│        │  │  ├─ _list-group.scss
+│        │  │  ├─ _lists.scss
+│        │  │  ├─ _nav-divider.scss
+│        │  │  ├─ _pagination.scss
+│        │  │  ├─ _reset-text.scss
+│        │  │  ├─ _resize.scss
+│        │  │  ├─ _screen-reader.scss
+│        │  │  ├─ _size.scss
+│        │  │  ├─ _table-row.scss
+│        │  │  ├─ _text-emphasis.scss
+│        │  │  ├─ _text-hide.scss
+│        │  │  ├─ _text-truncate.scss
+│        │  │  ├─ _transition.scss
+│        │  │  └─ _visibility.scss
+│        │  ├─ utilities
+│        │  │  ├─ _align.scss
+│        │  │  ├─ _background.scss
+│        │  │  ├─ _borders.scss
+│        │  │  ├─ _clearfix.scss
+│        │  │  ├─ _display.scss
+│        │  │  ├─ _embed.scss
+│        │  │  ├─ _flex.scss
+│        │  │  ├─ _float.scss
+│        │  │  ├─ _interactions.scss
+│        │  │  ├─ _overflow.scss
+│        │  │  ├─ _position.scss
+│        │  │  ├─ _screenreaders.scss
+│        │  │  ├─ _shadows.scss
+│        │  │  ├─ _sizing.scss
+│        │  │  ├─ _spacing.scss
+│        │  │  ├─ _stretched-link.scss
+│        │  │  ├─ _text.scss
+│        │  │  └─ _visibility.scss
+│        │  └─ vendor
+│        │     └─ _rfs.scss
+│        └─ normalize
+│           └─ _normalize.scss
+├─ data
+│  ├─ config.php
+│  └─ data.php
+├─ index.php
+└─ templates
+   ├─ footer.php
+   ├─ head.php
+   └─ navbar.php
+
+```

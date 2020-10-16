@@ -1,13 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
+$base_url = "https://localhost";
+$db_host     = 'localhost';
+$db_name     = 'oekologisch';
+$db_user     = 'root';
+$db_pass     = '';
+$db_charset  = 'utf8mb4';
+?>

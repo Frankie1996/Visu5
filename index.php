@@ -1,3 +1,12 @@
+<!-- Controller -->
+<?php
+require_once('data/config.php');
+require_once('data/data.php');
+
+$allIntros = get_all_intros();
+$topLessons = get_top_lessons();
+?>
+
 <!-- Head -->
 <?php require_once('templates/head.php'); ?>
 
@@ -18,10 +27,26 @@
     <h6>Hello, world!</h6>
     <p>Hello, world!</p>
     <article>
-        <!-- Artikel 1-->
+        <h2>Alle Themenbereiche aufgelistet:</h2>
+        <?php foreach($allIntros as $intro) { ?>
+            <ul>
+                <li><?php echo $intro['title'] ?></li>
+            </ul>
+        <?php } ?>
     </article>
     <article>
-        <!-- Artikel 2 -->
+    <h2>Alle Top Lektionen</h2>
+        <?php foreach($topLessons as $lesson) { ?>
+            <ul>
+                <li>Lektion: <?php echo $lesson['title'] ?></li>
+                <li>Thema: 
+                    <?php 
+                        $category =  get_category_by_id($lesson['category_id']);
+                        echo $category['title']; 
+                    ?>
+                </li>
+            </ul>
+        <?php } ?>
     </article>
 </section>
 

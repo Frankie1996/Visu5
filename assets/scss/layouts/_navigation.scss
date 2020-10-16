@@ -1,4 +1,4 @@
-.navbar-brand img{
+.navbar-brand img {
     width: 343px;
 }
 
@@ -7,114 +7,44 @@
     vertical-align: middle;
 }
 
-/* 
-@media (min-width: 576px) {
-    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
+li a {
+    &:hover {
+        background: $fern-green;
+
+        span {
+            color: white;
+        }
     }
 
-    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-} */
-
-li a:hover{
-    background: #8ABE34;
-color: #fff;
-  }
-  
-li a{
     -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
--webkit-tap-highlight-color: rgba(120,120,120,0.3);
-transition: background 0.1s linear,color 0.1s linear;
-padding: 50px;
-  }
-  .navbar li a{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: black;
+    transition: background 0.1s linear,
+    color 0.1s linear;
+    padding: 50px;
+}
+
+.navbar li a {
     padding: 0px;
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: black;
+
+    span {
+        padding-top: 5px;
+        display: block;
+    }
+}
+
+.nav-item {
+    margin: 0 8px;
+}

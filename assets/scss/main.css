@@ -10016,6 +10016,10 @@ a {
   color: #000;
 }
 
+.nav-item {
+  font-size: smaller;
+}
+
 .navbar-brand img {
   width: 343px;
 }
@@ -10025,115 +10029,173 @@ a {
   vertical-align: middle;
 }
 
-/* 
-@media (min-width: 576px) {
-    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
-        text-align: center;
-        display: table-cell;
-        height: 70px;
-        vertical-align: middle;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa {
-        display: block;
-        width: 48px;
-        margin: 2px auto 4px auto;
-        top: 0;
-        line-height: 24px;
-    }
-
-    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa>.badge {
-        top: -7px;
-    }
-} */
-li a:hover {
-  background: #8ABE34;
-  color: #fff;
-}
-
 li a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: rgba(120, 120, 120, 0.3);
-  transition: background 0.1s linear,color 0.1s linear;
+  -webkit-tap-highlight-color: black;
+  transition: background 0.1s linear, color 0.1s linear;
   padding: 50px;
+}
+
+li a:hover {
+  background: #5a804fff;
+}
+
+li a:hover span {
+  color: white;
 }
 
 .navbar li a {
   padding: 0px;
-  width: 50px;
-  height: 50px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link span {
+  padding-top: 5px;
+  display: block;
+}
+
+.nav-item {
+  margin: 0 8px;
+}
+
+/* The base code is from https://www.cssscript.com/demo/pure-css-vertical-image-accordion-slider/ I just adapted it in scss and put it on codepen*/
+.accordion {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  /*ul*/
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 33.33%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 500ms ease;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("https://images.unsplash.com/photo-1464039397811-476f652a343b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2248&q=80");
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+}
+
+.accordion ul li:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80");
+}
+
+.accordion ul li:nth-child(4) {
+  background-image: url("https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3306&q=80");
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateX(-20px);
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul:hover li {
+  width: 10%;
+}
+
+.accordion ul:hover li:hover {
+  width: 80%;
+}
+
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    transition: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

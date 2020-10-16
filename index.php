@@ -6,7 +6,7 @@
 </nav>
 
 <header>
-<!-- Slideshow -->
+<?php require_once('templates/header.php'); ?>
 </header>
 
 <section class="container">

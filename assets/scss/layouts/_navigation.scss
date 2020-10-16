@@ -1,5 +1,5 @@
 .navbar-brand img {
-    width: 343px;
+    width: 250px;
 }
 
 .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
@@ -7,7 +7,18 @@
     vertical-align: middle;
 }
 
-li a {
+.navbar li a {
+    padding: 0px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: black;
+    transition: background 0.1s linear,
+    color 0.1s linear;
+    padding: 50px;
+
     &:hover {
         background: $fern-green;
 
@@ -15,20 +26,6 @@ li a {
             color: white;
         }
     }
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-tap-highlight-color: black;
-    transition: background 0.1s linear,
-    color 0.1s linear;
-    padding: 50px;
-}
-
-.navbar li a {
-    padding: 0px;
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
 }
 
 .navbar-light .navbar-nav .nav-link {

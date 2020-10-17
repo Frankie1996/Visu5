@@ -41,8 +41,37 @@ $topLessons = get_top_lessons();
                     </div>
                 </div>
             <?php } ?>
+        </div>
+    </div>
+</section>
+<section class="container-fluid experience">
+    <div class="container">
+        <h2>Umwelt erleben</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583434987437-1b9dcbe44c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2658&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center"># Energie • Lektion 1</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583434987437-1b9dcbe44c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2658&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center"># Energie • Lektion 1</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583434987437-1b9dcbe44c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2658&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center"># Energie • Lektion 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-            <!-- Footer -->
-            <?php require_once('templates/footer.php'); ?>
+<!-- Footer -->
+<?php require_once('templates/footer.php'); ?>

@@ -1,7 +1,7 @@
 <body>
     <nav class="navbar navbar-icon-top navbar-expand navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href=".">
                 <img src="assets/logo/logo.png" alt="ökoLOGISCH" loading="lazy">
             </a>
 
@@ -10,7 +10,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href=".">
                             <span class="material-icons">
                                 home
                             </span>
@@ -20,7 +20,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="./lessons.php">
                             <span class="material-icons">
                                 live_tv
                             </span>
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="./about.php">
                             <span class="material-icons">
                                 public
                             </span>

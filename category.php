@@ -19,33 +19,34 @@ $lessons = get_lessons_by_category_id($_GET['id']);
         <p><?php echo $category['text']; ?></p>
     </article>
 </section>
-<section class="container">
+<section class="container category">
     <article>
     <h2>Lektionen</h2>
-        <div class="card-group">
-        <?php foreach($lessons as $lesson) { ?>
-            <div class="card col-md-4">
-                <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title"> <?php echo $lesson['title'] ?> </h5>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <a href="category.php?id=<?php echo $lesson['category_id']; ?>">#
-                                <?php 
-                                $category =  get_category_by_id($lesson['category_id']);
-                                echo $category['title']; 
-                                echo " · "; 
-                                ?>
-                            </a>
-                            <?php 
-                                echo "Lektion "; 
-                                echo $lesson['lesson_nr'];
-                            ?>
-                        </small>
-                    </p>
+        <div class="row row-cols-3">
+            <?php foreach ($lessons as $lesson) { ?>
+                <div class="col mb-4">
+                    <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
+                        <div class="card">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                                <p class="card-text small text-center">
+                                    <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php
+                                        $category =  get_category_by_id($lesson['category_id']);
+                                        echo "#" . $category['title'];
+                                        ?>
+                                    </a>
+                                    •
+                                    <?php
+                                    echo "Lektion ";
+                                    echo $lesson['lesson_nr'];
+                                    ?></p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-        <?php } ?>
+            <?php } ?>
         </div>
     </article>
 </section>

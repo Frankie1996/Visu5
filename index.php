@@ -21,25 +21,27 @@ $topLessons = get_top_lessons();
     <div class="container">
         <h2>Spannende Lektionen</h2>
         <div class="card-deck">
-
             <?php foreach ($topLessons as $lesson) { ?>
-
-                <div class="card">
-                    <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                        <p class="card-text text-center">
-                            <?php
-                            $category =  get_category_by_id($lesson['category_id']);
-                            echo '#'.$category['title'];
-                            echo " · ";
-                            ?>
-                            <?php
-                            echo "Lektion ";
-                            echo $lesson['lesson_nr'];
-                            ?></p>
+                <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
+                    <div class="card">
+                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                            <p class="card-text small text-center">
+                                <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                    <?php
+                                    $category =  get_category_by_id($lesson['category_id']);
+                                    echo "#" . $category['title'];
+                                    ?>
+                                </a>
+                                •
+                                <?php
+                                echo "Lektion ";
+                                echo $lesson['lesson_nr'];
+                                ?></p>
+                        </div>
                     </div>
-                </div>
+                </a>
             <?php } ?>
         </div>
     </div>

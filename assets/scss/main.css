@@ -10245,11 +10245,38 @@ section.featured h2 {
   margin-bottom: 20px;
 }
 
+section.featured a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 section.experience div.container {
   padding: 60px 0;
 }
 
 section.experience h2 {
   margin-bottom: 20px;
+}
+
+section.lessons a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+section.category {
+  background-color: #dee6dcff;
+}
+
+section.category div.container {
+  padding: 60px 0;
+}
+
+section.category h2 {
+  margin-bottom: 20px;
+}
+
+section.category a:hover {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 <?php 
+require_once('env.php');
 
 function get_db_connection(){
 

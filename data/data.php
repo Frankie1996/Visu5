@@ -46,7 +46,7 @@ function get_all_lessons()
 function get_top_lessons()
 {
 	$db = get_db_connection();
-	$sql = "SELECT * FROM tbl_lesson WHERE top_three = 1;";
+	$sql = "SELECT * FROM tbl_lesson WHERE top_lesson = 1 ORDER BY RAND() LIMIT 3;";
 	$result = $db->query($sql);
 	return $result->fetchAll();
 }

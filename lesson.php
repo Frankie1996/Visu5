@@ -24,11 +24,10 @@ $important = explode(", ", $importance);
             <p><?php echo $lesson['text']; ?></p>
             <h2>Das wichtigste in Kürze</h2>
             <ul>
-                <?php for($i = 0; $i < count($important)-1; ++$i) { ?>
-                <li><?php echo $important[$i] ?></li>
+                <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
+                    <li><?php echo $important[$i] ?></li>
                 <?php }; ?>
             </ul>
-            <p><?php echo $lesson['important']; ?></p>
         </article>
         <article class="col-md-6">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

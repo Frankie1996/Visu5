@@ -10199,4 +10199,24 @@ a {
     transition: none;
   }
 }
+
+section.featured {
+  background-color: #dee6dcff;
+}
+
+section.featured div.container {
+  padding: 60px 0;
+}
+
+section.featured h2 {
+  margin-bottom: 20px;
+}
+
+section.experience div.container {
+  padding: 60px 0;
+}
+
+section.experience h2 {
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=main.css.map */

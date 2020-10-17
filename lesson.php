@@ -3,6 +3,11 @@
 require_once('data/data.php');
 $lesson = get_lesson_by_id($_GET['id']);
 
+$images = $lesson['img_url'];
+$img = explode(", ", $images);
+
+$importance = $lesson['important'];
+$important = explode(", ", $importance);
 ?>
 
 <!-- Head -->
@@ -18,19 +23,24 @@ $lesson = get_lesson_by_id($_GET['id']);
             <h1><?php echo $lesson['title']; ?></h1>
             <p><?php echo $lesson['text']; ?></p>
             <h2>Das wichtigste in Kürze</h2>
+            <ul>
+                <?php for($i = 0; $i < count($important)-1; ++$i) { ?>
+                <li><?php echo $important[$i] ?></li>
+                <?php }; ?>
+            </ul>
             <p><?php echo $lesson['important']; ?></p>
         </article>
         <article class="col-md-6">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?php echo $lesson['gif_url']; ?>" alt="First slide">
+                        <img class="d-block w-100" src="<?php echo $img[0]; ?>" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Second slide">
+                        <img class="d-block w-100" src="<?php echo $img[1]; ?>" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Third slide">
+                        <img class="d-block w-100" src="<?php echo $img[2]; ?>" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

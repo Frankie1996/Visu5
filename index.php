@@ -74,14 +74,6 @@ $topLessons = get_top_lessons();
     </div>
 </section>
     <article>
-        <h2>Alle Themenbereiche aufgelistet:</h2>
-        <?php foreach ($allIntros as $intro) { ?>
-            <ul>
-                <li><?php echo $intro['title'] ?></li>
-            </ul>
-        <?php } ?>
-    </article>
-    <article>
         <h2>Top Lektionen</h2>
         <div class="card-group">
             <?php foreach ($topLessons as $lesson) { ?>

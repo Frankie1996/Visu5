@@ -1,6 +1,5 @@
 <!-- Controller -->
 <?php
-require_once('data/config.php');
 require_once('data/data.php');
 
 $allIntros = get_all_intros();

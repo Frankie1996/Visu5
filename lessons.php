@@ -1,6 +1,5 @@
 <!-- Controller -->
 <?php
-require_once('data/config.php');
 require_once('data/data.php');
 
 $allLessons = get_all_lessons();
@@ -26,7 +25,7 @@ $allLessons = get_all_lessons();
                     <h5 class="card-title"> <?php echo $lesson['title'] ?> </h5>
                     <p class="card-text">
                         <small class="text-muted">
-                            <a href="#">#
+                            <a href="category.php?id=<?php echo $lesson['category_id']; ?>">#
                                 <?php 
                                 $category =  get_category_by_id($lesson['category_id']);
                                 echo $category['title']; 

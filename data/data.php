@@ -55,3 +55,11 @@ function get_category_by_id($id){
     $row = $result->fetch();
     return $row;
 }
+
+/* GET LESSONS BY CATEGORY_ID */
+function get_lessons_by_category_id($id){
+	$db = get_db_connection();
+	$sql = "SELECT * FROM tbl_lesson WHERE category_id = $id;";
+	$result = $db->query($sql);
+	return $result->fetchAll();
+}

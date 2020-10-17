@@ -1,7 +1,7 @@
 <!-- Controller -->
 <?php
-require_once('data/config.php');
 require_once('data/data.php');
+$about = get_about();
 ?>
 
 <!-- Head -->
@@ -15,8 +15,8 @@ require_once('data/data.php');
 <section class="container">
 
     <article>
-        <h2>Über das Projekt</h2>
-        
+        <h1><?php echo $about['title']; ?></h1>
+        <p><?php echo $about['text']; ?></p>
     </article>
 </section>
 

@@ -63,3 +63,12 @@ function get_lessons_by_category_id($id){
 	$result = $db->query($sql);
 	return $result->fetchAll();
 }
+
+/* GET ABOUT */
+function get_about(){
+	$db = get_db_connection();
+	$sql = "SELECT * FROM tbl_about";
+	$result = $db->query($sql);
+	$row = $result->fetch();
+	return $row;
+}

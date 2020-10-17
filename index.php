@@ -37,13 +37,14 @@ $topLessons = get_top_lessons();
     <h2>Top Lektionen</h2>
         <div class="card-group">
         <?php foreach($topLessons as $lesson) { ?>
+            <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
             <div class="card col-md-4 col-sm-12">
                 <img class="card-img-top" src="<?php echo $lesson['gif_url'] ?>">
                 <div class="card-body">
                     <h3 class="card-title"><?php echo $lesson['title'] ?></h3>
                     <p class="card-text">
-                        <small class="text-muted">
-                        <a href="#">#
+                    <small class="text-muted">
+                            <a href="category.php?id=<?php echo $lesson['category_id']; ?>">#
                                 <?php 
                                 $category =  get_category_by_id($lesson['category_id']);
                                 echo $category['title']; 
@@ -58,6 +59,7 @@ $topLessons = get_top_lessons();
                     </p>
                 </div>
             </div>
+            </a>
         <?php } ?>
         </div>
     </article>

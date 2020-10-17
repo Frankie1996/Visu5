@@ -72,3 +72,12 @@ function get_about(){
 	$row = $result->fetch();
 	return $row;
 }
+
+/* GET LESSON BY ID */
+function get_lesson_by_id($id){
+	$db = get_db_connection();
+	$sql = "SELECT * FROM tbl_lesson WHERE id = $id;";
+	$result = $db->query($sql);
+    $row = $result->fetch();
+    return $row;
+}

@@ -31,7 +31,7 @@ $topLessons = get_top_lessons();
                         <p class="card-text text-center">
                             <?php
                             $category =  get_category_by_id($lesson['category_id']);
-                            echo $category['title'];
+                            echo '#'.$category['title'];
                             echo " · ";
                             ?>
                             <?php

@@ -16,12 +16,12 @@ $allLessons = get_all_lessons();
 <section class="container lessons my-5">
     <article>
         <h2 class="pb-4">Lektionen</h2>
-        <div class="row row-cols-3">
+        <div class="row">
             <?php
                 foreach ($allLessons as $lesson) {
                 $category =  get_category_by_id($lesson['category_id']);
             ?>
-                <div class="col mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
                         <div class="card <?php echo strtolower($category['title']); ?>">
                 <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">

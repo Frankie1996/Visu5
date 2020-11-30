@@ -20,9 +20,9 @@ $lessons = get_lessons_by_category_id($_GET['id']);
     </article>
 
     <article>
-        <div class="row row-cols-3">
+        <div class="row">
             <?php foreach ($lessons as $lesson) { ?>
-                <div class="col mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
                         <div class="card <?php echo strtolower($category['title']); ?>">
                             <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">

@@ -28,6 +28,14 @@
     }
 }
 
+.navbar li .active {
+    background: $fern-green;
+
+        span {
+            color: white;
+        }
+}
+
 .navbar-light .navbar-nav .nav-link {
     text-align: center;
     display: table-cell;

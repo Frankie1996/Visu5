@@ -10,7 +10,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href=".">
+                        <a class="nav-link" id="nav-home" href=".">
                             <span class="material-icons">
                                 home
                             </span>
@@ -20,7 +20,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./lessons.php">
+                        <a class="nav-link" id="nav-lessons" href="./lessons.php">
                             <span class="material-icons">
                                 live_tv
                             </span>
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.php">
+                        <a class="nav-link" id="nav-about" href="./about.php">
                             <span class="material-icons">
                                 public
                             </span>

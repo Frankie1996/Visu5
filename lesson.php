@@ -9,6 +9,12 @@ $img = explode(", ", $images);
 
 $importance = $lesson['important'];
 $important = explode(", ", $importance);
+
+$learning_goals = $lesson['lernziele'];
+$learning_goal = explode(", ", $learning_goals);
+
+$biggest_problems = $lesson['groeste_probleme'];
+$biggest_problem = explode(", ", $biggest_problems);
 ?>
 
 <!-- Head -->
@@ -26,12 +32,30 @@ $important = explode(", ", $importance);
                 <p><?php echo $lesson['text']; ?></p>
             </div>
             <div class="info">
-                <h3 class="mb-4">Das wichtigste in Kürze</h3>
-                <ul>
-                    <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
-                        <li><?php echo $important[$i] ?></li>
-                    <?php }; ?>
-                </ul>
+                <?php
+                if ($lesson['einfuerung'] == true) { ?>
+                    <h3 class="mb-4">Lernziele</h3>
+                    <ul>
+                        <?php for ($i = 0; $i < count($learning_goal) - 1; ++$i) { ?>
+                            <li><?php echo $learning_goal[$i] ?></li>
+                        <?php }; ?>
+                    </ul>
+
+                    <h3 class="mb-4">Grösste Probleme</h3>
+                    <ul>
+                        <?php for ($i = 0; $i < count($biggest_problem) - 1; ++$i) { ?>
+                            <li><?php echo $biggest_problem[$i] ?></li>
+                        <?php }; ?>
+                    </ul>
+
+                <?php } else { ?>
+                    <h3 class="mb-4">Das wichtigste in Kürze</h3>
+                    <ul>
+                        <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
+                            <li><?php echo $important[$i] ?></li>
+                        <?php }; ?>
+                    </ul>
+                <?php } ?>
             </div>
         </article>
         <article class="col-lg-6 col-sm-12 order-sm-first">

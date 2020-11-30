@@ -40,13 +40,14 @@ $biggest_problem = explode(", ", $biggest_problems);
                             <li><?php echo $learning_goal[$i] ?></li>
                         <?php }; ?>
                     </ul>
-
-                    <h3 class="mb-4">Grösste Probleme</h3>
-                    <ul>
-                        <?php for ($i = 0; $i < count($biggest_problem) - 1; ++$i) { ?>
-                            <li><?php echo $biggest_problem[$i] ?></li>
-                        <?php }; ?>
-                    </ul>
+                    <?php if ($biggest_problems != "") { ?>
+                        <h3 class="mb-4">Grösste Probleme</h3>
+                        <ul>
+                            <?php for ($i = 0; $i < count($biggest_problem) - 1; ++$i) { ?>
+                                <li><?php echo $biggest_problem[$i] ?></li>
+                            <?php }; ?>
+                        </ul>
+                    <?php } ?>
 
                 <?php } else { ?>
                     <h3 class="mb-4">Das wichtigste in Kürze</h3>

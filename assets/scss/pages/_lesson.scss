@@ -1,0 +1,44 @@
+section.lesson {
+    .info{
+        border: 3px solid $fern-green;
+        border-radius: calc(0.25rem - 1px);
+        padding: 20px;
+    }
+
+    &.energie{
+        h2,
+        h3{
+            color: $orange-yellow-crayola;
+        }
+        .info{
+            border-color: $orange-yellow-crayola;
+        }
+    }
+    &.entsorgung{
+        h2,
+        h3{
+            color: $congo-pink;
+        }
+        .info{
+            border-color: $congo-pink;
+        }
+    }
+    &.nachhaltigkeit{
+        h2,
+        h3{
+            color: $beau-blue;
+        }
+        .info{
+            border-color: $beau-blue;
+        }
+    }
+    &.klimawandel{
+        h2,
+        h3{
+            color: $green-sheen;
+        }
+        .info{
+            border-color: $green-sheen;
+        }
+    }
+}

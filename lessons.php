@@ -13,9 +13,9 @@ $allLessons = get_all_lessons();
 </nav>
 
 
-<section class="container lessons">
+<section class="container lessons my-5">
     <article>
-        <h2 class="py-5">Lektionen</h2>
+        <h2 class="pb-4">Lektionen</h2>
         <div class="row row-cols-3">
             <?php
                 foreach ($allLessons as $lesson) {

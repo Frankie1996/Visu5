@@ -13,9 +13,9 @@ $lessons = get_lessons_by_category_id($_GET['id']);
 <?php require_once('templates/navbar.php'); ?>
 </nav>
 
-<section class="container category">
+<section class="container category my-5">
     <article class="<?php echo strtolower($category['title']); ?>">
-        <h2 class="py-5"><?php echo $category['title']; ?></h2>
+        <h2 class="pb-4"><?php echo $category['title']; ?></h2>
         <p><?php echo $category['text']; ?></p>
     </article>
 

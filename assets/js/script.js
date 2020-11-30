@@ -9,8 +9,3 @@ function activeClass(url) {
         document.querySelector("#nav-lessons").classList.add("active");
     }
 }
-
-
-
-
-

@@ -2,6 +2,7 @@
 <?php
 require_once('data/data.php');
 $lesson = get_lesson_by_id($_GET['id']);
+$category =  get_category_by_id($lesson['category_id']);
 
 $images = $lesson['img_url'];
 $img = explode(", ", $images);
@@ -17,19 +18,23 @@ $important = explode(", ", $importance);
     <?php require_once('templates/navbar.php'); ?>
 </nav>
 
-<section class="container">
+<section class="container lesson <?php echo strtolower($category['title']); ?> my-5">
+    <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row">
-        <article class="col-md-6">
-            <h1><?php echo $lesson['title']; ?></h1>
-            <p><?php echo $lesson['text']; ?></p>
-            <h2>Das wichtigste in Kürze</h2>
-            <ul>
-                <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
-                    <li><?php echo $important[$i] ?></li>
-                <?php }; ?>
-            </ul>
+        <article class="col-lg-6 col-sm-12 order-lg-first">
+            <div class="text pb-3">
+                <p><?php echo $lesson['text']; ?></p>
+            </div>
+            <div class="info">
+                <h3 class="mb-4">Das wichtigste in Kürze</h3>
+                <ul>
+                    <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
+                        <li><?php echo $important[$i] ?></li>
+                    <?php }; ?>
+                </ul>
+            </div>
         </article>
-        <article class="col-md-6">
+        <article class="col-lg-6 col-sm-12 order-sm-first">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

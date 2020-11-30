@@ -13,9 +13,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- JS -->
-  <script src="assets/js/script.js" type="text/javascript"></script>
-
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/icon/favicon.ico">
 

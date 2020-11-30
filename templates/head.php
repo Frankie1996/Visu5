@@ -11,7 +11,7 @@
   <meta name="author" content="Sandro Anderes, Frank Zinsli">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/scss/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- JS -->
   <script src="assets/js/script.js" type="text/javascript"></script>

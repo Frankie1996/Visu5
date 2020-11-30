@@ -21,18 +21,18 @@ $topLessons = get_top_lessons();
     <div class="container">
         <h2>Spannende Lektionen</h2>
         <div class="card-deck">
-            <?php foreach ($topLessons as $lesson) { ?>
+            <?php
+                foreach ($topLessons as $lesson) {
+                $category =  get_category_by_id($lesson['category_id']);
+            ?>
                 <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
-                    <div class="card">
+                    <div class="card <?php echo $category['title']; ?>">
                         <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
                                 <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                    <?php
-                                    $category =  get_category_by_id($lesson['category_id']);
-                                    echo "#" . $category['title'];
-                                    ?>
+                                    <?php echo "#" . $category['title']; ?>
                                 </a>
                                 •
                                 <?php

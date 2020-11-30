@@ -10243,6 +10243,7 @@ section.featured div.container {
 
 section.featured h2 {
   margin-bottom: 20px;
+  color: #5a804fff;
 }
 
 section.featured a:hover {
@@ -10256,6 +10257,29 @@ section.experience div.container {
 
 section.experience h2 {
   margin-bottom: 20px;
+  color: #5a804fff;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card.energie {
+  border-color: #e9c46aff;
+}
+
+.card.energie .card-body {
+  background-color: #e9c46aff;
+}
+
+.card.energie .card-img,
+.card.energie .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card.energie .small {
+  color: black;
 }
 
 section.lessons a:hover {

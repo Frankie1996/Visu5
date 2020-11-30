@@ -9,7 +9,7 @@ $allLessons = get_all_lessons();
 <?php require_once('templates/head.php'); ?>
 
 <nav>
-<?php require_once('templates/navbar.php'); ?>
+    <?php require_once('templates/navbar.php'); ?>
 </nav>
 
 

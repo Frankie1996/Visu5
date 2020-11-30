@@ -10006,6 +10006,7 @@ h2 {
   font-family: blockhead-black-face, sans-serif;
   font-style: normal;
   font-weight: 400;
+  color: #5a804fff;
 }
 
 p,
@@ -10027,13 +10028,16 @@ a {
   font-size: smaller;
 }
 
-.navbar-brand img {
-  width: 250px;
+.navbar {
+  border-bottom: #5a804fff 5px solid;
 }
 
-.navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
-  text-align: center;
-  vertical-align: middle;
+.navbar.energie {
+  border-bottom-color: #e9c46aff;
+}
+
+.navbar .navbar-brand img {
+  width: 250px;
 }
 
 .navbar li a {
@@ -10054,6 +10058,11 @@ a {
 
 .navbar li a:hover span {
   color: white;
+}
+
+.navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+  text-align: center;
+  vertical-align: middle;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -10243,7 +10252,6 @@ section.featured div.container {
 
 section.featured h2 {
   margin-bottom: 20px;
-  color: #5a804fff;
 }
 
 section.featured a:hover {
@@ -10255,13 +10263,17 @@ section.experience div.container {
   padding: 60px 0;
 }
 
-section.experience h2 {
-  margin-bottom: 20px;
-  color: #5a804fff;
-}
-
 .card {
   border-radius: 10px;
+}
+
+.card .card-img, .card .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .small {
+  color: black;
 }
 
 .card.energie {
@@ -10272,14 +10284,28 @@ section.experience h2 {
   background-color: #e9c46aff;
 }
 
-.card.energie .card-img,
-.card.energie .card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.card.entsorgung {
+  border-color: #f69891ff;
 }
 
-.card.energie .small {
-  color: black;
+.card.entsorgung .card-body {
+  background-color: #f69891ff;
+}
+
+.card.nachhaltigkeit {
+  border-color: #b0c8d8ff;
+}
+
+.card.nachhaltigkeit .card-body {
+  background-color: #b0c8d8ff;
+}
+
+.card.klimawandel {
+  border-color: #81b29aff;
+}
+
+.card.klimawandel .card-body {
+  background-color: #81b29aff;
 }
 
 section.lessons a:hover {
@@ -10287,16 +10313,8 @@ section.lessons a:hover {
   color: black;
 }
 
-section.category {
-  background-color: #dee6dcff;
-}
-
-section.category div.container {
-  padding: 60px 0;
-}
-
 section.category h2 {
-  margin-bottom: 20px;
+  color: #e9c46aff;
 }
 
 section.category a:hover {

@@ -1,22 +1,36 @@
-.card {
+.card{
     border-radius: 10px;
 
+    .card-img, .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 
-    &.energie {
+    .small{
+        color: black;
+    }
+    &.energie{
         border-color: $orange-yellow-crayola;
-
-        .card-body {
+        .card-body{
             background-color: $orange-yellow-crayola;
         }
-
-        .card-img,
-        .card-img-top {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+    }
+    &.entsorgung{
+        border-color: $congo-pink;
+        .card-body{
+            background-color: $congo-pink;
         }
-
-        .small {
-            color: black;
+    }
+    &.nachhaltigkeit{
+        border-color: $beau-blue;
+        .card-body{
+            background-color: $beau-blue;
+        }
+    }
+    &.klimawandel{
+        border-color: $green-sheen;
+        .card-body{
+            background-color: $green-sheen;
         }
     }
 }

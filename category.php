@@ -13,20 +13,18 @@ $lessons = get_lessons_by_category_id($_GET['id']);
 <?php require_once('templates/navbar.php'); ?>
 </nav>
 
-<section class="container">
-    <article>
-        <h1><?php echo $category['title']; ?></h1>
+<section class="container category">
+    <article class="<?php echo strtolower($category['title']); ?>">
+        <h2 class="py-5"><?php echo $category['title']; ?></h2>
         <p><?php echo $category['text']; ?></p>
     </article>
-</section>
-<section class="container category">
+
     <article>
-    <h2>Lektionen</h2>
         <div class="row row-cols-3">
             <?php foreach ($lessons as $lesson) { ?>
                 <div class="col mb-4">
                     <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
-                        <div class="card">
+                        <div class="card <?php echo strtolower($category['title']); ?>">
                             <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>

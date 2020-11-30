@@ -1,5 +1,5 @@
 <body>
-    <nav class="navbar navbar-icon-top navbar-expand navbar-light bg-light">
+    <nav class="navbar navbar-icon-top navbar-expand navbar-light bg-light <?php echo isset($category['title']) ? strtolower($category['title']) : ''; ?>">
         <div class="container">
             <a class="navbar-brand" href=".">
                 <img src="assets/logo/logo.png" alt="ökoLOGISCH" loading="lazy">

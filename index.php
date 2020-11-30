@@ -19,14 +19,14 @@ $topLessons = get_top_lessons();
 
 <section class="container-fluid featured">
     <div class="container">
-        <h2>Spannende Lektionen</h2>
+        <h2 class="mb-4">Spannende Lektionen</h2>
         <div class="card-deck">
             <?php
                 foreach ($topLessons as $lesson) {
                 $category =  get_category_by_id($lesson['category_id']);
             ?>
                 <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
-                    <div class="card <?php echo $category['title']; ?>">
+                    <div class="card <?php echo strtolower($category['title']); ?>">
                         <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
@@ -48,7 +48,7 @@ $topLessons = get_top_lessons();
 </section>
 <section class="container-fluid experience">
     <div class="container">
-        <h2>Umwelt erleben</h2>
+        <h2 class="mb-4">Umwelt erleben</h2>
         <div class="card-deck">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1583434987437-1b9dcbe44c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2658&q=80" class="card-img-top" alt="...">

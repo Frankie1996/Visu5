@@ -9,9 +9,9 @@ $topLessons = get_top_lessons();
 <!-- Head -->
 <?php require_once('templates/head.php'); ?>
 
-<nav>
-    <?php require_once('templates/navbar.php'); ?>
-</nav>
+<!-- Navigation -->
+<?php require_once('templates/navbar.php'); ?>
+
 
 <header>
     <?php require_once('templates/header.php'); ?>

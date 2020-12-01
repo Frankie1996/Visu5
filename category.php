@@ -9,9 +9,8 @@ $lessons = get_lessons_by_category_id($_GET['id']);
 <!-- Head -->
 <?php require_once('templates/head.php'); ?>
 
-<nav>
-    <?php require_once('templates/navbar.php'); ?>
-</nav>
+<!-- Navigation -->
+<?php require_once('templates/navbar.php'); ?>
 
 <section class="container category my-5">
     <article class="<?php echo strtolower($category['title']); ?>">

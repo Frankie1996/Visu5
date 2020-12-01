@@ -20,9 +20,8 @@ $biggest_problem = explode(", ", $biggest_problems);
 <!-- Head -->
 <?php require_once('templates/head.php'); ?>
 
-<nav>
-    <?php require_once('templates/navbar.php'); ?>
-</nav>
+<!-- Navigation -->
+<?php require_once('templates/navbar.php'); ?>
 
 <section class="container lesson <?php echo strtolower($category['title']); ?> my-5">
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>

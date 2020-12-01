@@ -1,8 +1,23 @@
 <!-- Controller -->
 <?php
 require_once('data/data.php');
+
 $lesson = get_lesson_by_id($_GET['id']);
+$lesson_id = $_GET['id'];
+
+$prev_lesson_id = $lesson_id - 1;
+$next_lesson_id = $lesson_id + 1;
+
 $category =  get_category_by_id($lesson['category_id']);
+
+$category_count_all = get_lessons_by_category_id($lesson['category_id']);
+$count_lessons = count($category_count_all);
+$lesson_nr = $lesson['lesson_nr'];
+
+$percentage = (100/$count_lessons)*$lesson_nr;
+
+$last_id = get_last_lesson_id();
+$last_id = $last_id['LastID'];
 
 $images = $lesson['img_url'];
 $img = explode(", ", $images);
@@ -23,7 +38,6 @@ $biggest_problem = explode(", ", $biggest_problems);
 <nav>
     <?php require_once('templates/navbar.php'); ?>
 </nav>
-
 <section class="container lesson <?php echo strtolower($category['title']); ?> my-5">
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row">
@@ -86,22 +100,22 @@ $biggest_problem = explode(", ", $biggest_problems);
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 530.72 423.47" style="enable-background:new 0 0 530.72 423.47;" xml:space="preserve">
                     <defs>
                         <linearGradient id="Gradient" x2="100%" y2="0%">
-                            <stop offset="20%" stop-color="#e9c46aff" />
-                            <stop offset="20%" stop-color="#FFE8B1" />
+                            <stop offset="<?php echo $percentage ?>%" stop-color="#e9c46aff" />
+                            <stop offset="<?php echo $percentage ?>%" stop-color="#FFE8B1" />
                         </linearGradient>
                     </defs>
                     <rect id="Rectangle_15" x="255.9" y="26.24" class="post" width="18" height="377.12" />
                     <g id="next" transform="translate(1451.955 1133.787)">
-                        <a href="#">
+                    <a href="lesson.php?id=<?php echo $next_lesson_id; ?>">
                             <path id="Rectangle_14" class="sign" d="M-1204.05-965.43h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-1214.05-960.96-1209.58-965.43-1204.05-965.43z" />
                             <g id="Group_33" transform="translate(43.701 9.104)">
                                 <path id="Icon_awesome-chevron-circle-right" d="M-1043.7-962.18c5.7,0,10.32,4.62,10.32,10.32s-4.62,10.32-10.32,10.32 s-10.32-4.62-10.32-10.32C-1054.02-957.55-1049.4-962.17-1043.7-962.18C-1043.7-962.18-1043.7-962.18-1043.7-962.18z M-1038.96-952.56l-5.64-5.64c-0.39-0.39-1.02-0.39-1.41,0l-0.71,0.71c-0.39,0.39-0.39,1.02,0,1.41l4.23,4.23l-4.23,4.23 c-0.39,0.39-0.39,1.02,0,1.41l0.71,0.71c0.39,0.39,1.02,0.39,1.41,0l5.64-5.64C-1038.57-951.54-1038.57-952.17-1038.96-952.56 C-1038.96-952.56-1038.96-952.56-1038.96-952.56L-1038.96-952.56z" />
-                                <text transform="matrix(1 0 0 1 -1214.7557 -945.0616)" class="signtext">Wissen testen</text>
+                                <text transform="matrix(1 0 0 1 -1214.7557 -945.0616)" class="signtext">Nächste Lektion</text>
                             </g>
                         </a>
                     </g>
                     <g id="before" transform="translate(1238.911 1074.861)">
-                        <a href="#">
+                        <a href="lesson.php?id=<?php echo $prev_lesson_id; ?>">
                             <path id="Rectangle_13" class="sign" d="M-1209.01-965.51h257c2.76,0,5,2.24,5,5v35c0,2.76-2.24,5-5,5h-257c-2.76,0-5-2.24-5-5v-35 C-1214.01-963.27-1211.77-965.51-1209.01-965.51z" />
                             <g id="Group_34" transform="translate(16.011 8.206)">
                                 <text transform="matrix(1 0 0 1 -1176.5577 -945.355)" class="signtext">Vorherige Lektion</text>
@@ -110,7 +124,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                         </a>
                     </g>
                     <g id="overview">
-                        <a href="#">
+                        <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
                             <path id="Path_9" class="sign" d="M138.59,30.81h253.34c4.01,0,7.26,3.25,7.26,7.26c0,0,0,0,0,0v31.21c0,4.01-3.25,7.26-7.26,7.26 l0,0H138.59c-4.01,0-7.26-3.25-7.26-7.26V38.07C131.33,34.06,134.58,30.81,138.59,30.81C138.59,30.81,138.59,30.81,138.59,30.81z" />
                             <g id="Group_32" transform="translate(1407.643 1005.258)">
                                 <text transform="matrix(1 0 0 1 -1174.5598 -944.8887)" class="signtext">Übersicht</text>
@@ -122,7 +136,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                         <g id="Group_36_1_" transform="translate(1451.955 1133.787)">
                             <path id="Rectangle_14_1_" fill="url(#Gradient)" d="M-2667.72-2099.44h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-2677.72-2094.96-2673.24-2099.44-2667.72-2099.44z" />
                             <g id="Group_33_1_" transform="translate(43.701 9.104)">
-                                <text transform="matrix(1 0 0 1 -2676.511 -2079.541)" class="signtext">Fortschritt - 65%</text>
+                                <text transform="matrix(1 0 0 1 -2676.511 -2079.541)" class="signtext">Fortschritt - <?php echo $percentage ?>%</text>
                             </g>
                         </g>
                     </g>

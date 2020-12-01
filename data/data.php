@@ -89,3 +89,11 @@ function get_lesson_by_id($id)
 	$row = $result->fetch();
 	return $row;
 }
+
+function get_last_lesson_id(){
+	$db = get_db_connection();
+	$sql = "SELECT MAX(ID) AS LastID FROM tbl_lesson";
+	$result = $db->query($sql);
+	$row = $result->fetch();
+	return $row;
+}

@@ -1,7 +1,28 @@
-section.category{
-    h2{
-        color: $orange-yellow-crayola;
+section.category {
+    .energie {
+        h2 {
+            color: $orange-yellow-crayola;
+        }
     }
+
+    .food-waste {
+        h2 {
+            color: $congo-pink;
+        }
+    }
+
+    .nachhaltigkeit {
+        h2 {
+            color: $beau-blue;
+        }
+    }
+
+    .klimawandel {
+        h2 {
+            color: $green-sheen;
+        }
+    }
+
     a:hover {
         text-decoration: none;
         color: black;

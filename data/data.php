@@ -42,6 +42,24 @@ function get_all_lessons()
 	return $result->fetchAll();
 }
 
+/* GET ALL LESSONS */
+function get_all_lessons_by_cat_id($id)
+{
+	$db = get_db_connection();
+	$sql = "SELECT * FROM tbl_lesson  WHERE category_id = $id;";
+	$result = $db->query($sql);
+	return $result->fetchAll();
+}
+
+/* GET ALL CATEGORIES */
+function get_all_categories()
+{
+	$db = get_db_connection();
+	$sql = "SELECT * FROM tbl_category;";
+	$result = $db->query($sql);
+	return $result->fetchAll();
+}
+
 /* GET TOP LESSONS */
 function get_top_lessons()
 {

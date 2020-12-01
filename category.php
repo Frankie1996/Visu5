@@ -23,7 +23,7 @@ $lessons = get_lessons_by_category_id($_GET['id']);
         <div class="row">
             <?php foreach ($lessons as $lesson) { ?>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
+                    <a class="link-title" href="lesson.php?id=<?php echo $lesson['id']; ?>">
                         <div class="card <?php echo strtolower($category['title']); ?>">
                             <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
                             <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">

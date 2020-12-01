@@ -14,7 +14,7 @@ $category_count_all = get_lessons_by_category_id($lesson['category_id']);
 $count_lessons = count($category_count_all);
 $lesson_nr = $lesson['lesson_nr'];
 
-$percentage = (100/$count_lessons)*$lesson_nr;
+$percentage = (100 / $count_lessons) * $lesson_nr;
 
 $last_id = get_last_lesson_id();
 $last_id = $last_id['LastID'];
@@ -106,11 +106,11 @@ $biggest_problem = explode(", ", $biggest_problems);
                     </defs>
                     <rect id="Rectangle_15" x="255.9" y="26.24" class="post" width="18" height="377.12" />
                     <g id="next" transform="translate(1451.955 1133.787)">
-                    <a href="lesson.php?id=<?php echo $next_lesson_id; ?>">
+                        <a href="lesson.php?id=<?php echo $next_lesson_id; ?>">
                             <path id="Rectangle_14" class="sign" d="M-1204.05-965.43h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-1214.05-960.96-1209.58-965.43-1204.05-965.43z" />
                             <g id="Group_33" transform="translate(43.701 9.104)">
-                                <path id="Icon_awesome-chevron-circle-right" d="M-1043.7-962.18c5.7,0,10.32,4.62,10.32,10.32s-4.62,10.32-10.32,10.32 s-10.32-4.62-10.32-10.32C-1054.02-957.55-1049.4-962.17-1043.7-962.18C-1043.7-962.18-1043.7-962.18-1043.7-962.18z M-1038.96-952.56l-5.64-5.64c-0.39-0.39-1.02-0.39-1.41,0l-0.71,0.71c-0.39,0.39-0.39,1.02,0,1.41l4.23,4.23l-4.23,4.23 c-0.39,0.39-0.39,1.02,0,1.41l0.71,0.71c0.39,0.39,1.02,0.39,1.41,0l5.64-5.64C-1038.57-951.54-1038.57-952.17-1038.96-952.56 C-1038.96-952.56-1038.96-952.56-1038.96-952.56L-1038.96-952.56z" />
-                                <text transform="matrix(1 0 0 1 -1214.7557 -945.0616)" class="signtext">Nächste Lektion</text>
+                                <path id="Icon_awesome-chevron-circle-right" d="M-1018.7-962.36c5.7,0,10.32,4.62,10.32,10.32s-4.62,10.32-10.32,10.32 s-10.32-4.62-10.32-10.32C-1029.02-957.74-1024.4-962.36-1018.7-962.36C-1018.7-962.36-1018.7-962.36-1018.7-962.36z M-1013.96-952.75l-5.64-5.64c-0.39-0.39-1.02-0.39-1.41,0l-0.71,0.71c-0.39,0.39-0.39,1.02,0,1.41l4.23,4.23l-4.23,4.23 c-0.39,0.39-0.39,1.02,0,1.41l0.71,0.71c0.39,0.39,1.02,0.39,1.41,0l5.64-5.64C-1013.57-951.72-1013.57-952.36-1013.96-952.75 C-1013.96-952.75-1013.96-952.75-1013.96-952.75L-1013.96-952.75z" />
+                                <text transform="matrix(1 0 0 1 -1230.7557 -945.2465)" class="signtext">Nächste Lektion</text>
                             </g>
                         </a>
                     </g>

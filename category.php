@@ -10,7 +10,7 @@ $lessons = get_lessons_by_category_id($_GET['id']);
 <?php require_once('templates/head.php'); ?>
 
 <nav>
-<?php require_once('templates/navbar.php'); ?>
+    <?php require_once('templates/navbar.php'); ?>
 </nav>
 
 <section class="container category my-5">
@@ -25,7 +25,8 @@ $lessons = get_lessons_by_category_id($_GET['id']);
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <a href="lesson.php?id=<?php echo $lesson['id']; ?>">
                         <div class="card <?php echo strtolower($category['title']); ?>">
-                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top">
+                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                                 <p class="card-text small text-center">

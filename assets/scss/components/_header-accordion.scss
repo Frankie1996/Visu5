@@ -38,6 +38,10 @@
                 background-image: url("../img/headerAccordion/recycling.jpg");
             }
 
+            &:nth-child(5) {
+                background-image: url("../img/headerAccordion/food-waste.jpg");
+            }
+
             div {
                 display: block;
                 overflow: hidden;

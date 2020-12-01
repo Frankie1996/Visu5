@@ -10168,6 +10168,10 @@ footer a:hover {
   background-image: url("../img/headerAccordion/recycling.jpg");
 }
 
+.accordion ul li:nth-child(5) {
+  background-image: url("../img/headerAccordion/food-waste.jpg");
+}
+
 .accordion ul li div {
   display: block;
   overflow: hidden;

@@ -8,7 +8,7 @@
         </li>
         <li>
             <div> <a href="./category.php?id=3">
-                    <h1>Klimaveränderung</h1>
+                    <h1>Klimawandel</h1>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 </a> </div>
         </li>
@@ -20,7 +20,13 @@
         </li>
         <li>
             <div> <a href="./category.php?id=5">
-                    <h1>Entsorgung & Recylcing</h1>
+                    <h1>Recylcing</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                </a> </div>
+        </li>
+        <li>
+            <div> <a href="./category.php?id=4">
+                    <h1>Food Waste</h1>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 </a> </div>
         </li>

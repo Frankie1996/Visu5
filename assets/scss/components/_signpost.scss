@@ -1,30 +1,31 @@
-.st0 {
-    fill: #9D5B00;
-}
-
-.st1 {
-    fill: #E9C46A;
-    &:hover{
-        fill: red;
+div.signpost {
+    position: absolute;
+    bottom: -64px;
+    right: 20px;
+    width: 75%;
+    a{
+        text-decoration: none;
+        color: black;
     }
-}
 
-.st2 {
-    font-family: 'BlockheadOT-Unplugged';
-}
+    .post {
+        fill: #9D5B00;
+    }
 
-.st3 {
-    font-size: 22px;
-}
+    .sign {
+        fill: #E9C46A;
+    }
 
-.st4 {
-    font-size: 21px;
-}
+    #overview:hover,
+    #before:hover,
+    #next:hover {
+        .sign {
+            fill: #ebbc48;
+        }
+    }
 
-.st5 {
-    font-size: 20px;
-}
-
-.st6 {
-    fill: #FFE8B1;
+    .signtext {
+        font-family: 'BlockheadOT-Unplugged';
+        font-size: 22px;
+    }
 }

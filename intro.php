@@ -57,7 +57,7 @@ $next_lesson_id = $lesson['id']+1;
                     <?php } ?>
 
                 <?php } else { ?>
-                    <h3 class="mb-4">Das wichtigste in Kürze</h3>
+                    <h3 class="mb-4">Das Wichtigste in Kürze</h3>
                     <ul>
                         <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
                             <li><?php echo $important[$i] ?></li>

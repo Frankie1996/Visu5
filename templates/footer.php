@@ -3,7 +3,7 @@
   <div class="container-fluid footer-top">
     <div class="container">
       <p>Ein Angebot in Zusammenarbeit mit:</p>
-      <a href="#"><img src="https://www.fhgr.ch/typo3conf/ext/sfptemplate/RootPage/Default/Resources/Public/Partials/Logo/Images/Logo.svg" alt="Fachhochschule Graubünden"></a>
+      <a href="https://www.fhgr.ch/"><img src="https://www.fhgr.ch/typo3conf/ext/sfptemplate/RootPage/Default/Resources/Public/Partials/Logo/Images/Logo.svg" alt="Fachhochschule Graubünden"></a>
     </div>
   </div>
 

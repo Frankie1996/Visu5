@@ -20,7 +20,7 @@
         </li>
         <li>
             <div> <a href="./category.php?id=5">
-                    <h1>Recylcing</h1>
+                    <h1>Recycling</h1>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 </a> </div>
         </li>

@@ -39,8 +39,12 @@ $allLessons = get_all_lessons();
                                 </a>
                                 •
                                 <?php
-                                echo "Lektion ";
-                                echo $lesson['lesson_nr'];
+                                if ($lesson['einfuerung'] == 1) {
+                                    echo "Einführung ";
+                                } else {
+                                    echo "Lektion ";
+                                    echo $lesson['lesson_nr'];
+                                }
                                 ?></p>
                         </div>
                     </div>

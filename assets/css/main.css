@@ -10371,6 +10371,16 @@ section.lesson .info {
   padding: 20px;
 }
 
+section.lesson .carousel img {
+  object-fit: cover;
+  /* Do not scale the image */
+  object-position: center;
+  /* Center the image within the element */
+  width: 100%;
+  height: 350px;
+  margin-bottom: 1rem;
+}
+
 section.lesson.energie h2,
 section.lesson.energie h3 {
   color: #e9c46aff;

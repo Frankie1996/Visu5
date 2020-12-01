@@ -1,43 +1,64 @@
 section.lesson {
-    .info{
+    .info {
         border: 3px solid $fern-green;
         border-radius: calc(0.25rem - 1px);
         padding: 20px;
     }
 
-    &.energie{
+    .carousel img {
+        object-fit: cover;
+        /* Do not scale the image */
+        object-position: center;
+        /* Center the image within the element */
+        width: 100%;
+        height: 350px;
+        margin-bottom: 1rem;
+    }
+
+    &.energie {
+
         h2,
-        h3{
+        h3 {
             color: $orange-yellow-crayola;
         }
-        .info{
+
+        .info {
             border-color: $orange-yellow-crayola;
         }
     }
-    &.food-waste{
+
+    &.food-waste {
+
         h2,
-        h3{
+        h3 {
             color: $congo-pink;
         }
-        .info{
+
+        .info {
             border-color: $congo-pink;
         }
     }
-    &.nachhaltigkeit{
+
+    &.nachhaltigkeit {
+
         h2,
-        h3{
+        h3 {
             color: $beau-blue;
         }
-        .info{
+
+        .info {
             border-color: $beau-blue;
         }
     }
-    &.klimawandel{
+
+    &.klimawandel {
+
         h2,
-        h3{
+        h3 {
             color: $green-sheen;
         }
-        .info{
+
+        .info {
             border-color: $green-sheen;
         }
     }

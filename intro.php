@@ -4,8 +4,7 @@ require_once('data/data.php');
 $lesson = get_lesson_by_id($_GET['id']);
 $category =  get_category_by_id($lesson['category_id']);
 
-$images = $lesson['img_url'];
-$img = explode(", ", $images);
+$video = $lesson['video_url'];
 
 $importance = $lesson['important'];
 $important = explode(", ", $importance);
@@ -15,6 +14,8 @@ $learning_goal = explode(", ", $learning_goals);
 
 $biggest_problems = $lesson['groeste_probleme'];
 $biggest_problem = explode(", ", $biggest_problems);
+
+$next_lesson_id = $lesson['id']+1;
 ?>
 
 <!-- Head -->
@@ -27,7 +28,7 @@ $biggest_problem = explode(", ", $biggest_problems);
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row justify-content-center pb-4">
         <section class="col-12">
-            <video src="assets/video/energy.mp4" controls width=100%></video>
+            <video src="<?php echo $video; ?>" controls width=100%></video>
         </section>
     </div>
     <div class="row">
@@ -66,10 +67,10 @@ $biggest_problem = explode(", ", $biggest_problems);
             </div>
             <div class="row">
                 <div class="col">
-                    <a href=""><img src="assets/img/buttons/uebersicht.svg" alt="Uebersicht"></a>
+                    <a href="category.php?id=<?php echo $lesson['category_id']; ?>"><img src="assets/img/buttons/uebersicht.svg" alt="Uebersicht"></a>
                 </div>
                 <div class="col">
-                    <a href="#"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
+                    <a href="<?php echo "lesson.php?id=$next_lesson_id";?>"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
                 </div>
             </div>
         </article>

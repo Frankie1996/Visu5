@@ -43,8 +43,12 @@ $lessons = get_lessons_by_category_id($_GET['id']);
                                     </a>
                                     •
                                     <?php
-                                    echo "Lektion ";
-                                    echo $lesson['lesson_nr'];
+                                     if ($lesson['einfuerung'] == 1) {
+                                        echo "Einführung ";
+                                    } else {
+                                        echo "Lektion ";
+                                        echo $lesson['lesson_nr'];
+                                    }
                                     ?></p>
                             </div>
                         </div>

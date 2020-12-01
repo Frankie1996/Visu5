@@ -144,7 +144,12 @@ $biggest_problem = explode(", ", $biggest_problems);
                         ?>">
                             <path id="Rectangle_13" class="sign" d="M-1209.01-965.51h257c2.76,0,5,2.24,5,5v35c0,2.76-2.24,5-5,5h-257c-2.76,0-5-2.24-5-5v-35 C-1214.01-963.27-1211.77-965.51-1209.01-965.51z" />
                             <g id="Group_34" transform="translate(16.011 8.206)">
-                                <text transform="matrix(1 0 0 1 -1176.5577 -945.355)" class="signtext">Vorherige Lektion</text>
+                                <text transform="matrix(1 0 0 1 -1176.5577 -945.355)" class="signtext"><?php 
+                                    if($prev_lesson_intro['einfuerung']){
+                                        echo "Zur Einführung";
+                                    }else {
+                                        echo "Vorherige Lektion";
+                                    } ?></text>
                                 <path id="Icon_awesome-chevron-circle-left" d="M-1204.05-941.52c-5.7,0-10.32-4.62-10.32-10.32s4.62-10.32,10.32-10.32 s10.32,4.62,10.32,10.32C-1193.72-946.14-1198.34-941.52-1204.05-941.52C-1204.04-941.52-1204.04-941.52-1204.05-941.52z M-1208.79-951.13l5.64,5.64c0.39,0.39,1.02,0.39,1.41,0l0.71-0.71c0.39-0.39,0.39-1.02,0-1.41l-4.23-4.23l4.23-4.23 c0.39-0.39,0.39-1.02,0-1.41l-0.71-0.71c-0.39-0.39-1.02-0.39-1.41,0l-5.64,5.64C-1209.18-952.16-1209.18-951.52-1208.79-951.13 C-1208.79-951.13-1208.79-951.13-1208.79-951.13z" />
                             </g>
                         </a>
@@ -163,7 +168,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                             <path id="Rectangle_14_1_" fill="url(#Gradient)" d="M-2667.72-2099.44h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-2677.72-2094.96-2673.24-2099.44-2667.72-2099.44z" />
                             <g id="Group_33_1_" transform="translate(43.701 9.104)">
                                 <text transform="matrix(1 0 0 1 -2676.511 -2079.541)" class="signtext"><?php if ($percentage == 100){
-                                    echo "$percentage% - Fertig";
+                                    echo "$percentage% - Beendet";
                                 } else {
                                     echo "Fortschritt - "; echo $percentage; echo "%";
                                 }?></text>

@@ -8,16 +8,24 @@ $lesson_id = $_GET['id'];
 $prev_lesson_id = $lesson_id - 1;
 $next_lesson_id = $lesson_id + 1;
 
+$prev_lesson_intro = get_lesson_by_id($prev_lesson_id);
+$next_lesson_intro = get_lesson_by_id($next_lesson_id);
+
 $category =  get_category_by_id($lesson['category_id']);
 
 $category_count_all = get_lessons_by_category_id($lesson['category_id']);
 $count_lessons = count($category_count_all);
 $lesson_nr = $lesson['lesson_nr'];
 
+<<<<<<< Updated upstream
 $percentage = (100 / $count_lessons) * $lesson_nr;
+=======
+$percentage_raw = (100/($count_lessons-1))*$lesson_nr;
+$percentage = round($percentage_raw, 2);
+>>>>>>> Stashed changes
 
 $last_id = get_last_lesson_id();
-$last_id = $last_id['LastID'];
+$last_lesson_id = strval($last_id['LastID']);
 
 $images = $lesson['img_url'];
 $img = explode(", ", $images);
@@ -37,7 +45,6 @@ $biggest_problem = explode(", ", $biggest_problems);
 
 <!-- Navigation -->
 <?php require_once('templates/navbar.php'); ?>
-
 <section class="container lesson <?php echo strtolower($category['title']); ?> my-5">
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row">
@@ -106,16 +113,47 @@ $biggest_problem = explode(", ", $biggest_problems);
                     </defs>
                     <rect id="Rectangle_15" x="255.9" y="26.24" class="post" width="18" height="377.12" />
                     <g id="next" transform="translate(1451.955 1133.787)">
+<<<<<<< Updated upstream
                         <a href="lesson.php?id=<?php echo $next_lesson_id; ?>">
                             <path id="Rectangle_14" class="sign" d="M-1204.05-965.43h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-1214.05-960.96-1209.58-965.43-1204.05-965.43z" />
                             <g id="Group_33" transform="translate(43.701 9.104)">
                                 <path id="Icon_awesome-chevron-circle-right" d="M-1018.7-962.36c5.7,0,10.32,4.62,10.32,10.32s-4.62,10.32-10.32,10.32 s-10.32-4.62-10.32-10.32C-1029.02-957.74-1024.4-962.36-1018.7-962.36C-1018.7-962.36-1018.7-962.36-1018.7-962.36z M-1013.96-952.75l-5.64-5.64c-0.39-0.39-1.02-0.39-1.41,0l-0.71,0.71c-0.39,0.39-0.39,1.02,0,1.41l4.23,4.23l-4.23,4.23 c-0.39,0.39-0.39,1.02,0,1.41l0.71,0.71c0.39,0.39,1.02,0.39,1.41,0l5.64-5.64C-1013.57-951.72-1013.57-952.36-1013.96-952.75 C-1013.96-952.75-1013.96-952.75-1013.96-952.75L-1013.96-952.75z" />
                                 <text transform="matrix(1 0 0 1 -1230.7557 -945.2465)" class="signtext">Nächste Lektion</text>
+=======
+                    <a href="
+                    <?php 
+                            
+                            if ($lesson_id === $last_lesson_id) {
+                                echo "lesson.php?id=$lesson_id"; 
+                            }
+                            else if($next_lesson_intro['einfuerung'] == 1)  {
+                                echo "intro.php?id=$next_lesson_id"; 
+                            }else {
+                                echo "lesson.php?id=$next_lesson_id";
+                            }
+                        ?>">
+                            <path id="Rectangle_14" class="sign" d="M-1204.05-965.43h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-1214.05-960.96-1209.58-965.43-1204.05-965.43z" />
+                            <g id="Group_33" transform="translate(43.701 9.104)">
+                                <path id="Icon_awesome-chevron-circle-right" d="M-1043.7-962.18c5.7,0,10.32,4.62,10.32,10.32s-4.62,10.32-10.32,10.32 s-10.32-4.62-10.32-10.32C-1054.02-957.55-1049.4-962.17-1043.7-962.18C-1043.7-962.18-1043.7-962.18-1043.7-962.18z M-1038.96-952.56l-5.64-5.64c-0.39-0.39-1.02-0.39-1.41,0l-0.71,0.71c-0.39,0.39-0.39,1.02,0,1.41l4.23,4.23l-4.23,4.23 c-0.39,0.39-0.39,1.02,0,1.41l0.71,0.71c0.39,0.39,1.02,0.39,1.41,0l5.64-5.64C-1038.57-951.54-1038.57-952.17-1038.96-952.56 C-1038.96-952.56-1038.96-952.56-1038.96-952.56L-1038.96-952.56z" />
+                                <text transform="matrix(1 0 0 1 -1214.7557 -945.0616)" class="signtext"><?php if ($percentage == 100){
+                                    echo "Nächstes Modul";
+                                } else {
+                                    echo "Nächste Lektion";
+                                }?></text>
+>>>>>>> Stashed changes
                             </g>
                         </a>
                     </g>
                     <g id="before" transform="translate(1238.911 1074.861)">
-                        <a href="lesson.php?id=<?php echo $prev_lesson_id; ?>">
+                        <a href="
+                        <?php 
+                            if($prev_lesson_intro['einfuerung'] == 1)  {
+                                echo "intro.php?id=$prev_lesson_id"; 
+                            } else {
+                                echo "lesson.php?id=$prev_lesson_id"; 
+                            }
+                            
+                        ?>">
                             <path id="Rectangle_13" class="sign" d="M-1209.01-965.51h257c2.76,0,5,2.24,5,5v35c0,2.76-2.24,5-5,5h-257c-2.76,0-5-2.24-5-5v-35 C-1214.01-963.27-1211.77-965.51-1209.01-965.51z" />
                             <g id="Group_34" transform="translate(16.011 8.206)">
                                 <text transform="matrix(1 0 0 1 -1176.5577 -945.355)" class="signtext">Vorherige Lektion</text>
@@ -136,7 +174,11 @@ $biggest_problem = explode(", ", $biggest_problems);
                         <g id="Group_36_1_" transform="translate(1451.955 1133.787)">
                             <path id="Rectangle_14_1_" fill="url(#Gradient)" d="M-2667.72-2099.44h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-2677.72-2094.96-2673.24-2099.44-2667.72-2099.44z" />
                             <g id="Group_33_1_" transform="translate(43.701 9.104)">
-                                <text transform="matrix(1 0 0 1 -2676.511 -2079.541)" class="signtext">Fortschritt - <?php echo $percentage ?>%</text>
+                                <text transform="matrix(1 0 0 1 -2676.511 -2079.541)" class="signtext"><?php if ($percentage == 100){
+                                    echo "$percentage% - Fertig";
+                                } else {
+                                    echo "Fortschritt - "; echo $percentage; echo "%";
+                                }?></text>
                             </g>
                         </g>
                     </g>

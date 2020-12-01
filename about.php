@@ -29,7 +29,7 @@ $about = get_about();
                     <div class="container">
                         <div class="box">
                             <div class="imgBx">
-                                <img src="https://i.ibb.co/x1Gth6s/team-1.jpg" alt="">
+                                <img src="https://718373-19.web1.fh-htwchur.ch/wp-content/uploads/2020/04/Delia_Schafer.jpg" alt="">
                             </div>
                             <div class="card-footer">
                                 <h4>Delia Schafer</h4>
@@ -38,7 +38,7 @@ $about = get_about();
 
                         <div class="box">
                             <div class="imgBx">
-                                <img src="https://i.ibb.co/VNnNB0P/team-2.jpg" alt="">
+                                <img src="https://www.waeldi.ch/public/upload/assets/577/rendition/img_small.jpg" alt="">
                             </div>
                             <div class="card-footer">
                                 <h4>Zoe Waltenspül</h4>
@@ -47,16 +47,16 @@ $about = get_about();
 
                         <div class="box">
                             <div class="imgBx">
-                                <img src="https://i.ibb.co/2MP418L/team-3.jpg" alt="">
+                                <img src="https://www.digezz.ch/projekte/paris-5/images/yssa-profilfoto.png" alt="">
                             </div>
                             <div class="card-footer">
-                                <h4>Ysablle Moser</h4>
+                                <h4>Ysabelle Moser</h4>
                             </div>
                         </div>
 
                         <div class="box">
                             <div class="imgBx">
-                                <img src="https://i.ibb.co/jGcmRHP/team-4.jpg" alt="">
+                                <img src="https://www.vally.ch/images/profil_frank.jpg" alt="">
                             </div>
                             <div class="card-footer">
                                 <h4>Frank Zinsli</h4>
@@ -65,7 +65,7 @@ $about = get_about();
 
                         <div class="box">
                             <div class="imgBx">
-                                <img src="https://i.ibb.co/jGcmRHP/team-4.jpg" alt="">
+                                <img src="https://avatars3.githubusercontent.com/u/51910214?s=460&u=aac2cd5afda73adcd426bfe678ab5e1d7735dbe8&v=4" alt="">
                             </div>
                             <div class="card-footer">
                                 <h4>Sandro Anderes</h4>

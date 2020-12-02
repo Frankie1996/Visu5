@@ -29,6 +29,12 @@
             background-color: $green-sheen;
         }
     }
+    &.recycling{
+        border-color: $english-vermillion;
+        .card-body{
+            background-color: $english-vermillion;
+        }
+    }
 }
 
 .card:hover {

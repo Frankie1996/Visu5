@@ -11530,6 +11530,14 @@ section.experience div.container {
   background-color: #81b29aff;
 }
 
+.card.recycling {
+  border-color: #d64041ff;
+}
+
+.card.recycling .card-body {
+  background-color: #d64041ff;
+}
+
 .card:hover {
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;

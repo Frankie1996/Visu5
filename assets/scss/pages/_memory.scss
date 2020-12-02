@@ -1,10 +1,4 @@
 section.memory{
-    .container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
     h2{
         color: $orange-yellow-crayola;
@@ -27,6 +21,7 @@ section.memory{
         min-height: 680px;
         padding: 32px;
         width: 660px;
+        margin: 0 auto;
     }
     
     .deck .card {
@@ -114,44 +109,6 @@ section.memory{
         text-align: center;
     
     }
-    
-    /*
-     * Styles for the Previous Score
-     */
-    
-    .previous-score__container {
-        display: none;
-    }
-    
-     .previous-score__container h2 {
-       text-align: center;
-    }
-    
-     .previous-score__table {
-        margin: auto;
-        width: 660px;
-     }
-    
-    .previous-score__table th {
-        background-color: #4568dc;
-        color: white;
-        font-weight: 200;
-    }
-    
-    .previous-score__table tr,
-      .previous-score__table td {
-       background-color: white;
-    }
-    
-    
-     .previous-score__table tr,
-      .previous-score__table th,
-       .previous-score__table td {
-        border: 1px solid silver;
-        border-radius: 5px;
-        padding: 10px;
-        text-align: center;
-     }
     
     /*
      * Styles for Animations

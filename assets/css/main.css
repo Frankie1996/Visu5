@@ -10036,6 +10036,22 @@ a {
   border-bottom-color: #e9c46aff;
 }
 
+.navbar.food-waste {
+  border-bottom-color: #f69891ff;
+}
+
+.navbar.nachhaltigkeit {
+  border-bottom-color: #b0c8d8ff;
+}
+
+.navbar.klimawandel {
+  border-bottom-color: #81b29aff;
+}
+
+.navbar.recycling {
+  border-bottom-color: #d64041ff;
+}
+
 .navbar .navbar-brand img {
   width: 250px;
 }
@@ -10223,7 +10239,7 @@ footer a:hover {
 }
 
 .accordion ul:hover li:hover {
-  width: 90%;
+  width: 30%;
 }
 
 .accordion ul:hover li:hover a {
@@ -10356,6 +10372,26 @@ section.lessons a:hover {
   color: black;
 }
 
+section.lessons h3.energie {
+  color: #e9c46aff;
+}
+
+section.lessons h3.food-waste {
+  color: #f69891ff;
+}
+
+section.lessons h3.nachhaltigkeit {
+  color: #b0c8d8ff;
+}
+
+section.lessons h3.klimawandel {
+  color: #81b29aff;
+}
+
+section.lessons h3.recycling {
+  color: #d64041ff;
+}
+
 .gif_static {
   position: absolute;
   opacity: 1;
@@ -10415,6 +10451,15 @@ section.lesson.klimawandel h3 {
 
 section.lesson.klimawandel .info {
   border-color: #81b29aff;
+}
+
+section.lesson.recycling h2,
+section.lesson.recycling h3 {
+  color: #d64041ff;
+}
+
+section.lesson.recycling .info {
+  border-color: #d64041ff;
 }
 
 .bg {
@@ -10524,6 +10569,10 @@ section.category .nachhaltigkeit h2 {
 
 section.category .klimawandel h2 {
   color: #81b29aff;
+}
+
+section.category .recycling h2 {
+  color: #d64041ff;
 }
 
 section.category a:hover {

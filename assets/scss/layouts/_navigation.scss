@@ -5,6 +5,22 @@
         border-bottom-color: $orange-yellow-crayola;
     }
 
+    &.food-waste {
+        border-bottom-color: $congo-pink;
+    }
+
+    &.nachhaltigkeit {
+        border-bottom-color: $beau-blue;
+    }
+
+    &.klimawandel {
+        border-bottom-color: $green-sheen;
+    }
+
+    &.recycling {
+        border-bottom-color: $english-vermillion;
+    }
+
     .navbar-brand img {
         width: 250px;
     }
@@ -41,9 +57,9 @@
 .navbar li .active {
     background: $fern-green;
 
-        span {
-            color: white;
-        }
+    span {
+        color: white;
+    }
 }
 
 .navbar-light .navbar-nav .nav-link {

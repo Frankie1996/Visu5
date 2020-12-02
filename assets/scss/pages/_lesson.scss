@@ -62,4 +62,16 @@ section.lesson {
             border-color: $green-sheen;
         }
     }
+
+    &.recycling {
+
+        h2,
+        h3 {
+            color: $english-vermillion;
+        }
+
+        .info {
+            border-color: $english-vermillion;
+        }
+    }
 }

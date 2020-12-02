@@ -19,7 +19,7 @@ $topLessons = get_top_lessons();
 
 <section class="container-fluid featured">
     <div class="container">
-        <h2 class="mb-4">Spannende Lektionen</h2>
+        <h2 class="mb-4">Aktuelle Themen</h2>
         <div class="row">
             <?php
             foreach ($topLessons as $lesson) {
@@ -33,8 +33,8 @@ $topLessons = get_top_lessons();
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                                 <p class="card-text small text-center">
-                                    <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                        <?php echo "#" . $category['title']; ?>
+                                    <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php echo "#" . $category['title']; ?></b>
                                     </a>
                                     •
                                     <?php
@@ -51,7 +51,7 @@ $topLessons = get_top_lessons();
 </section>
 <section class="container-fluid experience">
     <div class="container">
-        <h2 class="mb-4">Umwelt erleben</h2>
+        <h2 class="mb-4">Wissenstest</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">

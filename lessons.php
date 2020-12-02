@@ -25,8 +25,10 @@ $allCategories = get_all_categories();
     <article>
         <h2 class="pb-4">Lektionen</h2>
 
-<!-- Energie Lektionen -->
-        <h3 class="pb-4">Thema Energie</h3>
+        <!-- Energie Lektionen -->
+        <a href="category.php?id=1">
+            <h3 class="pb-4 energie">Thema Energie</h3>
+        </a>
         <div class="row">
             <?php
             foreach ($energy_lessons as $lesson) {
@@ -46,9 +48,9 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                    <?php echo "#" . $category['title']; ?>
-                                </a>
+                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php echo "#" . $category['title']; ?>
+                                    </a></b>
                                 •
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
@@ -66,7 +68,9 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen Nachhaltigkeit -->
-        <h3 class="pb-4">Thema Nachhaltigkeit</h3>
+        <a href="category.php?id=2">
+            <h3 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h3>
+        </a>
         <div class="row">
             <?php
             foreach ($sustainability_lessons as $lesson) {
@@ -86,9 +90,9 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                    <?php echo "#" . $category['title']; ?>
-                                </a>
+                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php echo "#" . $category['title']; ?>
+                                    </a></b>
                                 •
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
@@ -106,7 +110,9 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen Klimawandel -->
-        <h3 class="pb-4">Thema Klimawandel</h3>
+        <a href="category.php?id=3">
+            <h3 class="pb-4 klimawandel">Thema Klimawandel</h3>
+        </a>
         <div class="row">
             <?php
             foreach ($climate_lessons as $lesson) {
@@ -126,9 +132,9 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                    <?php echo "#" . $category['title']; ?>
-                                </a>
+                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php echo "#" . $category['title']; ?>
+                                    </a></b>
                                 •
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
@@ -146,7 +152,9 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen FoodWaste -->
-        <h3 class="pb-4">Thema Food-Waste</h3>
+        <a href="category.php?id=4">
+            <h3 class="pb-4 food-waste">Thema Food-Waste</h3>
+        </a>
         <div class="row">
             <?php
             foreach ($food_waste_lessons as $lesson) {
@@ -166,9 +174,9 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                    <?php echo "#" . $category['title']; ?>
-                                </a>
+                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php echo "#" . $category['title']; ?>
+                                    </a></b>
                                 •
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
@@ -186,7 +194,9 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen Recycling -->
-        <h3 class="pb-4">Thema Recycling</h3>
+        <a href="category.php?id=5">
+            <h3 class="pb-4 recycling">Thema Recycling</h3>
+        </a>
         <div class="row">
             <?php
             foreach ($recycling_lessons as $lesson) {
@@ -206,9 +216,9 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
-                                    <?php echo "#" . $category['title']; ?>
-                                </a>
+                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                        <?php echo "#" . $category['title']; ?>
+                                    </a></b>
                                 •
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {

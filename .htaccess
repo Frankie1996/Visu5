@@ -1,5 +1,3 @@
-ErrorDocument 404 http://localhost/portfolio/error
-
 IndexIgnore * # prevent directory listing
 
 Order deny,allow

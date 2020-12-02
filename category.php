@@ -35,11 +35,11 @@ $lessons = get_lessons_by_category_id($_GET['id']);
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                                 <p class="card-text small text-center">
-                                    <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                    <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
                                         <?php
                                         $category =  get_category_by_id($lesson['category_id']);
                                         echo "#" . $category['title'];
-                                        ?>
+                                        ?></b>
                                     </a>
                                     •
                                     <?php

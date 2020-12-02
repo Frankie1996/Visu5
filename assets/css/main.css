@@ -10028,6 +10028,13 @@ a {
   font-size: smaller;
 }
 
+/* Code for Firefox */
+
+::selection {
+  color: #dee6dcff;
+  background: #5a804fff;
+}
+
 .navbar {
   border-bottom: #5a804fff 5px solid;
 }
@@ -10463,7 +10470,7 @@ section.lesson.recycling .info {
 }
 
 .bg {
-  background-image: url("../img/background/about.png");
+  background-image: url("../img/background/about.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -10588,18 +10595,8 @@ section.memory {
      * Styles for the Score Panel
      */
   /*
-     * Styles for the Previous Score
-     */
-  /*
      * Styles for Animations
      */
-}
-
-section.memory .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 section.memory h2 {
@@ -10619,6 +10616,7 @@ section.memory .deck {
   min-height: 680px;
   padding: 32px;
   width: 660px;
+  margin: 0 auto;
 }
 
 section.memory .deck .card {
@@ -10701,39 +10699,6 @@ section.memory .score-panel .restart {
   cursor: pointer;
   float: right;
   text-align: right;
-  text-align: center;
-}
-
-section.memory .previous-score__container {
-  display: none;
-}
-
-section.memory .previous-score__container h2 {
-  text-align: center;
-}
-
-section.memory .previous-score__table {
-  margin: auto;
-  width: 660px;
-}
-
-section.memory .previous-score__table th {
-  background-color: #4568dc;
-  color: white;
-  font-weight: 200;
-}
-
-section.memory .previous-score__table tr,
-section.memory .previous-score__table td {
-  background-color: white;
-}
-
-section.memory .previous-score__table tr,
-section.memory .previous-score__table th,
-section.memory .previous-score__table td {
-  border: 1px solid silver;
-  border-radius: 5px;
-  padding: 10px;
   text-align: center;
 }
 

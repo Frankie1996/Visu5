@@ -11196,6 +11196,14 @@ a {
   background: #5a804fff;
 }
 
+body {
+  cursor: url(../img/cursor/cursor.cur), auto;
+}
+
+a:hover {
+  cursor: url(../img/cursor/sandro.png), auto;
+}
+
 .navbar {
   border-bottom: #5a804fff 5px solid;
 }
@@ -11298,7 +11306,6 @@ footer img {
 
 footer .footer-top {
   background-color: #dee6dcff;
-  color: #5a804fff;
 }
 
 footer .footer-top p {

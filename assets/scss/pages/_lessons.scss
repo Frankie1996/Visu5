@@ -1,4 +1,4 @@
-section.lessons {
+section {
     a:hover {
         text-decoration: none;
         color: black;
@@ -23,6 +23,11 @@ section.lessons {
     h3.recycling {
             color: $english-vermillion;
     }
+}
+
+.energy-section {
+        background-color: $orange-yellow-crayola;
+        opacity: .3;
 }
 
 .gif_static {

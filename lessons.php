@@ -22,13 +22,16 @@ $allCategories = get_all_categories();
 <?php require_once('templates/navbar.php'); ?>
 
 <section class="container lessons my-5">
-    <article>
-        <h2 class="pb-4">Lektionen</h2>
+    <h2 class="pb-4">Lektionen</h2>
+</section>
 
-        <!-- Energie Lektionen -->
+<!-- Energie Lektionen -->
+<section class="energy-section container-fluid">
+    <article class="container">
         <a href="category?id=1">
             <h3 class="pb-4 energie">Thema Energie</h3>
         </a>
+
         <div class="row">
             <?php
             foreach ($energy_lessons as $lesson) {
@@ -66,8 +69,12 @@ $allCategories = get_all_categories();
                 </div>
             <?php } ?>
         </div>
+    </article>
+</section>
 
-        <!-- Lektionen Nachhaltigkeit -->
+<!-- Lektionen Nachhaltigkeit -->
+<section class="sustainability-section container-fluid">
+    <article class="container">
         <a href="category?id=2">
             <h3 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h3>
         </a>
@@ -108,8 +115,12 @@ $allCategories = get_all_categories();
                 </div>
             <?php } ?>
         </div>
+    </article>
+</section>
 
-        <!-- Lektionen Klimawandel -->
+<!-- Lektionen Klimawandel -->
+<section class="climate-section container-fluid">
+    <article class="container">
         <a href="category?id=3">
             <h3 class="pb-4 klimawandel">Thema Klimawandel</h3>
         </a>
@@ -150,8 +161,12 @@ $allCategories = get_all_categories();
                 </div>
             <?php } ?>
         </div>
+    </article>
+</section>
 
-        <!-- Lektionen FoodWaste -->
+<!-- Lektionen FoodWaste -->
+<section class="food-waste-section container-fluid">
+    <article class="container">
         <a href="category?id=4">
             <h3 class="pb-4 food-waste">Thema Food-Waste</h3>
         </a>
@@ -192,8 +207,12 @@ $allCategories = get_all_categories();
                 </div>
             <?php } ?>
         </div>
+    </article>
+</section>
 
-        <!-- Lektionen Recycling -->
+<!-- Lektionen Recycling -->
+<section class="recycling-section container-fluid">
+    <article class="container">
         <a href="category?id=5">
             <h3 class="pb-4 recycling">Thema Recycling</h3>
         </a>
@@ -234,9 +253,10 @@ $allCategories = get_all_categories();
                 </div>
             <?php } ?>
         </div>
-
     </article>
 </section>
+
+
 
 <!-- Footer -->
 <?php require_once('templates/footer.php'); ?>

@@ -116,7 +116,8 @@ $biggest_problem = explode(", ", $biggest_problems);
                                 echo "lesson?id=$lesson_id"; 
                             }
                             else if($next_lesson_intro['einfuerung'] == 1)  {
-                                echo "intro?id=$next_lesson_id"; 
+                                $next_category_id = $next_lesson_intro['category_id'];
+                                echo "category?id=$next_category_id"; 
                             }else {
                                 echo "lesson?id=$next_lesson_id";
                             }

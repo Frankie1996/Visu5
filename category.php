@@ -24,9 +24,9 @@ $lessons = get_lessons_by_category_id($_GET['id']);
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <?php
                     if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
-                        echo '<a class="link-title" href="lesson.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
                         <div class="card <?php echo strtolower($category['title']); ?>">
@@ -35,7 +35,7 @@ $lessons = get_lessons_by_category_id($_GET['id']);
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                                 <p class="card-text small text-center">
-                                    <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                    <a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php
                                         $category =  get_category_by_id($lesson['category_id']);
                                         echo "#" . $category['title'];

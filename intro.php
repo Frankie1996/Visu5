@@ -67,10 +67,10 @@ $next_lesson_id = $lesson['id']+1;
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="category.php?id=<?php echo $lesson['category_id']; ?>"><img src="assets/img/buttons/uebersicht.svg" alt="Uebersicht"></a>
+                    <a href="category?id=<?php echo $lesson['category_id']; ?>"><img src="assets/img/buttons/uebersicht.svg" alt="Uebersicht"></a>
                 </div>
                 <div class="col">
-                    <a href="<?php echo "lesson.php?id=$next_lesson_id";?>"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
+                    <a href="<?php echo "lesson?id=$next_lesson_id";?>"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
                 </div>
             </div>
         </article>

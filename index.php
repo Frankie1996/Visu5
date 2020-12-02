@@ -26,14 +26,14 @@ $topLessons = get_top_lessons();
                 $category =  get_category_by_id($lesson['category_id']);
             ?>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a class="link-title" href="lesson.php?id=<?php echo $lesson['id']; ?>">
+                    <a class="link-title" href="lesson?id=<?php echo $lesson['id']; ?>">
                         <div class="card <?php echo strtolower($category['title']); ?>">
                             <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
                             <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                                 <p class="card-text small text-center">
-                                    <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php echo "#" . $category['title']; ?></b>
                                     </a>
                                     •

@@ -26,7 +26,7 @@ $allCategories = get_all_categories();
         <h2 class="pb-4">Lektionen</h2>
 
         <!-- Energie Lektionen -->
-        <a href="category.php?id=1">
+        <a href="category?id=1">
             <h3 class="pb-4 energie">Thema Energie</h3>
         </a>
         <div class="row">
@@ -37,9 +37,9 @@ $allCategories = get_all_categories();
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <?php
                     if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
-                        echo '<a class="link-title" href="lesson.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
                     <div class="card <?php echo strtolower($category['title']); ?>">
@@ -48,7 +48,7 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php echo "#" . $category['title']; ?>
                                     </a></b>
                                 •
@@ -68,7 +68,7 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen Nachhaltigkeit -->
-        <a href="category.php?id=2">
+        <a href="category?id=2">
             <h3 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h3>
         </a>
         <div class="row">
@@ -79,9 +79,9 @@ $allCategories = get_all_categories();
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <?php
                     if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
-                        echo '<a class="link-title" href="lesson.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
                     <div class="card <?php echo strtolower($category['title']); ?>">
@@ -90,7 +90,7 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php echo "#" . $category['title']; ?>
                                     </a></b>
                                 •
@@ -110,7 +110,7 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen Klimawandel -->
-        <a href="category.php?id=3">
+        <a href="category?id=3">
             <h3 class="pb-4 klimawandel">Thema Klimawandel</h3>
         </a>
         <div class="row">
@@ -121,9 +121,9 @@ $allCategories = get_all_categories();
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <?php
                     if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
-                        echo '<a class="link-title" href="lesson.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
                     <div class="card <?php echo strtolower($category['title']); ?>">
@@ -132,7 +132,7 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php echo "#" . $category['title']; ?>
                                     </a></b>
                                 •
@@ -152,7 +152,7 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen FoodWaste -->
-        <a href="category.php?id=4">
+        <a href="category?id=4">
             <h3 class="pb-4 food-waste">Thema Food-Waste</h3>
         </a>
         <div class="row">
@@ -163,9 +163,9 @@ $allCategories = get_all_categories();
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <?php
                     if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
-                        echo '<a class="link-title" href="lesson.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
                     <div class="card <?php echo strtolower($category['title']); ?>">
@@ -174,7 +174,7 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php echo "#" . $category['title']; ?>
                                     </a></b>
                                 •
@@ -194,7 +194,7 @@ $allCategories = get_all_categories();
         </div>
 
         <!-- Lektionen Recycling -->
-        <a href="category.php?id=5">
+        <a href="category?id=5">
             <h3 class="pb-4 recycling">Thema Recycling</h3>
         </a>
         <div class="row">
@@ -205,9 +205,9 @@ $allCategories = get_all_categories();
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <?php
                     if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
-                        echo '<a class="link-title" href="lesson.php?id=' . $lesson["id"] . '">';
+                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
                     <div class="card <?php echo strtolower($category['title']); ?>">
@@ -216,7 +216,7 @@ $allCategories = get_all_categories();
                         <div class="card-body">
                             <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
                             <p class="card-text small text-center">
-                                <b><a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php echo "#" . $category['title']; ?>
                                     </a></b>
                                 •

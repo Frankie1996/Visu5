@@ -113,12 +113,12 @@ $biggest_problem = explode(", ", $biggest_problems);
                     <?php 
                             
                             if ($lesson_id === $last_lesson_id) {
-                                echo "lesson.php?id=$lesson_id"; 
+                                echo "lesson?id=$lesson_id"; 
                             }
                             else if($next_lesson_intro['einfuerung'] == 1)  {
-                                echo "intro.php?id=$next_lesson_id"; 
+                                echo "intro?id=$next_lesson_id"; 
                             }else {
-                                echo "lesson.php?id=$next_lesson_id";
+                                echo "lesson?id=$next_lesson_id";
                             }
                         ?>">
                             <path id="Rectangle_14" class="sign" d="M-1204.05-965.43h247c5.52,0,10,4.48,10,10v25c0,5.52-4.48,10-10,10h-247 c-5.52,0-10-4.48-10-10v-25C-1214.05-960.96-1209.58-965.43-1204.05-965.43z" />
@@ -136,9 +136,9 @@ $biggest_problem = explode(", ", $biggest_problems);
                         <a href="
                         <?php 
                             if($prev_lesson_intro['einfuerung'] == 1)  {
-                                echo "intro.php?id=$prev_lesson_id"; 
+                                echo "intro?id=$prev_lesson_id"; 
                             } else {
-                                echo "lesson.php?id=$prev_lesson_id"; 
+                                echo "lesson?id=$prev_lesson_id"; 
                             }
                             
                         ?>">
@@ -155,7 +155,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                         </a>
                     </g>
                     <g id="overview">
-                        <a href="category.php?id=<?php echo $lesson['category_id']; ?>">
+                        <a href="category?id=<?php echo $lesson['category_id']; ?>">
                             <path id="Path_9" class="sign" d="M138.59,30.81h253.34c4.01,0,7.26,3.25,7.26,7.26c0,0,0,0,0,0v31.21c0,4.01-3.25,7.26-7.26,7.26 l0,0H138.59c-4.01,0-7.26-3.25-7.26-7.26V38.07C131.33,34.06,134.58,30.81,138.59,30.81C138.59,30.81,138.59,30.81,138.59,30.81z" />
                             <g id="Group_32" transform="translate(1407.643 1005.258)">
                                 <text transform="matrix(1 0 0 1 -1174.5598 -944.8887)" class="signtext">Übersicht</text>

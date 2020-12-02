@@ -4,17 +4,19 @@
 
 /* SCSS HEX */
 $orange-yellow-crayola: #e9c46aff;
-$orange-yellow-crayola_opa: rgba(233, 197, 106, 0.3);
 $beau-blue: #b0c8d8ff;
-$beau-blue_opa: rgba(176, 200, 216, 0.3);
 $english-vermillion: #d64041ff;
-$english-vermillion_opa: rgba(214, 64, 64, 0.3);
 $congo-pink: #f69891ff;
-$congo-pink_opa: rgba(246, 152, 145, 0.3);
 $green-sheen: #81b29aff;
-$green-sheen_opa: rgba(129, 178, 154, 0.3);
 $fern-green: #5a804fff;
 $alabaster: #dee6dcff;
+
+$orange-yellow-crayola_opa: rgba(233, 197, 106, 0.23);
+$beau-blue_opa: rgba(176, 200, 216, 0.23);
+$english-vermillion_opa: rgba(214, 64, 64, 0.23);
+$congo-pink_opa: rgba(246, 152, 145, 0.23);
+$green-sheen_opa: rgba(129, 178, 154, 0.23);
+$fern-green_opa: rgba(90, 128, 79, 0.6);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #e9c46aff, #b0c8d8ff, #d64041ff, #f69891ff, #81b29aff, #5a804fff, #dee6dcff);

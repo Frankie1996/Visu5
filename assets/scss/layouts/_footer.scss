@@ -11,6 +11,7 @@ footer {
 
     .footer-top {
         background-color: $alabaster;
+        color: $fern-green;
 
         p {
             margin-bottom: 0.3rem;
@@ -19,14 +20,21 @@ footer {
 
     .footer-copyright {
         background-color: $fern-green;
+        color: white;
 
         p {
             margin-bottom: 0;
         }
+
+        a {
+            color: white;
+            &:hover {
+                text-decoration: none;
+                color: $alabaster;
+            }
+        }
+        
     }
 
-    a:hover {
-        text-decoration: none;
-        color: white;
-    }
+
 }

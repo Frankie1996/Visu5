@@ -10102,7 +10102,7 @@ a {
   vertical-align: middle;
   padding-top: 0;
   padding-bottom: 0;
-  color: black;
+  color: #5a804fff;
 }
 
 .navbar-light .navbar-nav .nav-link span {
@@ -10128,6 +10128,7 @@ footer img {
 
 footer .footer-top {
   background-color: #dee6dcff;
+  color: #5a804fff;
 }
 
 footer .footer-top p {
@@ -10136,15 +10137,20 @@ footer .footer-top p {
 
 footer .footer-copyright {
   background-color: #5a804fff;
+  color: white;
 }
 
 footer .footer-copyright p {
   margin-bottom: 0;
 }
 
-footer a:hover {
-  text-decoration: none;
+footer .footer-copyright a {
   color: white;
+}
+
+footer .footer-copyright a:hover {
+  text-decoration: none;
+  color: #dee6dcff;
 }
 
 .accordion {
@@ -10374,29 +10380,34 @@ div.signpost .signtext {
   font-size: 22px;
 }
 
-section.lessons a:hover {
+section a:hover {
   text-decoration: none;
   color: black;
 }
 
-section.lessons h3.energie {
+section h3.energie {
   color: #e9c46aff;
 }
 
-section.lessons h3.food-waste {
+section h3.food-waste {
   color: #f69891ff;
 }
 
-section.lessons h3.nachhaltigkeit {
+section h3.nachhaltigkeit {
   color: #b0c8d8ff;
 }
 
-section.lessons h3.klimawandel {
+section h3.klimawandel {
   color: #81b29aff;
 }
 
-section.lessons h3.recycling {
+section h3.recycling {
   color: #d64041ff;
+}
+
+.energy-section {
+  background-color: #e9c46aff;
+  opacity: .3;
 }
 
 .gif_static {
@@ -10540,6 +10551,7 @@ section.about .box .imgBx img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: grayscale(100%);
 }
 
 section.about .box .card-footer {

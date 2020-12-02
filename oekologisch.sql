@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Erstellungszeit: 02. Dez 2020 um 14:15
--- Server-Version: 10.4.14-MariaDB
--- PHP-Version: 7.4.10
+-- Host: localhost
+-- Generation Time: Dec 02, 2020 at 02:30 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.2.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,32 +18,33 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `oekologisch`
+-- Database: `oekologisch`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `tbl_about`
+-- Table structure for table `tbl_about`
 --
 
 CREATE TABLE `tbl_about` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
-  `text` text NOT NULL
+  `task` text NOT NULL,
+  `project` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Daten für Tabelle `tbl_about`
+-- Dumping data for table `tbl_about`
 --
 
-INSERT INTO `tbl_about` (`id`, `title`, `text`) VALUES
-(1, 'Über uns und das Projekt', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.');
+INSERT INTO `tbl_about` (`id`, `title`, `task`, `project`) VALUES
+(1, 'Über uns und das Projekt', 'Diese Projekt entstand als Teil des Studiengangs Multimedia Production an der Fachhochschule Graubünden. Der Auftrag war, ein Projekt, dass die gestalterischen Aspekte des Moduls Visualisieren und die das Programmieren des Moduls Interaktive Medien, zu realisieren. Im Mittelpunkt standen die Sustainable Development Goals der UN.', 'Die Plattform \"ökoLOGISCH!\" zeigt den Studierenden die immense Bedeutung des Umweltschutzes. Unter anderem wird anhand von Beispielen aus dem Alltag gezeigt, wie die Schülerinnen und Schüler selbst zu einer nachhaltigeren Welt beitragen können. \r\n\r\nVorrangiges Ziel des Produktes ist, Kinder altersgerecht für Nachhaltigkeitsthemen zu sensibilisieren. Schon heute ist klar, dass die Bedeutung der damit verbundenen Themen im Laufe der Zeit stetig zunimmt. Konkret wird das SDG 12, \"Nachhaltige Konsum- und Produktionsmuster sicherstellen\", verfolgt. \r\n\r\nDas Endprodukt ist eine webbasierte E-Learning-Plattform, die frei zugänglich ist. Aufgrund der Struktur der Themen kann die Plattform innerhalb der Unterrichtseinheiten optimal genutzt werden. Minispiele und Quizrunden, die auf der Plattform zur Verfügung stehen, ermöglichen es den Studierenden, ihren Lernerfolg zu überprüfen. Die Plattform richtet sich an Schülerinnen und Schüler der vierten bis sechsten Klasse. \r\n');
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `tbl_category`
+-- Table structure for table `tbl_category`
 --
 
 CREATE TABLE `tbl_category` (
@@ -54,20 +55,20 @@ CREATE TABLE `tbl_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Daten für Tabelle `tbl_category`
+-- Dumping data for table `tbl_category`
 --
 
 INSERT INTO `tbl_category` (`id`, `title`, `text`, `img_url`) VALUES
-(1, 'Energie', 'Energie ist eine fundamentale physikalische Größe, die in allen Teilgebieten der Physik sowie in der Technik, Chemie, Biologie und der Wirtschaft eine zentrale Rolle spielt. Ihre SI-Einheit ist das Joule. Die praktische Bedeutung der Energie liegt oft darin, dass ein physikalisches System in dem Maß Wärme abgeben, Arbeit leisten oder Strahlung aussenden kann, in dem seine Energie sich verringert. In einem gegenüber der Umgebung abgeschlossenen System ändert sich die Gesamtenergie nicht (Energieerhaltungssatz). Die Bedeutung der Energie in der theoretischen Physik liegt unter anderem darin, dass der Energieerhaltungssatz, ursprünglich eine Erfahrungstatsache, schon daraus gefolgert werden kann, dass die grundlegenden physikalischen Naturgesetze zeitlich unveränderlich sind.\r\n\r\nEnergie gibt es in verschiedenen Energieformen, die ineinander umgewandelt werden können. Beispiele von Energieformen sind potentielle, kinetische, elektrische, chemische und Wärmeenergie (thermische Energie). Beispiele für solche Umwandlungen von Energie sind, dass ein Mensch ein Paket hochhebt oder ein Fahrrad beschleunigt, dass eine Batterie geladen wird, ein Lebewesen Stoffwechsel betreibt oder eine Heizung Wärme abgibt.\r\n\r\nDie Energie eines Systems ist von seinem Zustand abhängig, d. h. von den Parametern des Systems und den momentanen Werten seiner Variablen. Die Form dieser Abhängigkeit bestimmt nach den hamiltonschen Bewegungsgleichungen, der Schrödingergleichung oder der Dirac-Gleichung in allen Einzelheiten die zeitliche Entwicklung des Systems. ', 'assets/img/header_energy.jpg'),
-(2, 'Nachhaltigkeit', 'Nachhaltigkeit ist ein Handlungsprinzip zur Ressourcen-Nutzung, bei dem eine dauerhafte Bedürfnisbefriedigung durch die Bewahrung der natürlichen Regenerationsfähigkeit der beteiligten Systeme (vor allem von Lebewesen und Ökosystemen) gewährleistet werden soll. Im entsprechenden englischen Wort sustainable ist dieses Prinzip wörtlich erkennbar: to sustain im Sinne von aushalten bzw. ertragen. Mit anderen Worten: Die beteiligten Systeme können ein bestimmtes Maß an Ressourcennutzung dauerhaft aushalten, ohne Schaden zu nehmen. Das Prinzip wurde zuerst in der Forstwirtschaft angewendet: Im Wald ist nur soviel Holz zu schlagen wie permanent nachwächst. Als in der zweiten Hälfte des 20. Jahrhunderts erkannt wurde, dass alle Rohstoffe und Energievorräte auf der Welt auszugehen drohen, ging sein Gebrauch auf den Umgang mit allen Ressourcen über.\r\nIn seiner früheren und umgangssprachlichen Bedeutung weist nachhaltig als Adjektiv oder bei adverbialem Gebrauch darauf hin, dass eine Handlung längere Zeit anhaltend wirkt.[1] Beispiel: Die (ungeregelte) Ressourcennutzung führt über längere Zeit zum Verlust der Ressourcen. Da das oben genannte Handlungsprinzip das Gegenteil, nämlich die Ressourcenerhaltung trotz Nutzung zum Ziel hat, ist darauf zu achten, dass die umgangssprachliche und die hinzugekommene Bedeutung[2] zueinander nicht widerspruchsfrei sind. ', 'assets/img/header_sustainability.jpg'),
-(3, 'Klimawandel', 'Klimawandel, auch Klimaveränderung, Klimaänderung oder Klimawechsel, ist eine weltweit auftretende Veränderung des Klimas auf der Erde oder erdähnlichen Planeten/Monden, die eine Atmosphäre besitzen. Die mit einem Klimawandel verbundene Abkühlung oder Erwärmung kann über unterschiedlich lange Zeiträume erfolgen. Es ist wichtig zu unterscheiden zwischen Wetteränderungen, die innerhalb eines Klimas variieren und dem Klimawandel, der die zugrundeliegenden Auftrittswahrscheinlichkeiten von Wetterergebnissen verändert.\r\n\r\nDie gegenwärtige, vor allem durch den Menschen verursachte (anthropogene) globale Erwärmung (siehe dort) ist ein Beispiel für einen sehr rasch verlaufenden, aber noch nicht abgeschlossenen Klimawandel. Hierfür wird in der öffentlichen Diskussion ebenfalls der Begriff Klimawandel synonym genutzt (dann aber als „Der Klimawandel“). Die durch diesen Klimawandel hervorgerufene ökologische und soziale Krise wird auch als „Klimakrise“ bezeichnet. ', 'assets/img/header_climateChange.jpg'),
-(4, 'Food-Waste', 'Die Ursachen der Verschwendung sind vielfältig. Sie wird zum Beispiel zu viel eingekauft, die Lebensmittel werden vom Endverbraucher falsch gelagert.[1] Auch die Überschreitung von Mindesthaltsbarkeitsdaten spielt eine wichtige Rolle. Aber auch bei der Produktion von Lebensmitteln kann es zu Verschwendung kommen, etwa bei einer nicht-nachhaltige Fischerei, wenn etwa Beifang weggeschmissen wird.[2] Weitere Ursachen sind eine vermeidbare falsche Lagerung, Schädlingsbefall, Überproduktion, wodurch zu viele Lebensmittel hergestellt werden, die dann keinen Abnehmer finden; Transportschäden, Vorstellungen beim Kunden, die etwa nicht normgerechte Produkte ablehnen bzw. nicht kaufen usw.[3]', 'assets/img/header_foodWaste.jpg'),
-(5, 'Recycling', 'Beim Recycling (gelegentlich als RC abgekürzt), Rezyklierung bzw. Müllverwertung werden Abfallprodukte wiederverwertet bzw. deren Ausgangsmaterialien werden zu Sekundärrohstoffen.\r\n\r\nDer Begriff „Recycling“ ist ein Lehnwort aus dem Englischen (recycling – ausgesprochen [ɹɪˈsaɪklɪŋ] – für „Wiederverwertung“ oder „Wiederaufbereitung“); etymologisch leitet es sich vom griechischen kýklos (Kreis) sowie dem lateinischen Präfix re- (zurück, wieder) ab.\r\n\r\n„Recycling“ ist definiert als „jedes Verwertungsverfahren, durch das Abfälle zu Erzeugnissen, Materialien oder Stoffen entweder für den ursprünglichen Zweck oder für andere Zwecke aufbereitet werden. Es schließt die Aufbereitung organischer Materialien ein, aber nicht die energetische Verwertung und die Aufbereitung zu Materialien, die für die Verwendung als Brennstoff oder zur Verfüllung bestimmt sind“ (§ 3 Abs. 25 deutsches Kreislaufwirtschaftsgesetz).[1] Die so produzierten Stoffe werden als Recyclat oder Regenerat bezeichnet.\r\n\r\nGesetzlich wird erst von „Recycling“ gesprochen, wenn der Rohstoff zuvor als „Abfall“ einzustufen war; andernfalls handelt es sich um „Wiederverwendung“. Der umgangssprachliche Gebrauch des Begriffs Recycling umfasst oft beide Bedeutungen.[2][3] ', 'assets/img/header_recycling.jpg');
+(1, 'Energie', 'Als erneuerbare Energien oder regenerative Energien werden Energiequellen bezeichnet, die im menschlichen Zeithorizont für nachhaltige Energieversorgung praktisch unerschöpflich zur Verfügung stehen oder sich verhältnismässig schnell erneuern. Damit grenzen sie sich von fossilen Energiequellen ab, die endlich sind oder sich erst über den Zeitraum von Millionen Jahren regenerieren. Erneuerbare Energiequellen gelten, neben der effizienten Nutzung von Energie, als wichtigste Säule einer nachhaltigen Energiepolitik und der Energiewende. Zu ihnen zählen Bioenergie (Biomassepotenzial), Geothermie, Wasserkraft, Meeresenergie, Sonnenenergie und Windenergie. Ihre Energie beziehen sie von der Kernfusion der Sonne, die bei weitem die wichtigste Energiequelle ist, aus der kinetischen Energie der Erddrehung und der Planetenbewegung sowie aus der erdinneren Wärme.', 'assets/img/header_energy.jpg'),
+(2, 'Nachhaltigkeit', 'Nachhaltigkeit ist ein Handlungsprinzip zur Ressourcen-Nutzung, bei dem eine dauerhafte Bedürfnisbefriedigung durch die Bewahrung der natürlichen Regenerationsfähigkeit der beteiligten Systeme (vor allem von Lebewesen und Ökosystemen) gewährleistet werden soll. Im entsprechenden englischen Wort sustainable ist dieses Prinzip wörtlich erkennbar: to sustain im Sinne von aushalten bzw. ertragen. Mit anderen Worten: Die beteiligten Systeme können ein bestimmtes Mass an Ressourcennutzung dauerhaft aushalten, ohne Schaden zu nehmen. Das Prinzip wurde zuerst in der Forstwirtschaft angewendet: Im Wald ist nur soviel Holz zu schlagen wie permanent nachwächst. Als in der zweiten Hälfte des 20. Jahrhunderts erkannt wurde, dass alle Rohstoffe und Energievorräte auf der Welt auszugehen drohen, ging sein Gebrauch auf den Umgang mit allen Ressourcen über. In seiner früheren und umgangssprachlichen Bedeutung weist nachhaltig als Adjektiv oder bei adverbialem Gebrauch darauf hin, dass eine Handlung längere Zeit anhaltend wirkt. ', 'assets/img/header_sustainability.jpg'),
+(3, 'Klimawandel', 'Klimawandel ist eine weltweit auftretende Veränderung des Klimas auf der Erde oder erdähnlichen Planeten/Monden, die eine Atmosphäre besitzen. Die mit einem Klimawandel verbundene Abkühlung oder Erwärmung kann über unterschiedlich lange Zeiträume erfolgen. Es ist wichtig zu unterscheiden zwischen Wetteränderungen, die innerhalb eines Klimas variieren und dem Klimawandel, der die zugrundeliegenden Auftrittswahrscheinlichkeiten von Wetterergebnissen verändert. Die gegenwärtige, vor allem durch den Menschen verursachte globale Erwärmung ist ein Beispiel für einen sehr rasch verlaufenden, aber noch nicht abgeschlossenen Klimawandel. Die durch diesen Klimawandel hervorgerufene ökologische und soziale Krise wird auch als „Klimakrise“ bezeichnet.', 'assets/img/header_climateChange.jpg'),
+(4, 'Food-Waste', 'Die Ursachen der Essensverschwendung sind vielfältig. So wird zum Beispiel zu viel eingekauft und die Lebensmittel werden vom Endverbraucher falsch gelagert. Auch die Überschreitung von Mindesthaltsbarkeitsdaten spielt eine wichtige Rolle. Aber auch bei der Produktion von Lebensmitteln kann es zu Verschwendung kommen, etwa bei einer nicht-nachhaltigen Fischerei, wenn etwa Beifang weggeschmissen wird. Weitere Ursachen sind eine vermeidbare falsche Lagerung, Schädlingsbefall, Überproduktion, wodurch zu viele Lebensmittel hergestellt werden, die dann keinen Abnehmer finden; Transportschäden, Vorstellungen beim Kunden, die etwa nicht normgerechte Produkte ablehnen bzw. nicht kaufen usw.', 'assets/img/header_foodWaste.jpg'),
+(5, 'Recycling', 'Beim Recycling bzw. Müllverwertung werden Abfallprodukte wiederverwertet bzw. deren Ausgangsmaterialien werden zu Sekundärrohstoffen. „Recycling“ ist definiert als „jedes Verwertungsverfahren, durch das Abfälle zu Erzeugnissen, Materialien oder Stoffen entweder für den ursprünglichen Zweck oder für andere Zwecke aufbereitet werden. Gesetzlich wird erst von „Recycling“ gesprochen, wenn der Rohstoff zuvor als „Abfall“ einzustufen war; andernfalls handelt es sich um „Wiederverwendung“.', 'assets/img/header_recycling.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `tbl_intro`
+-- Table structure for table `tbl_intro`
 --
 
 CREATE TABLE `tbl_intro` (
@@ -81,7 +82,7 @@ CREATE TABLE `tbl_intro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Daten für Tabelle `tbl_intro`
+-- Dumping data for table `tbl_intro`
 --
 
 INSERT INTO `tbl_intro` (`id`, `category_id`, `title`, `text`, `goals`, `problems`, `gif_url`) VALUES
@@ -94,7 +95,7 @@ INSERT INTO `tbl_intro` (`id`, `category_id`, `title`, `text`, `goals`, `problem
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `tbl_lesson`
+-- Table structure for table `tbl_lesson`
 --
 
 CREATE TABLE `tbl_lesson` (
@@ -115,7 +116,7 @@ CREATE TABLE `tbl_lesson` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Daten für Tabelle `tbl_lesson`
+-- Dumping data for table `tbl_lesson`
 --
 
 INSERT INTO `tbl_lesson` (`id`, `category_id`, `title`, `text`, `img_url`, `gif_url`, `gif_url_static`, `video_url`, `top_lesson`, `lesson_nr`, `important`, `einfuerung`, `lernziele`, `groeste_probleme`) VALUES
@@ -142,75 +143,75 @@ INSERT INTO `tbl_lesson` (`id`, `category_id`, `title`, `text`, `img_url`, `gif_
 (21, 3, 'Was kann ich dagegen tun?', 'Wir haben nun gelernt, dass der globale Klimawandel verheerende Folgen auf unsere Umwelt und unser gesamtes gesellschaftliches Zusammenleben hat. Wenn wir nichts gegen die Erwärmung unternehmen, wird es immer häufiger zu extremen Wetterereignissen und Naturkatastrophen kommen, nicht nur unser Lebensraum, auch diejenigen vieler bedrohter Tierarten werden zerstört und gesundheitliche Probleme werden steigen, wegen Trinkwasserknappheiten, Hungersnöten und Infektionskrankheiten. Es ist also jedem von uns ein daran gelegen, gemeinsam etwas zur Bekämpfung des Klimawandel zu leisten! Jeder kann seinen Teil dazu beitragen, auch im Alltag können kleine Dinge eine grosse Wirkung erzielen.<br><br>\r\n \r\nWas du tun kannst, um zu helfen:\r\n<ul>\r\n<li>Fortbewegung – öfter mit der ÖV, dem Fahrrad oder zu Fuss</li>\r\n<li>Einkaufen – möglichst auf Verpackungen, vor allem auf Plastik, verzichten, lieber immer denselben Stoffsack zum Einpacken mitnehmen, anstatt jedes Mal einen neuen Plastiksack zu verbrauchen und darauf achten, regional und Bio einzukaufen</li>\r\n<li>Essen – bewusster Umgang mit Fleisch und auch vegetarische/vegane Alternativen in Betracht ziehen und darauf achten, nicht unnötig Lebensmittel wegzuwerfen (mehr dazu findest du in der Lektion \"Foodwaste\")</li>\r\n<li>Energie – sparsamer und bewusster Umgang (mehr dazu findest du in der Lektion \"Energie\")</li>\r\n</ul>\r\n', '', 'assets/gif/klima_04.gif', 'assets/gif/klima_04.jpg', '', 0, 4, 'Wir können alle einen Einfluss nehmen und etwas gegen den Klimawandel unternehmen, Am wichtigsten ist der respektvolle Umgang mit unserer Umwelt; Sei es nun beim Sparen von Energie oder bei dem bewussten Konsum von Lebensmitteln und materiellen Dingen wie Kleidern,   ', 0, '', '');
 
 --
--- Indizes der exportierten Tabellen
+-- Indexes for dumped tables
 --
 
 --
--- Indizes für die Tabelle `tbl_about`
+-- Indexes for table `tbl_about`
 --
 ALTER TABLE `tbl_about`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indizes für die Tabelle `tbl_category`
+-- Indexes for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indizes für die Tabelle `tbl_intro`
+-- Indexes for table `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_category_id` (`category_id`);
 
 --
--- Indizes für die Tabelle `tbl_lesson`
+-- Indexes for table `tbl_lesson`
 --
 ALTER TABLE `tbl_lesson`
   ADD PRIMARY KEY (`id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- AUTO_INCREMENT für exportierte Tabellen
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT für Tabelle `tbl_about`
+-- AUTO_INCREMENT for table `tbl_about`
 --
 ALTER TABLE `tbl_about`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT für Tabelle `tbl_category`
+-- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT für Tabelle `tbl_intro`
+-- AUTO_INCREMENT for table `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT für Tabelle `tbl_lesson`
+-- AUTO_INCREMENT for table `tbl_lesson`
 --
 ALTER TABLE `tbl_lesson`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- Constraints der exportierten Tabellen
+-- Constraints for dumped tables
 --
 
 --
--- Constraints der Tabelle `tbl_intro`
+-- Constraints for table `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
   ADD CONSTRAINT `fk_category_id` FOREIGN KEY (`category_id`) REFERENCES `tbl_category` (`id`);
 
 --
--- Constraints der Tabelle `tbl_lesson`
+-- Constraints for table `tbl_lesson`
 --
 ALTER TABLE `tbl_lesson`
   ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `tbl_category` (`id`);

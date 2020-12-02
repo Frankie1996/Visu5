@@ -16,11 +16,11 @@ $about = get_about();
             <div class="row">
                 <div class="col-lg-6">
                     <h3>Der Auftrag</h3>
-                    <p><?php echo $about['text']; ?></p>
+                    <p><?php echo $about['task']; ?></p>
                 </div>
                 <div class="col-lg-6">
                     <h3>Das Projekt</h3>
-                    <p><?php echo $about['text']; ?></p>
+                    <p><?php echo $about['project']; ?></p>
                 </div>
             </div>
             <div class="row justify-content-center">

@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Dec 02, 2020 at 02:30 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.30
+-- Host: 127.0.0.1
+-- Erstellungszeit: 02. Dez 2020 um 15:03
+-- Server-Version: 10.4.14-MariaDB
+-- PHP-Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `oekologisch`
+-- Datenbank: `oekologisch`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_about`
+-- Tabellenstruktur für Tabelle `tbl_about`
 --
 
 CREATE TABLE `tbl_about` (
@@ -35,7 +35,7 @@ CREATE TABLE `tbl_about` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_about`
+-- Daten für Tabelle `tbl_about`
 --
 
 INSERT INTO `tbl_about` (`id`, `title`, `task`, `project`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `tbl_about` (`id`, `title`, `task`, `project`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_category`
+-- Tabellenstruktur für Tabelle `tbl_category`
 --
 
 CREATE TABLE `tbl_category` (
@@ -55,7 +55,7 @@ CREATE TABLE `tbl_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_category`
+-- Daten für Tabelle `tbl_category`
 --
 
 INSERT INTO `tbl_category` (`id`, `title`, `text`, `img_url`) VALUES
@@ -68,7 +68,7 @@ INSERT INTO `tbl_category` (`id`, `title`, `text`, `img_url`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_intro`
+-- Tabellenstruktur für Tabelle `tbl_intro`
 --
 
 CREATE TABLE `tbl_intro` (
@@ -82,7 +82,7 @@ CREATE TABLE `tbl_intro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_intro`
+-- Daten für Tabelle `tbl_intro`
 --
 
 INSERT INTO `tbl_intro` (`id`, `category_id`, `title`, `text`, `goals`, `problems`, `gif_url`) VALUES
@@ -95,7 +95,7 @@ INSERT INTO `tbl_intro` (`id`, `category_id`, `title`, `text`, `goals`, `problem
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_lesson`
+-- Tabellenstruktur für Tabelle `tbl_lesson`
 --
 
 CREATE TABLE `tbl_lesson` (
@@ -116,15 +116,15 @@ CREATE TABLE `tbl_lesson` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_lesson`
+-- Daten für Tabelle `tbl_lesson`
 --
 
 INSERT INTO `tbl_lesson` (`id`, `category_id`, `title`, `text`, `img_url`, `gif_url`, `gif_url_static`, `video_url`, `top_lesson`, `lesson_nr`, `important`, `einfuerung`, `lernziele`, `groeste_probleme`) VALUES
-(1, 1, 'Energie - Einführung', 'Als erneuerbare oder grüne Energie bezeichnet man Strom, Wärme und Treibstoffe, die wir aus der Sonne, dem Wind, der Wasserkraft oder bestimmten Pflanzen gewinnen können. Sie haben den grossen Vorteil, dass sie sich meist wieder auf natürliche Weise erneuern und wir sie wiederverwenden können. Die Sonne kann man schließlich nicht ausknipsen und der Wind hört nicht plötzlich auf zu wehen. Ausserdem erzeugen erneuerbare Energien in der Regel bei ihrer Nutzung kaum Abfälle und Schadstoffe. Ihre Nutzung stört somit die kommenden Generationen nicht. <br><br>\r\nDer grosse Nachteil von erneuerbaren Energien ist, dass diese im Vergleich zu den herkömmlichen Stromerzeugungsanlagen erheblich teurer sind. Des weiteren sind einige Technologien, vor allem Windkraft, stark von Wetter- und Witterungsbedingungen abhängig.<br><br>\r\nDie herkömmliche Energie wie Öl, Kohle und Erdgas wird auch “fossile Energie” genannt. Aus Öl kann man zum Beispiel Treibstoffe wie Benzin für Autos herstellen; Kohle und Erdgas kann man verbrennen und damit heizen oder Strom gewinnen. Diese Art von Energie ist allerdings schlecht für die Umwelt und trägt einen grossen Beitrag zum Klimawandel bei. Wenn immer möglich, ist deshalb fossile Energie zu vermeiden.<br><br>\r\nWie die einzelnen erneuerbaren Energien funktionieren, was du zu unserer Umwelt beitragen kannst und wie man am besten mit Energie umgeht, findest du in den nachfolgenden Lektionen. Viel Spass!', 'assets/img/energy/lesson01_1.jpg, assets/img/energy/lesson01_2.jpg, assets/img/energy/lesson01_3.jpg,  ', 'assets/gif/energie_01.gif', 'assets/gif/energie_01.jpg', 'assets/video/energy.mp4', 0, 0, '', 1, 'Was versteht man unter erneuerbarer Energie?, Was sind die Vor- und Nachteile von erneuerbarer Energie?, Wie kann man durch Sonne, Wind und Wasser Energie gewinnen?, Was ist der Treibhauseffekt?, Wie kann ich Energie sparen?, ', 'Herkömmliche Energie ist schlecht für die Umwelt, Erneuerbare Energie ist teuer, Die Schweiz ist internationalen Vergleich an den hinteren Positionen, '),
+(1, 1, 'Energie - Einführung', 'Als erneuerbare oder grüne Energie bezeichnet man Strom, Wärme und Treibstoffe, die wir aus der Sonne, dem Wind, der Wasserkraft oder bestimmten Pflanzen gewinnen können. Sie haben den grossen Vorteil, dass sie sich meist wieder auf natürliche Weise erneuern und wir sie wiederverwenden können. Die Sonne kann man schließlich nicht ausknipsen und der Wind hört nicht plötzlich auf zu wehen. Ausserdem erzeugen erneuerbare Energien in der Regel bei ihrer Nutzung kaum Abfälle und Schadstoffe. Ihre Nutzung stört somit die kommenden Generationen nicht. <br><br>\r\nDer grosse Nachteil von erneuerbaren Energien ist, dass diese im Vergleich zu den herkömmlichen Stromerzeugungsanlagen erheblich teurer sind. Des weiteren sind einige Technologien, vor allem Windkraft, stark von Wetter- und Witterungsbedingungen abhängig.<br><br>\r\nDie herkömmliche Energie wie Öl, Kohle und Erdgas wird auch “fossile Energie” genannt. Aus Öl kann man zum Beispiel Treibstoffe wie Benzin für Autos herstellen; Kohle und Erdgas kann man verbrennen und damit heizen oder Strom gewinnen. Diese Art von Energie ist allerdings schlecht für die Umwelt und trägt einen grossen Beitrag zum Klimawandel bei. Wenn immer möglich, ist deshalb fossile Energie zu vermeiden.<br><br>\r\nWie die einzelnen erneuerbaren Energien funktionieren, was du zu unserer Umwelt beitragen kannst und wie man am besten mit Energie umgeht, findest du in den nachfolgenden Lektionen. Viel Spass!', 'assets/img/energy/lesson01_1.jpg, assets/img/energy/lesson01_2.jpg, assets/img/energy/lesson01_3.jpg,  ', 'assets/gif/energie_00.gif', 'assets/gif/energie_00.jpg', 'assets/video/energy.mp4', 0, 0, '', 1, 'Was versteht man unter erneuerbarer Energie?, Was sind die Vor- und Nachteile von erneuerbarer Energie?, Wie kann man durch Sonne, Wind und Wasser Energie gewinnen?, Was ist der Treibhauseffekt?, Wie kann ich Energie sparen?, ', 'Herkömmliche Energie ist schlecht für die Umwelt, Erneuerbare Energie ist teuer, Die Schweiz ist internationalen Vergleich an den hinteren Positionen, '),
 (2, 1, 'Sonnenenergie', 'Die vielleicht bekannteste Quelle erneuerbarer Energie ist die Sonne – und das aus gutem Grund. Immerhin trifft jährlich so viel Solarenergie auf die Erde, dass sie den Energiebedarf der Menschheit gleich um mehrere Tausendfach übersteigt. Bestimmt hast du schon Hausdächer gesehen, auf denen große verspiegelte Scheiben montiert sind. Das sind Solar-Kollektoren, die die Sonnenstrahlen einfangen. Mit der Wärme kann man Wasser erhitzen, das dann durch die Heizung strömt und das Haus heizt. <br><br>\r\nDoch es gibt auch Anlagen, mit denen man Strom produzieren kann. Man nennt sie \"Fotovoltaik-Anlagen\". Sie sind häufig auf Schulen, Fabrikdächern oder großen Scheunen installiert und speisen von dort Energie ins Stromnetz ein.<br><br>\r\nDas Problem dabei ist, die Sonnenstunden in der Schweiz sind begrenzt, denn bei uns ist es ziemlich oft bewölkt und es regnet häufig. Deshalb kann man die Sonnenenergie nicht so gut nutzen wie zum Beispiel die Wind- oder Wasserkraft, welche du in den nächsten Lektionen kennenlernen wirst.', 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80, https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80, https://images.unsplash.com/photo-1503495731986-41d521ecbb32?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80,  ', 'assets/gif/energie_01.gif', 'assets/gif/energie_01.jpg', '', 0, 1, 'Sonnenenergie kann den Energiebedarf der Welt bei weitem abdecken, Solar-Kollektoren heizen das Haus, Fotovoltaik-Anlagen erzeugen durch Sonnenenergie Strom, Sonnenstunden sind begrenzt, ', 0, '', ''),
 (3, 1, 'Wasserkraft', 'Schon im alten Ägypten und im römischen Reich wurde die Wasserkraft als Antrieb für Arbeitsmaschinen wie Getreidemühlen genutzt. Im Mittelalter wurden Wassermühlen im europäischen Raum für Säge- und Papierwerke eingesetzt. Seit Ende des 19. Jahrhunderts wird aus Wasserkraft Strom erzeugt. Heute ist die Wasserkraft eine ausgereifte Technologie und weltweit eine der am meisten genutzte erneuerbare Energiequelle.<br><br>\r\nUm aus Wasser Energie gewinnen zu können gibt es drei gängige Arten von Wasserkraftwerken:\r\n<ul>\r\n\r\n<li>Bei Wasserspeicherkraftwerken wird ein fließendes Gewässer aufgestaut. Ein Stausee entsteht. Dieses Wasser wird durch Rohre abgelassen, in denen sich Turbinen befinden. Diese Turbinen erzeugen die erneuerbare Energie.</li>\r\n<li>Laufwasserkraftwerke nutzen wiederum unmittelbar die Fließenergie von Flüssen, besitzen dafür keine Speicherkapazität. </li>\r\n<li>Meeresströmungskraftwerke, deren Rotoren sich unter Wasser befinden, wandeln die Meeresströmung in Ökostrom um.</li>\r\n</ul>\r\nDer Aufwand so Energie zu gewinnen ist allerdings hoch: Man muss Stauseen, Staustufen und Wehre bauen, damit man die Kraft des Wassers kontrollieren kann. Dies ist nebst dem Aufwand auch immer ein eingriff in die Natur und verändert das Aussehen der Landschaft erheblich.', 'https://images.unsplash.com/photo-1548516328-332d3df9d5f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, https://images.unsplash.com/photo-1589938219129-3bff434f8c6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80, https://images.unsplash.com/photo-1561533115-f893e69758e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80,  ', 'assets/gif/energie_02.gif', 'assets/gif/energie_02.jpg', '', 1, 2, 'Wasserkraft gibt es seit dem römischen Reich, Weltweit eine der am meisten genutzte Energiequelle, Aufwand zur Energiegewinnung ist hoch, Eingriff in die Landschaft, ', 0, '', ''),
 (4, 1, 'Windenergie', 'Die Nutzung des Windes als Antriebsenergie hat eine lange Tradition. Windmühlen wurden zum Mahlen von Getreide oder als Sägemühle eingesetzt. Moderne Windenergieanlagen gewinnen Strom aus der Kraft des Windes. Sie nutzen den Auftrieb, den der Wind beim Vorbeiströmen an den Rotorblättern erzeugt und treiben dadurch einen Generator an. Dort wird die Windenergie, die die großen Rotoren zuvor aufgenommen haben, in Strom umgewandelt. Die Windräder stehen meist in flachen Landschaften oder sogar im Meer, da es an solchen stellen meist sehr Windig ist.<br><br>\r\nAber auch wenn die Windkraft gut für unser Klima ist, muss beim Bau der Anlagen auch der Schutz der Natur berücksichtigt werden. Nicht überall dürfen die Windräder aufgestellt werden. In Naturschutzgebieten zum Beispiel sind Windkraft-Anlagen nicht erlaubt, da sie dem Wald und seinen Bewohnern schaden könnten.', 'https://images.unsplash.com/photo-1527808359641-0a97efcf81fd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80, https://images.unsplash.com/photo-1503427073713-8e991db6befe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80, https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80,  ', 'assets/gif/energie_03.gif', 'assets/gif/energie_03.jpg', '', 1, 3, 'Windenergie hat eine lange Tradition, Durch das Vorbeiströmen von Wind gewinnen Windräder strom, Windräder stehen in flachen Landschaften oder im Meer, Beim Bau ist der Naturschutz sehr wichtig, ', 0, '', ''),
-(5, 1, 'Treibhauseffekt', 'Bei der Verbrennung von Öl, Kohle oder Gas entsteht das Gas Kohlendioxid (CO²), das zu den sogenannten Treibhausgasen gehört. Treibhausgase sind Gase in der Atmosphäre, die die Wärmestrahlung der Erde aufnehmen können und wieder an die Erde zurückstrahlen. Sie sorgen dafür, dass es auf der Erde nicht zu kalt wird. Das ist der Treibhauseffekt. Bis zu einem gewissen Grad ist der Treibhauseffekt absolut notwendig für das Leben auf der Erde,  wie wir es kennen. Die durchschnittliche Temperatur an der Erdoberfläche beträgt +15° Celsius. Ohne den natürlichen Treibhauseffekt läge sie bei -18° Celsius. <br><br>\r\nWenn allerdings zuviele Treibhausgase entstehen, wird es auf der Erde immer wärmer und das Wetter spielt verrückt. Man nennt diese Veränderungen \"Klimawandel\".<br><br>\r\nErneuerbare Energien tragen entscheidend zur Verringerung klimaschädlicher Treibhausgase bei und damit auch zum stoppen des Klimawandels.', 'https://images.unsplash.com/photo-1592593154279-a651942a45ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80, https://images.unsplash.com/photo-1581626221838-9715c0e06049?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80, https://images.unsplash.com/photo-1505051508008-923feaf90180?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80,  ', 'assets/gif/energie_04.gif', 'assets/gif/energie_04.jpg', '', 0, 4, 'Bei der Verbrennung entsteht CO², Treibhausgase sorgen für wärme auf der Erde, Zu viel Treibhausgase treiben den Klimawandel voran, Erneuerbare Energien helfen den Klimawandel zu stoppen, ', 0, '', ''),
+(5, 1, 'Treibhauseffekt', 'Bei der Verbrennung von Öl, Kohle oder Gas entsteht das Gas Kohlendioxid (CO²), das zu den sogenannten Treibhausgasen gehört. Treibhausgase sind Gase in der Atmosphäre, die die Wärmestrahlung der Erde aufnehmen können und wieder an die Erde zurückstrahlen. Sie sorgen dafür, dass es auf der Erde nicht zu kalt wird. Das ist der Treibhauseffekt. Bis zu einem gewissen Grad ist der Treibhauseffekt absolut notwendig für das Leben auf der Erde, wie wir es kennen. Die durchschnittliche Temperatur an der Erdoberfläche beträgt +15° Celsius. Ohne den natürlichen Treibhauseffekt läge sie bei -18° Celsius. <br><br>\r\nWenn allerdings zuviele Treibhausgase entstehen, wird es auf der Erde immer wärmer und das Wetter spielt verrückt. Man nennt diese Veränderungen \"Klimawandel\".<br><br>\r\nErneuerbare Energien tragen entscheidend zur Verringerung klimaschädlicher Treibhausgase bei und damit auch zum stoppen des Klimawandels.', 'https://images.unsplash.com/photo-1592593154279-a651942a45ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80, https://images.unsplash.com/photo-1581626221838-9715c0e06049?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80, https://images.unsplash.com/photo-1505051508008-923feaf90180?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80,  ', 'assets/gif/energie_04.gif', 'assets/gif/energie_04.jpg', '', 0, 4, 'Bei der Verbrennung entsteht CO², Treibhausgase sorgen für wärme auf der Erde, Zu viel Treibhausgase treiben den Klimawandel voran, Erneuerbare Energien helfen den Klimawandel zu stoppen, ', 0, '', ''),
 (6, 1, 'Mein Energieverhalten ', 'Wir haben durch unser Verhalten in unseren vier Wänden einen wichtigen Einfluss auf den Energieverbrauch. Jedes Mal, wenn wir die Heizung andrehen, den Wasserkocher einschalten oder uns einen Film anschauen, wird Strom und Energie benötigt. Da der meiste Strom nach wie vor aus fossilen Energieträgern wie Kohle und Atomkraftwerken gewonnen wird, tragen wir mit unserem Stromverbrauch zur Freisetzung von Kohlendioxid bei.<br><br>\r\nMit den folgenden Tipps kannst du dein Energieverhalten verbessern: \r\n<ul>\r\n<li>Licht muss nur brennen, wenn es nötig ist. </li>\r\n<li>Sind elektrische Geräte nicht im Betrieb, können diese komplett aus der Steckdose gezogen werden.</li>\r\n<li>Wasserkocher statt Herdplatte brauchen.</li>\r\n<li>Energiesparlampen oder LED Lampen verwenden.</li>\r\n<li>Neue Geräte sind meist Energiesparender als die Alten.</li>\r\n<li>Geräte Aus- statt in Stand-By-Modus schalten.</li>\r\n<li>Anstatt Google, Ecosia.org verwenden.</li>\r\n<li>Stosslüften statt Fenster auf kipp stellen.</li>\r\n<li>Bei Spül- oder Waschmaschine das Stromsparprogramm verwenden.</li>\r\n</ul>\r\nJeder ist verantwortlich für die Umwelt und kann zum Klimaschutz beitragen. Wenn alle nachhaltig mitwirken kann Großes geschaffen werden!', 'https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80, https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1224&q=80, https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80,  ', 'assets/gif/energie_05.gif', 'assets/gif/energie_05.jpg', '', 0, 5, 'Wir haben durch unser Verhalten Einfluss auf den Klimawandel, Bewusst Energie konsumieren, Durch weniger Energieverbrauch können kosten gespart werden, ', 0, '', ''),
 (7, 2, 'Nachhaltigkeit - Einführung', 'In diesem Kapitel werden vier verschiedene Themenbereiche behandelt. In der ersten Lektion schauen wir uns an, was der Faire Handel ist und warum er so wichtig in der heutigen Zeit ist. Danach gehen wir auf die Nachhaltige Bewirtschaftung ein. Hier lernen wir, was die Nachhaltige Bewirtschaftung überhaupt ist und mit welchen Problemen wir konfrontiert werden. In der dritten Lektion geht es um ein ziemlich kompliziertes Thema, um die Ressourceneffizienz. Keine Angst, wenn du dir darunter noch nicht vorstellen kannst, dies wird dir in der Lektion erklärt. In der letzten Lektion geht es um die Förderung unserer lokalen Produkte. Warum ist das wichtig? Und was für einen Einfluss hat unser Kaufverhalten auf die Umwelt? All das und noch einiges mehr, wirst du hier erfahren.', '', 'assets/gif/konsum_00.gif', 'assets/gif/konsum_00.jpg', '', 0, 0, '', 1, 'Wie funktioniert Fairer Handel?, Warum kann Fairer Handel zu Nachhaltigkeit beitragen?, Wie sieht nachhaltige Bewirtschaftung aus?, Wie werden natürliche Ressourcen in der Schweiz genutzt?, Warum müssen wir die lokalen Produkte fördern?, ', 'Viele Kleinbauer und Arbeiter in Entwicklungsländer werden noch immer oft ausgenutzt., Oft werden Frauen in Entwicklungsländer sehr schlechte Arbeitsbedingungen und verdienen nur wenig Geld damit., Der weite Transport der Produkte schadet der Umwelt., '),
 (8, 2, 'Fairer Handel', '<b>Was ist Fairtrade?</b><br>\r\nFairtrade ist die internationale Bezeichnung für, den Fairen Handel von Produkten. Es ist ein internationales System, welches die Produzenten stärkt und faire Arbeitsbedingungen fördert. Damit dies funktionieren kann, muss jeder Akteur, der beteiligt ist, eingebunden werden.<br><br>\r\nBeim Fairen Handel geht es nicht nur um den nachhaltigen Anbau, sondern auch um den späteren Handel mit dem Produkt und dem Verhalten der Konsumentinnen und Konsumenten.<br><br>\r\n<b>Warum ist Fairer Handel wichtig?</b><br>\r\nIn vielen Teilen der Welt, ist der allgemeine Handel oft sehr ausbeuterisch. Kleinbauern und Arbeiter werden ausgenutzt und eingeschüchtert. Zudem müssen sie mit schlechten Arbeitsbedingungen und niedrigen Löhnen versuchen auszukommen. Auch Frauen arbeiten in verschiedenen Ländern oft zwölf Stunden am Tag und werden dafür sehr schlecht bezahlt. Durch diese Bedingungen verarmen viele Familien und haben dadurch nicht das nötige Geld, ihre Kinder in die Schule schicken zu können. Die Kinder haben jedoch nicht einfach frei, sondern Sie müssen Arbeiten gehen, um die Familie finanziell zu unterstützen.<br><br>\r\nAuch die Umwelt leidet unter diesem Vorgehen. Da viele Arbeiten in Entwicklungsländer verrichtet werden, findet ein reger Transport der erarbeiteten Materialien statt.<br><br>\r\nDurch den Fairen Handel wird nun aber dagegen vorgegangen. Fairer Handel bedeutet, dass Menschen, die etwas verkaufen auch fair für ihre Arbeit bezahlt werden und dies unter sicheren und gesunden Arbeitsbedingungen. Dafür bekommen die lokalen Arbeiter eine Fairhandelsprämie, mit der sie z.B. Schulen bauen können. Zudem ist die Kinderarbeit im Fairen Handel ausnahmslos verboten und auch die Umwelt wird bestmöglich geschützt.', 'https://adrianos.ch/static/media/cms/0001/02/thumb_1912_cms_large.jpeg, https://images.unsplash.com/photo-1521791136064-7986c2920216?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, https://www.wienerzeitung.at/_em_daten/_cache/image/1x3J4_P4dUMOAnOW5FgnPnC1vThK-yUnrKn92esxNFkpJYrjcrEZqu36YT1R63wJdOmmKTA8SWdAaP7INzhgNqrA/190411-1634-fairtrade.jpg,', 'assets/gif/konsum_01.gif', 'assets/gif/konsum_01.jpg', '', 1, 1, 'Fairer Handel bedeutet, dass die Produzenten fair behandelt und bezahlt werden., Kinderarbeit ist beim Fairen Handel ausnahmslos verboten., Die Umwelt wird durch den Fairen Handel bestmöglich geschützt., Achte bei Einkaufen auf das Siegel für Fairen Handel, ', 0, '', ''),
@@ -140,78 +140,84 @@ INSERT INTO `tbl_lesson` (`id`, `category_id`, `title`, `text`, `img_url`, `gif_
 (18, 3, 'Klimawandel kurz erklärt', '<b>Was ist der Klimawandel?</b><br>\r\nKlimawandel, Klimaveränderung, Klimaänderung oder Klimawechsel. Du hast sicher schon einmal von einem dieser Begriffe gehört oder gelesen. Sie alle bezeichnen dasselbe Phänomen, nämlich die weltweite Veränderung des Klimas auf der Erde. Im Unterschied zum Wetter, was einen kurzfristigen Zustand, wie Regen oder Schnee, an einem bestimmten Ort zu einem bestimmten Zeitpunkt oder kurzen Zeitraum bezeichnet, betrachtet man beim Klima das Wetter über einen längeren Zeitraum und in einer grösseren Region. <br><br>\r\nDoch wieso ist dieser Begriff seit einiger Zeit so ein Thema? Veränderungen des Klimas, also Abkühlungen oder Erwärmungen, gibt es schon seit Anbeginn, man siehe zum Beispiel die Eiszeit.<br><br>\r\nAllerdings vollziehen sich die Veränderungen der Temperatur normalerweise sehr langsam über einen grossen Zeitraum. Doch zurzeit hat es die Erde mit einer von Menschen gemachten globalen Erwärmung zu tun. Diese geht im Vergleich zu den früheren Wandeln sehr schnell vonstatten, was katastrophale Folgen für die Umwelt, Tiere und Menschen nach sich zieht. <br><br>\r\nIn den letzten 100 Jahren haben Forscher einen Anstieg der Durchschnittstemperatur von ungefähr 0,8°C gemessen. Man rechnet damit, dass ohne Klimaschutz-Massnahmen, die Temperatur bis 2100 um etwa 4-5 °C steigt. Das hört sich erst einmal nach wenig an, aber schon ab einer Veränderung von +2°C wird es zu gravierenden Auswirkungen kommen, wie Jahrhundertfluten, Dürren und gigantischen Wirbelstürmen. <br><br>\r\nIm Vergleich: Bisher erwärmte sich die Erde bei natürlichen Klimaveränderungen (ohne den menschlichen Einfluss) innerhalb von 10.000 Jahren um diese 4-5 °C. Das heisst, momentan vollzieht sich die Klimaveränderung also etwa 100-mal schneller. <br><br>\r\n\r\n<b>Was verursacht den Klimawandel?</b><br>\r\nUrsache für die global Erwärmung sind Treibhausgase. Die Erde wird von einer unsichtbaren Lufthülle umgeben, der Atmosphäre. Die Atmosphäre ist eine hundert Kilometer dicke Schicht aus Luft, die sich vollständig um die Erde zieht. Wenn die Sonne auf die Erde scheint, treffen die Strahlen die Erdoberfläche und erwärmen diese. Diese Strahlen werden von der Erde in die Atmosphäre zurückgeworfen. Ein Grossteil der Strahlung gelangt zurück ins Weltall. Ein Teil davon wird aber durch die sich in der Atmosphäre befindenden Treibhausgase (wie z.B. Wasserdampf, Kohlenstoffdioxid und Methan) aufgehalten. Dieser Teil wird wieder zurück zur Erde reflektiert und die Erde wird so erneut erwärmt. Diese Erwärmung durch die zurückgeschickten Strahlen bezeichnet man als den natürlichen Treibhauseffekt. Dieser natürliche Prozess ist sehr wichtig, damit auf der Erde überhaupt eine angenehm warme Temperatur herrscht.<br><br>\r\nAber die Konzentration der Treibhaugase ist durch den Menschen stark gestiegen. Deshalb bleiben immer mehr Strahlen in der Atmosphäre hängen und werden wieder zurück auf die Erde reflektiert, wodurch sich die Erde immer weiter erwärmt. Diese Verstärkung des Treibhauseffektes durch den Menschen wird auch der “anthropogene Treibhauseffekt” genannt. \r\n', '', 'assets/gif/klima_01.gif', 'assets/gif/klima_01.jpg', '', 0, 1, 'Der Begriff “Klima” bezeichnet die Betrachtung des Wetters über einen längeren Zeitraum (mind. 30 Jahre) in einem bestimmten Gebiet, Schon ab Veränderungen von +2°C kann es zu gravierenden Auswirkungen in der Natur kommen, Der Treibhauseffekt bezeichnet den Vorgang der Erderwärmung durch die mehrmalige Reflektion der Sonnenstrahlen mithilfe der Treibhausgase in der Erdatmosphäre, ', 0, '', ''),
 (19, 3, 'Ursachen', '<b>Wie trägt der Mensch zur Problematik des Klimawandels bei? </b><br>\r\nNeben den natürlichen Ursachen für den Klimawandel hat dieser viele menschengemachte Gründe. Insbesondere Kohlenstoffdioxid (CO2) und Methan spielen dabei eine grosse Rolle. Über die Hälfte des vom Menschen verursachten Treibhauseffektes entfallen auf CO2. Methan steht dem in keiner Weise nach, da es als besonders aggressives Treibhausgas bekannt ist. Die Wirkung ist 25-mal stärker wie bei CO2.<br><br>\r\n          <b> Verbrennung von fossilen Brennstoffen</b><br>\r\nEin erhebliche Rolle bei der Verursachung des Klimawandels kommt der Verbrennung von fossilen Brennstoffen zu, wodurch nämlich eine Menge Treibhausgase, wie z.B. CO2 freigesetzt werden. Fossile Brennstoffe sind tote Biomasse, also Jahrmillionen alte Überreste von Tieren und Pflanzen, welche durch geologische Prozesse in Kohle, Erdgas und Erdöl umgewandelt wurde. Das Gegenstück zu den fossilen Brennstoffen sind die erneuerbaren Energien, näheres dazu kannst du in der Lektion \"Energien\" lernen.<br><br>\r\n\r\nDiese fossilen Brennstoffe werden noch in vielen Bereichen eingesetzt:\r\n<ul>\r\n<li>Verkehr und Reisen:<br>\r\nMobilität ist ein wichtiger Teil in unserem täglichen Leben. Geht es nun um das Reisen in die Ferien mit dem Flugzeug oder um den alltäglichen Transport mit dem Auto. Der Verkehr ist aber auch einer der grössten Verursacher von Treibhausgasen, da für deren Antrieb enorme Mengen an Treibstoffen, wie Benzin, Diesel oder Kerosin, benötigt und verbrannt werden.</li>\r\n \r\n<li>Industrie:<br>\r\nAuch die industrielle Produktion ist für den Anstieg der Treibhausgase mitverantwortlich. Vor allem die Kunststoffproduktion trägt dazu bei, den Kunststoffe bzw. Plastik und synthetische Fasern werden aus Öl und Gas gewonnen. Über 99% basieren auf fossilen Rohstoffen. Und die enorme Nachfrage nach Plastik lässt nicht nach, sie wächst stetig. Alleine in den letzten 20 Jahren hat sich die Produktion mehr als verdoppelt.</li>\r\n\r\n<li>Dabei spielt nicht nur die Herstellung eine tragende Rolle, sondern auch die Entsorgung. Bei der Verbrennung von Plastik entstehen weitere grosse Mengen an Treibhausgasen. Dies scheint noch gravierender, wenn man beachtet, dass es sich bei Plastik in den meisten Fällen nur um sehr kurzlebige Produkte handelt, die bereits nach einmaliger Benutzung wieder im Abfall landen.</li>\r\n\r\n<li>Der Einfluss von Plastik geht aber noch viel weiter. Leider wird viel Plastikabfall immer noch nicht richtig in Müllverbrennungsanlagen entsorgt und landet entweder an Land in der Natur oder vor allem auch in unseren Meeren. Jedes Jahr gelangen schätzungsweise 5 – 13 Millionen Tonnen Plastikmüll in die Meere. Eines der Probleme dabei: auch während des Zersetzungsprozesses von Plastik werden kontinuierlich Treibhausgase freigesetzt. Besonders viele Gase entstehen bei der Zersetzung in Salzwasser.</li>\r\n               </ul>               \r\n           <b>Auch die Landwirtschaft spielt eine tragende Rolle</b><br>\r\nDie Waldrodung gilt nach der Verbrennung von fossilen Brennstoffen als die wichtigste Quelle der CO2-Emissionen.<br><br>\r\n\r\nEigentlich nehmen Bäume und Pflanzen CO2 auf und wandeln dieses in Sauerstoff um. Doch bei der Abholzung von Wäldern wird das in den Bäumen gespeicherte CO2 freigesetzt. Der Schutz der Wälder ist also nicht nur wichtig für den Erhalt der Tier- und Pflanzenwelt, sondern auch für den Kampf gegen die globale Erderwärmung.<br><br>\r\n\r\nEin weiteres Problem stellt die zunehmende Viehzucht dar. Wiederkäuer (Rinder, Ziegen, Schafe) stossen bei der Verdauung grosse Mengen an Methan aus. Wir erinnern uns,: Methan ist ebenfalls eines der schädlichen Treibhausgase, mit einer noch viel stärkerer Auswirkung auf die Atmosphäre wie CO2.', '', 'assets/gif/klima_02.gif', 'assets/gif/klima_02.jpg', '', 0, 2, 'Die Treibhausgase mit der grössten Wirkung auf die Erderwärmung sind Kohlenstoffdioxid (CO2) und Methan, Fossile Brennstoffe sind Millionen Jahre alte Überreste von Tieren und Pflanzen. Diese wurden durch geologische Prozesse in Kohle sowie Erdgas und Erdöl umgewandelt, Eine tragende Rolle bei der Erderwärmung spielen die Verbrennung von fossilen Rohstoffen in der Industrie und im Verkehr,  ', 0, '', ''),
 (20, 3, 'Folgen', '<b>Weitreichende Folgen</b><br>\r\nDer Klimawandel hat weitreichende Auswirkungen auf uns Menschen und unsere Umwelt. Jetzt schon spürbare Veränderungen werden sich in den kommenden Jahrzehnten voraussichtlich noch weiter verschärfen.<br><br>\r\nEinige der direkten Folgen sind:\r\n<ul>\r\n<li>Steigende Minimal- und Maximaltemperaturen</li>\r\n<li>Steigender Meeresspiegel und höhere Meerestemperaturen</li>\r\n<li>Extreme Wetterereignisse</li>\r\n<li>Gletscherschwund</li>\r\n</ul>\r\n\r\nDurch die steigenden Temperaturen schmelzen die Eisgebiete. In den letzten 30 Jahren hat sich die Eisfläche am Nordpol fast halbiert und wird immer dünner. Wenn die Erwärmung weiter so voranschreitet, könnte das Eis innerhalb der nächsten 20 Jahre ganz wegschmelzen. Auch die Gletscher in den Hochgebirgen verlieren immer mehr an Masse. Unter anderem wegen dieser Eisschmelze steigt der Meeresspiegel immer mehr an. Dadurch werden in der folgenden Zeit immer grössere Gebiete an den Küsten überschwemmt, Sturmfluten und Hochwasser drohen.<br><br>\r\n \r\nDank des Klimawandels steigt nicht nur der Meeresspiegel, sondern auch die Wassertemperatur der Meere. Dadurch verdunstet mehr Wasser und wird in der Luft als Wasserdampf gespeichert. Die Gefahr von grossen Unwettern, wie heftigen Regenfällen und Wirbelstürmen steigt. Der Klimawandel führt bei den Meeren aber nicht nur zu wärmen Wassertemperaturen, sondern auch zu einem höheren Säuregehalt. Wind und Wellen mischen das Kohlenstoffdioxid au der Luft mit dem Meerwasser. Es entsteht Kohlensäure, genau wie die, die du aus Mineralwasser oder Limonade kennst. Dieses saure Meerwasser wird immer mehr zur Bedrohung von kalkhaltigen Lebewesen, wie Korallen, Muscheln und Schnecken.<br><br>\r\n\r\nIn trockenen Regionen breiten sich durch die steigenden Temperaturen die Wüsten aus. Es kommt öfters zu immer längeren Dürreperioden, worauf die Gefahr droht, dass die Flüsse austrocknen und grüne Landesteile verdorren. Die Wasserknappheit wird sich weiter verstärken. Breitet sich die Dürre in den trockenen Regionen weiter aus, werden Waldbrände ebenfalls zur drängenden Gefahr.', '', 'assets/gif/klima_03.gif', 'assets/gif/klima_03.jpg', '', 0, 3, 'Die Folgen des Klimawandels ziehen sich weitreichend, Die Meeresspiegel steigen, Die Gletscher schmelzen, Dürreperioden kommen immer öfters vor, ', 0, '', ''),
-(21, 3, 'Was kann ich dagegen tun?', 'Wir haben nun gelernt, dass der globale Klimawandel verheerende Folgen auf unsere Umwelt und unser gesamtes gesellschaftliches Zusammenleben hat. Wenn wir nichts gegen die Erwärmung unternehmen, wird es immer häufiger zu extremen Wetterereignissen und Naturkatastrophen kommen, nicht nur unser Lebensraum, auch diejenigen vieler bedrohter Tierarten werden zerstört und gesundheitliche Probleme werden steigen, wegen Trinkwasserknappheiten, Hungersnöten und Infektionskrankheiten. Es ist also jedem von uns ein daran gelegen, gemeinsam etwas zur Bekämpfung des Klimawandel zu leisten! Jeder kann seinen Teil dazu beitragen, auch im Alltag können kleine Dinge eine grosse Wirkung erzielen.<br><br>\r\n \r\nWas du tun kannst, um zu helfen:\r\n<ul>\r\n<li>Fortbewegung – öfter mit der ÖV, dem Fahrrad oder zu Fuss</li>\r\n<li>Einkaufen – möglichst auf Verpackungen, vor allem auf Plastik, verzichten, lieber immer denselben Stoffsack zum Einpacken mitnehmen, anstatt jedes Mal einen neuen Plastiksack zu verbrauchen und darauf achten, regional und Bio einzukaufen</li>\r\n<li>Essen – bewusster Umgang mit Fleisch und auch vegetarische/vegane Alternativen in Betracht ziehen und darauf achten, nicht unnötig Lebensmittel wegzuwerfen (mehr dazu findest du in der Lektion \"Foodwaste\")</li>\r\n<li>Energie – sparsamer und bewusster Umgang (mehr dazu findest du in der Lektion \"Energie\")</li>\r\n</ul>\r\n', '', 'assets/gif/klima_04.gif', 'assets/gif/klima_04.jpg', '', 0, 4, 'Wir können alle einen Einfluss nehmen und etwas gegen den Klimawandel unternehmen, Am wichtigsten ist der respektvolle Umgang mit unserer Umwelt; Sei es nun beim Sparen von Energie oder bei dem bewussten Konsum von Lebensmitteln und materiellen Dingen wie Kleidern,   ', 0, '', '');
+(21, 3, 'Was kann ich dagegen tun?', 'Wir haben nun gelernt, dass der globale Klimawandel verheerende Folgen auf unsere Umwelt und unser gesamtes gesellschaftliches Zusammenleben hat. Wenn wir nichts gegen die Erwärmung unternehmen, wird es immer häufiger zu extremen Wetterereignissen und Naturkatastrophen kommen, nicht nur unser Lebensraum, auch diejenigen vieler bedrohter Tierarten werden zerstört und gesundheitliche Probleme werden steigen, wegen Trinkwasserknappheiten, Hungersnöten und Infektionskrankheiten. Es ist also jedem von uns ein daran gelegen, gemeinsam etwas zur Bekämpfung des Klimawandel zu leisten! Jeder kann seinen Teil dazu beitragen, auch im Alltag können kleine Dinge eine grosse Wirkung erzielen.<br><br>\r\n \r\nWas du tun kannst, um zu helfen:\r\n<ul>\r\n<li>Fortbewegung – öfter mit der ÖV, dem Fahrrad oder zu Fuss</li>\r\n<li>Einkaufen – möglichst auf Verpackungen, vor allem auf Plastik, verzichten, lieber immer denselben Stoffsack zum Einpacken mitnehmen, anstatt jedes Mal einen neuen Plastiksack zu verbrauchen und darauf achten, regional und Bio einzukaufen</li>\r\n<li>Essen – bewusster Umgang mit Fleisch und auch vegetarische/vegane Alternativen in Betracht ziehen und darauf achten, nicht unnötig Lebensmittel wegzuwerfen (mehr dazu findest du in der Lektion \"Foodwaste\")</li>\r\n<li>Energie – sparsamer und bewusster Umgang (mehr dazu findest du in der Lektion \"Energie\")</li>\r\n</ul>\r\n', '', 'assets/gif/klima_04.gif', 'assets/gif/klima_04.jpg', '', 0, 4, 'Wir können alle einen Einfluss nehmen und etwas gegen den Klimawandel unternehmen, Am wichtigsten ist der respektvolle Umgang mit unserer Umwelt; Sei es nun beim Sparen von Energie oder bei dem bewussten Konsum von Lebensmitteln und materiellen Dingen wie Kleidern,   ', 0, '', ''),
+(22, 5, 'Recycling- Einführung', 'Dinge, die nicht mehr gebraucht werden, nicht mehr essbar oder kaputt sind, landen auf dem Müll. Aufgrund des Wohlstandes in der Schweiz entsteht so eine grosse Menge Abfall. Denn anders als in ärmeren Ländern haben wir die Möglichkeiten, scheinbar unlimitierte Güter zu konsumieren und zu (ge-)brauchen. 80 bis 90 Millionen Tonnen Abfall entstehen so jährlich in der Schweiz. Dies entspricht ca. 716 Kilogramm pro Person. <i>Hierbei macht jedoch den grössten Anteil Aushub- und Ausbruchmaterialien sowie Rückbaumaterialien aus. </i><br><br>\r\n\r\nEs gibt verschiedene Entsorgungsarten in der Schweiz, wie wir mit dieser riesigen Menge an Abfall umgehen können. In der Regel sollten Abfälle so verwertet werden, dass entweder Material (beim Recycling) oder Wärme (bei der Verbrennung) gewonnen werden kann. Manchmal ist dies jedoch nicht möglich. Zu den Gründen zählt die Tatsache, dass die Verwertung einiger Stoffe technisch nicht möglich oder schlichtweg zu teuer ist. Wenn dies der Fall ist, werden die Abfälle nach geeigneter Behandlung in einer Deponie kontrolliert abgelagert. <br><br>\r\n\r\nWelche Arten von der Abfallentsorgung es bei uns in der Schweiz gibt, warum Recycling so immens wichtig ist und wie du deinen Beitrag dafür leisten kannst, findest du in den nachfolgenden Kapitel! Viel Spass bei der Lektion “Entsorgung”.<br><br>\r\n', '', 'assets/gif/abfall_00.gif', 'assets/gif/abfall_00.jpg', 'assets/video/intro_recycling.mp4', 0, 0, '', 1, 'Welche Arten der Abfallentsorgung gibt es in der Schweiz?, Was versteht man unter Recycling?, Warum ist Recycling wichtig?, Was ist der Zyklus einer PET-Flasche?, Wie trenne ich meinen Abfall richtig?, ', ''),
+(23, 5, 'Entsorgungsarten', '', '', 'assets/gif/abfall_01.gif', 'assets/gif/abfall_01.jpg', '', 0, 1, '', 0, '', ''),
+(24, 5, 'Entsorgungsarten', '', '', 'assets/gif/abfall_02.gif', 'assets/gif/abfall_02.jpg', '', 0, 2, '', 0, '', ''),
+(25, 5, 'Was kann recycelt werden?', '', '', 'assets/gif/abfall_03.gif', 'assets/gif/abfall_03.jpg', '', 0, 3, '', 0, '', ''),
+(26, 5, 'Wo recycelt werden kann', '', '', 'assets/gif/abfall_04.gif', 'assets/gif/abfall_04.jpg', '', 0, 4, '', 0, '', ''),
+(27, 5, 'Wie DU Müll vermeiden kannst', '', '', 'assets/gif/abfall_05.gif', 'assets/gif/abfall_05.jpg', '', 0, 5, '', 0, '', '');
 
 --
--- Indexes for dumped tables
+-- Indizes der exportierten Tabellen
 --
 
 --
--- Indexes for table `tbl_about`
+-- Indizes für die Tabelle `tbl_about`
 --
 ALTER TABLE `tbl_about`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_category`
+-- Indizes für die Tabelle `tbl_category`
 --
 ALTER TABLE `tbl_category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_intro`
+-- Indizes für die Tabelle `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_category_id` (`category_id`);
 
 --
--- Indexes for table `tbl_lesson`
+-- Indizes für die Tabelle `tbl_lesson`
 --
 ALTER TABLE `tbl_lesson`
   ADD PRIMARY KEY (`id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT für exportierte Tabellen
 --
 
 --
--- AUTO_INCREMENT for table `tbl_about`
+-- AUTO_INCREMENT für Tabelle `tbl_about`
 --
 ALTER TABLE `tbl_about`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tbl_category`
+-- AUTO_INCREMENT für Tabelle `tbl_category`
 --
 ALTER TABLE `tbl_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `tbl_intro`
+-- AUTO_INCREMENT für Tabelle `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `tbl_lesson`
+-- AUTO_INCREMENT für Tabelle `tbl_lesson`
 --
 ALTER TABLE `tbl_lesson`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- Constraints for dumped tables
+-- Constraints der exportierten Tabellen
 --
 
 --
--- Constraints for table `tbl_intro`
+-- Constraints der Tabelle `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
   ADD CONSTRAINT `fk_category_id` FOREIGN KEY (`category_id`) REFERENCES `tbl_category` (`id`);
 
 --
--- Constraints for table `tbl_lesson`
+-- Constraints der Tabelle `tbl_lesson`
 --
 ALTER TABLE `tbl_lesson`
   ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `tbl_category` (`id`);

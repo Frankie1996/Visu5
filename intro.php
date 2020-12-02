@@ -15,7 +15,7 @@ $learning_goal = explode(", ", $learning_goals);
 $biggest_problems = $lesson['groeste_probleme'];
 $biggest_problem = explode(", ", $biggest_problems);
 
-$next_lesson_id = $lesson['id']+1;
+$next_lesson_id = $lesson['id'] + 1;
 ?>
 
 <!-- Head -->
@@ -65,12 +65,12 @@ $next_lesson_id = $lesson['id']+1;
                     </ul>
                 <?php } ?>
             </div>
-            <div class="row">
+            <div class="row pb-3">
                 <div class="col">
                     <a href="category?id=<?php echo $lesson['category_id']; ?>"><img src="assets/img/buttons/uebersicht.svg" alt="Uebersicht"></a>
                 </div>
                 <div class="col">
-                    <a href="<?php echo "lesson?id=$next_lesson_id";?>"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
+                    <a href="<?php echo "lesson?id=$next_lesson_id"; ?>"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
                 </div>
             </div>
         </article>

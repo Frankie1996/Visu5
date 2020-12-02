@@ -22,36 +22,36 @@ $lessons = get_lessons_by_category_id($_GET['id']);
         <div class="row">
             <?php foreach ($lessons as $lesson) { ?>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <?php
+                    <?php
                     if ($lesson['einfuerung'] == 1) {
                         echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                     } else {
                         echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                     }
                     ?>
-                        <div class="card <?php echo strtolower($category['title']); ?>">
-                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
-                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
-                            <div class="card-body">
-                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                                <p class="card-text small text-center">
-                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
+                    <div class="card <?php echo strtolower($category['title']); ?>">
+                        <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
+                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                            <p class="card-text small text-center">
+                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
                                         <?php
                                         $category =  get_category_by_id($lesson['category_id']);
                                         echo "#" . $category['title'];
                                         ?></b>
-                                    </a>
-                                    •
-                                    <?php
-                                     if ($lesson['einfuerung'] == 1) {
-                                        echo "Einführung ";
-                                    } else {
-                                        echo "Lektion ";
-                                        echo $lesson['lesson_nr'];
-                                    }
-                                    ?></p>
-                            </div>
+                                </a>
+                                •
+                                <?php
+                                if ($lesson['einfuerung'] == 1) {
+                                    echo "Einführung ";
+                                } else {
+                                    echo "Lektion ";
+                                    echo $lesson['lesson_nr'];
+                                }
+                                ?></p>
                         </div>
+                    </div>
                     </a>
                 </div>
             <?php } ?>

@@ -26,8 +26,29 @@ section {
 }
 
 .energy-section {
-        background-color: $orange-yellow-crayola;
-        opacity: .3;
+        background-color: $orange-yellow-crayola_opa;
+        padding: 60px 0px;
+
+}
+
+.sustainability-section {
+        background-color: $beau-blue_opa;
+        padding: 60px 0px;
+}
+
+.climate-section{
+        background-color: $green-sheen_opa; 
+        padding: 60px 0px;   
+}
+
+.food-waste-section {
+        background-color: $congo-pink_opa;
+        padding: 60px 0px;
+}
+
+.recycling-section {
+        background-color: $english-vermillion_opa;
+        padding: 60px 0px;
 }
 
 .gif_static {

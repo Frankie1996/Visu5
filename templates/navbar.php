@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-lessons" href="./lessons.php">
+                    <a class="nav-link" id="nav-lessons" href="./lessons">
                         <span class="material-icons">
                             live_tv
                         </span>
@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-about" href="./about.php">
+                    <a class="nav-link" id="nav-about" href="./about">
                         <span class="material-icons">
                             public
                         </span>

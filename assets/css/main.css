@@ -11160,15 +11160,27 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-family: blockhead-black-face, sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #5a804fff;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
 p,
-h4,
 h5,
 h6 {
   font-family: 'Roboto', sans-serif;
@@ -11718,7 +11730,7 @@ section.featured div.container {
   padding: 60px 0;
 }
 
-section.featured h2 {
+section.featured h3 {
   margin-bottom: 20px;
 }
 
@@ -11823,23 +11835,23 @@ section a:hover {
   color: black;
 }
 
-section h3.energie {
+section h4.energie {
   color: #e9c46aff;
 }
 
-section h3.food-waste {
+section h4.food-waste {
   color: #f69891ff;
 }
 
-section h3.nachhaltigkeit {
+section h4.nachhaltigkeit {
   color: #b0c8d8ff;
 }
 
-section h3.klimawandel {
+section h4.klimawandel {
   color: #81b29aff;
 }
 
-section h3.recycling {
+section h4.recycling {
   color: #d64041ff;
 }
 
@@ -11896,7 +11908,8 @@ section.lesson .carousel img {
 }
 
 section.lesson.energie h2,
-section.lesson.energie h3 {
+section.lesson.energie h3,
+section.lesson.energie h4 {
   color: #e9c46aff;
 }
 
@@ -11905,7 +11918,8 @@ section.lesson.energie .info {
 }
 
 section.lesson.food-waste h2,
-section.lesson.food-waste h3 {
+section.lesson.food-waste h3,
+section.lesson.food-waste h4 {
   color: #f69891ff;
 }
 
@@ -11914,7 +11928,8 @@ section.lesson.food-waste .info {
 }
 
 section.lesson.nachhaltigkeit h2,
-section.lesson.nachhaltigkeit h3 {
+section.lesson.nachhaltigkeit h3,
+section.lesson.nachhaltigkeit h4 {
   color: #b0c8d8ff;
 }
 
@@ -11923,7 +11938,8 @@ section.lesson.nachhaltigkeit .info {
 }
 
 section.lesson.klimawandel h2,
-section.lesson.klimawandel h3 {
+section.lesson.klimawandel h3,
+section.lesson.klimawandel h4 {
   color: #81b29aff;
 }
 
@@ -11932,7 +11948,8 @@ section.lesson.klimawandel .info {
 }
 
 section.lesson.recycling h2,
-section.lesson.recycling h3 {
+section.lesson.recycling h3,
+section.lesson.recycling h4 {
   color: #d64041ff;
 }
 

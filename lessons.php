@@ -30,7 +30,7 @@ $allCategories = get_all_categories();
 <section class="energy-section container-fluid">
     <article class="container">
         <a href="category?id=1">
-            <h3 class="pb-4 energie">Thema Energie</h3>
+            <h4 class="pb-4 energie">Thema Energie</h4>
         </a>
 
         <div class="row">
@@ -77,7 +77,7 @@ $allCategories = get_all_categories();
 <section class="sustainability-section container-fluid">
     <article class="container">
         <a href="category?id=2">
-            <h3 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h3>
+            <h4 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h4>
         </a>
         <div class="row">
             <?php
@@ -123,7 +123,7 @@ $allCategories = get_all_categories();
 <section class="climate-section container-fluid">
     <article class="container">
         <a href="category?id=3">
-            <h3 class="pb-4 klimawandel">Thema Klimawandel</h3>
+            <h4 class="pb-4 klimawandel">Thema Klimawandel</h4>
         </a>
         <div class="row">
             <?php
@@ -169,7 +169,7 @@ $allCategories = get_all_categories();
 <section class="food-waste-section container-fluid">
     <article class="container">
         <a href="category?id=4">
-            <h3 class="pb-4 food-waste">Thema Food-Waste</h3>
+            <h4 class="pb-4 food-waste">Thema Food-Waste</h4>
         </a>
         <div class="row">
             <?php
@@ -215,7 +215,7 @@ $allCategories = get_all_categories();
 <section class="recycling-section container-fluid">
     <article class="container">
         <a href="category?id=5">
-            <h3 class="pb-4 recycling">Thema Recycling</h3>
+            <h4 class="pb-4 recycling">Thema Recycling</h4>
         </a>
         <div class="row">
             <?php

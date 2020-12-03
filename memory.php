@@ -14,7 +14,7 @@ $topLessons = get_top_lessons();
 
 <section class="memory">
     <div class="container py-5">
-        <h2 class="pb-4 text-center">Energie Memory</h2>
+        <h3 class="pb-4 text-center">Energie Memory</h3>
 
         <div class="row mb-4">
             <div class="col">

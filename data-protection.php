@@ -10,8 +10,8 @@ $about = get_about();
 <!-- Navigation -->
 <?php require_once('templates/navbar.php'); ?>
 <section class="container data-protection my-5">
+<h2 class="pb-4">Datenschutz</h2>
     <div class="row">
-        <h2 class="pb-4">Datenschutz</h2>
         <div class="col-12">
             <h4>Sicherheit</h4>
             <p>

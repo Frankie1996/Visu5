@@ -51,14 +51,14 @@ $biggest_problem = explode(", ", $biggest_problems);
             <div class="info">
                 <?php
                 if ($lesson['einfuerung'] == true) { ?>
-                    <h3 class="mb-4">Lernziele</h3>
+                    <h4 class="mb-4">Lernziele</h4>
                     <ul>
                         <?php for ($i = 0; $i < count($learning_goal) - 1; ++$i) { ?>
                             <li><?php echo $learning_goal[$i] ?></li>
                         <?php }; ?>
                     </ul>
                     <?php if ($biggest_problems != "") { ?>
-                        <h3 class="mb-4">Grösste Probleme</h3>
+                        <h4 class="mb-4">Grösste Probleme</h4>
                         <ul>
                             <?php for ($i = 0; $i < count($biggest_problem) - 1; ++$i) { ?>
                                 <li><?php echo $biggest_problem[$i] ?></li>
@@ -67,7 +67,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                     <?php } ?>
 
                 <?php } else { ?>
-                    <h3 class="mb-4">Das Wichtigste in Kürze</h3>
+                    <h4 class="mb-4">Das Wichtigste in Kürze</h4>
                     <ul>
                         <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
                             <li><?php echo $important[$i] ?></li>

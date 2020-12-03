@@ -45,7 +45,7 @@ $topLessons = get_top_lessons();
 
 <section class="container-fluid featured">
     <div class="container">
-        <h2 class="mb-2">Aktuelle Themen</h2>
+        <h3 class="mb-2">Aktuelle Themen</h3>
         <p class="mb-4">Hier zeigen wir dir Lektionen, die ein aktuelles Thema behandeln, neu auf der Plattform aufgeschaltet wurden oder äusserst beliebt bei unseren Nutzern sind.</p>
         <div class="row">
             <?php
@@ -78,7 +78,7 @@ $topLessons = get_top_lessons();
 </section>
 <section class="container-fluid experience">
     <div class="container">
-        <h2 class="mb-2">Wissenstest</h2>
+        <h3 class="mb-2">Wissenstest</h3>
         <p class="mb-4">Von hier aus kannst du direkt auf unsere Quizrunden und Spiele zugreifen.</p>
         <div class="row">
             <?php

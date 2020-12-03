@@ -29,3 +29,10 @@ div.signpost {
         font-size: 22px;
     }
 }
+@media screen and (max-width: 992px) {
+    div.signpost{
+        position: initial;
+        height: fit-content;
+        width: 100%;
+    }
+}

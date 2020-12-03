@@ -48,7 +48,7 @@ $biggest_problem = explode(", ", $biggest_problems);
             <div class="text pb-3">
                 <p><?php echo $lesson['text']; ?></p>
             </div>
-            <div class="info">
+            <div class="info mb-4">
                 <?php
                 if ($lesson['einfuerung'] == true) { ?>
                     <h4 class="mb-4">Lernziele</h4>
@@ -76,7 +76,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                 <?php } ?>
             </div>
         </article>
-        <article class="col-lg-6 col-sm-12 order-sm-first">
+        <article class="col-lg-6 col-sm-12 order-md-first">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

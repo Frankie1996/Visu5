@@ -1,7 +1,6 @@
 <!-- Controller -->
 <?php
 require_once('data/data.php');
-$about = get_about();
 ?>
 
 <!-- Head -->
@@ -12,20 +11,47 @@ $about = get_about();
 <div class="container-fluid bg px-0">
     <div class="overlay py-5">
         <section class="container about">
+
+            <div class="btn-group btn-group-toggle mb-2 float-right" data-toggle="buttons">
+                <label class="btn btn-outline-light">
+                    <a href="about?de=true">
+                        <input type="radio" name="lang-de" id="lang-de" <?php if (isset($_GET['de'])) {echo "checked";}?>> DE
+                    </a>
+                </label>
+                <label class="btn btn-outline-light">
+                    <a href="about?en=true">
+                        <input type="radio" name="lang_en" id="lang_en" <?php if (isset($_GET['en'])) {echo "checked";}?>> EN
+                    </a>
+                </label>
+            </div>
+
+            <?php
+            if (isset($_GET['de'])) {
+                $about = get_about("1");
+                $task = "Der Auftrag";
+                $project = "Das Projekt";
+                $crew = "Die Truppe";
+            } else if (isset($_GET['en'])) {
+                $about = get_about("2");
+                $task ="The Task";
+                $project = "The Project";
+                $crew = "The Crew";
+            }
+            ?>
             <h2 class="pb-4"><?php echo $about['title']; ?></h2>
             <div class="row">
                 <div class="col-lg-6">
-                    <h3>Der Auftrag</h3>
+                    <h3><?php echo $task; ?></h3>
                     <p><?php echo $about['task']; ?></p>
                 </div>
                 <div class="col-lg-6">
-                    <h3>Das Projekt</h3>
+                    <h3><?php echo $project; ?></h3>
                     <p><?php echo $about['project']; ?></p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <h3 class="text-center">Die Truppe</h3>
+                    <h3 class="text-center"><?php echo $crew; ?></h3>
                     <div class="container">
                         <div class="box">
                             <div class="imgBx">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 03. Dez 2020 um 14:23
+-- Erstellungszeit: 03. Dez 2020 um 19:41
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.4.10
 
@@ -31,15 +31,17 @@ CREATE TABLE `tbl_about` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `task` text NOT NULL,
-  `project` text NOT NULL
+  `project` text NOT NULL,
+  `lang` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Daten für Tabelle `tbl_about`
 --
 
-INSERT INTO `tbl_about` (`id`, `title`, `task`, `project`) VALUES
-(1, 'Über uns und das Projekt', 'Diese Projekt entstand als Teil des Studiengangs Multimedia Production an der Fachhochschule Graubünden. Der Auftrag war, ein Projekt, dass die gestalterischen Aspekte des Moduls Visualisieren und die das Programmieren des Moduls Interaktive Medien, zu realisieren. Im Mittelpunkt standen die Sustainable Development Goals der UN.', 'Die Plattform \"ökoLOGISCH!\" zeigt den Studierenden die immense Bedeutung des Umweltschutzes. Unter anderem wird anhand von Beispielen aus dem Alltag gezeigt, wie die Schülerinnen und Schüler selbst zu einer nachhaltigeren Welt beitragen können. \r\n\r\nVorrangiges Ziel des Produktes ist, Kinder altersgerecht für Nachhaltigkeitsthemen zu sensibilisieren. Schon heute ist klar, dass die Bedeutung der damit verbundenen Themen im Laufe der Zeit stetig zunimmt. Konkret wird das SDG 12, \"Nachhaltige Konsum- und Produktionsmuster sicherstellen\", verfolgt. \r\n\r\nDas Endprodukt ist eine webbasierte E-Learning-Plattform, die frei zugänglich ist. Aufgrund der Struktur der Themen kann die Plattform innerhalb der Unterrichtseinheiten optimal genutzt werden. Minispiele und Quizrunden, die auf der Plattform zur Verfügung stehen, ermöglichen es den Studierenden, ihren Lernerfolg zu überprüfen. Die Plattform richtet sich an Schülerinnen und Schüler der vierten bis sechsten Klasse. \r\n');
+INSERT INTO `tbl_about` (`id`, `title`, `task`, `project`, `lang`) VALUES
+(1, 'Über uns und das Projekt', 'Diese Projekt entstand als Teil des Studiengangs Multimedia Production an der Fachhochschule Graubünden. Der Auftrag war, ein Projekt, dass die gestalterischen Aspekte des Moduls Visualisieren und die das Programmieren des Moduls Interaktive Medien, zu realisieren. Im Mittelpunkt standen die Sustainable Development Goals der UN.', 'Die Plattform \"ökoLOGISCH!\" zeigt den Studierenden die immense Bedeutung des Umweltschutzes. Unter anderem wird anhand von Beispielen aus dem Alltag gezeigt, wie die Schülerinnen und Schüler selbst zu einer nachhaltigeren Welt beitragen können. \r\n\r\nVorrangiges Ziel des Produktes ist, Kinder altersgerecht für Nachhaltigkeitsthemen zu sensibilisieren. Schon heute ist klar, dass die Bedeutung der damit verbundenen Themen im Laufe der Zeit stetig zunimmt. Konkret wird das SDG 12, \"Nachhaltige Konsum- und Produktionsmuster sicherstellen\", verfolgt. \r\n\r\nDas Endprodukt ist eine webbasierte E-Learning-Plattform, die frei zugänglich ist. Aufgrund der Struktur der Themen kann die Plattform innerhalb der Unterrichtseinheiten optimal genutzt werden. Minispiele und Quizrunden, die auf der Plattform zur Verfügung stehen, ermöglichen es den Studierenden, ihren Lernerfolg zu überprüfen. Die Plattform richtet sich an Schülerinnen und Schüler der vierten bis sechsten Klasse. \r\n', 'de'),
+(2, 'About us and the project', 'This project was developed as part of the Multimedia Production course at the University of Applied Sciences in Graubünden. The assignment was to realize a project that included the design aspects of the module Visualization and the programming of the module Interactive Media. The focus was on the Sustainable Development Goals of the UN.', 'The platform \"ökoLOGISCH!\" shows students the immense importance of environmental protection. Among other things, examples from everyday life are used to show how the students themselves can contribute to a more sustainable world. \r\n\r\nThe primary goal of the product is to sensitize children to sustainability issues in a way that is appropriate for their age. It is already clear today that the importance of the associated topics is steadily increasing over time. Specifically, SDG 12, \"Ensure sustainable consumption and production patterns\", is being pursued. \r\n\r\nThe final product is a web-based e-learning platform that is freely accessible. Due to the structure of the topics, the platform can be used optimally within the teaching units. Mini-games and quizzes that are available on the platform allow students to check their learning success. The platform is aimed at students in grades four to six. ', 'en');
 
 -- --------------------------------------------------------
 
@@ -64,6 +66,26 @@ INSERT INTO `tbl_category` (`id`, `title`, `text`, `img_url`) VALUES
 (3, 'Klimawandel', 'Klimawandel ist eine weltweit auftretende Veränderung des Klimas auf der Erde oder erdähnlichen Planeten/Monden, die eine Atmosphäre besitzen. Die mit einem Klimawandel verbundene Abkühlung oder Erwärmung kann über unterschiedlich lange Zeiträume erfolgen. Es ist wichtig zu unterscheiden zwischen Wetteränderungen, die innerhalb eines Klimas variieren und dem Klimawandel, der die zugrundeliegenden Auftrittswahrscheinlichkeiten von Wetterergebnissen verändert. Die gegenwärtige, vor allem durch den Menschen verursachte globale Erwärmung ist ein Beispiel für einen sehr rasch verlaufenden, aber noch nicht abgeschlossenen Klimawandel. Die durch diesen Klimawandel hervorgerufene ökologische und soziale Krise wird auch als „Klimakrise“ bezeichnet.', 'assets/img/header_climateChange.jpg'),
 (4, 'Food-Waste', 'Die Ursachen der Essensverschwendung sind vielfältig. So wird zum Beispiel zu viel eingekauft und die Lebensmittel werden vom Endverbraucher falsch gelagert. Auch die Überschreitung von Mindesthaltsbarkeitsdaten spielt eine wichtige Rolle. Aber auch bei der Produktion von Lebensmitteln kann es zu Verschwendung kommen, etwa bei einer nicht-nachhaltigen Fischerei, wenn etwa Beifang weggeschmissen wird. Weitere Ursachen sind eine vermeidbare falsche Lagerung, Schädlingsbefall, Überproduktion, wodurch zu viele Lebensmittel hergestellt werden, die dann keinen Abnehmer finden; Transportschäden, Vorstellungen beim Kunden, die etwa nicht normgerechte Produkte ablehnen bzw. nicht kaufen usw.', 'assets/img/header_foodWaste.jpg'),
 (5, 'Recycling', 'Beim Recycling bzw. Müllverwertung werden Abfallprodukte wiederverwertet bzw. deren Ausgangsmaterialien werden zu Sekundärrohstoffen. „Recycling“ ist definiert als „jedes Verwertungsverfahren, durch das Abfälle zu Erzeugnissen, Materialien oder Stoffen entweder für den ursprünglichen Zweck oder für andere Zwecke aufbereitet werden. Gesetzlich wird erst von „Recycling“ gesprochen, wenn der Rohstoff zuvor als „Abfall“ einzustufen war; andernfalls handelt es sich um „Wiederverwendung“.', 'assets/img/header_recycling.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `tbl_glossar`
+--
+
+CREATE TABLE `tbl_glossar` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `definition` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `tbl_glossar`
+--
+
+INSERT INTO `tbl_glossar` (`id`, `name`, `definition`) VALUES
+(1, 'Fisch', 'Ein Fisch lebt im Wasser'),
+(2, 'Reh', 'Rehe sind Tiere');
 
 -- --------------------------------------------------------
 
@@ -166,6 +188,12 @@ ALTER TABLE `tbl_category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indizes für die Tabelle `tbl_glossar`
+--
+ALTER TABLE `tbl_glossar`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indizes für die Tabelle `tbl_intro`
 --
 ALTER TABLE `tbl_intro`
@@ -187,13 +215,19 @@ ALTER TABLE `tbl_lesson`
 -- AUTO_INCREMENT für Tabelle `tbl_about`
 --
 ALTER TABLE `tbl_about`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT für Tabelle `tbl_category`
 --
 ALTER TABLE `tbl_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT für Tabelle `tbl_glossar`
+--
+ALTER TABLE `tbl_glossar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT für Tabelle `tbl_intro`

@@ -12,6 +12,8 @@ function activeClass(url) {
         document.querySelector("#nav-lessons").classList.add("active");
     } else if (url.startsWith('category') == true) {
         document.querySelector("#nav-lessons").classList.add("active");
+    } else if (url.startsWith('glossar') == true) {
+        document.querySelector("#nav-glossar").classList.add("active");
     }
 }
 
@@ -43,4 +45,14 @@ $(document).ready(function () {
         return false;
     });
 
+});
+
+/* Search Funktion Glossar */
+$(document).ready(function () {
+    $("#searchInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#glossar_table tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });

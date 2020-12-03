@@ -10,7 +10,15 @@
 }
 
 body{
-    cursor:url(../img/cursor/cursor.cur), auto;
+    cursor: url("../img/cursor/cursor.png"), auto !important;
+}
+
+a {
+    cursor: url("../img/cursor/cursor-link.png"), auto !important;
+}
+
+button {
+    cursor: url("../img/cursor/cursor-link.png"), auto !important;
 }
 
 .btn-outline-primary {

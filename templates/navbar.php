@@ -27,8 +27,18 @@
                         </span>
                     </a>
                 </li>
+                <li id="nav-glossar">
+                    <a href="./glossar">
+                        <span class="material-icons">
+                            assignment
+                        </span>
+                        <span>
+                            Glossar
+                        </span>
+                    </a>
+                </li>
                 <li id="nav-about">
-                    <a href="./about">
+                    <a href="./about?de=true">
                         <span class="material-icons">
                             public
                         </span>

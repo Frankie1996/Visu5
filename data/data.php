@@ -89,10 +89,10 @@ function get_lessons_by_category_id($id)
 }
 
 /* GET ABOUT */
-function get_about()
+function get_about($id)
 {
 	$db = get_db_connection();
-	$sql = "SELECT * FROM tbl_about";
+	$sql = "SELECT * FROM tbl_about WHERE id = $id;";
 	$result = $db->query($sql);
 	$row = $result->fetch();
 	return $row;
@@ -109,10 +109,20 @@ function get_lesson_by_id($id)
 }
 
 /* GET THE LAST LESSON ID */
-function get_last_lesson_id(){
+function get_last_lesson_id()
+{
 	$db = get_db_connection();
 	$sql = "SELECT MAX(ID) AS LastID FROM tbl_lesson";
 	$result = $db->query($sql);
 	$row = $result->fetch();
 	return $row;
+}
+
+/* GET GLOSSAR */
+function get_glossar()
+{
+	$db = get_db_connection();
+	$sql = "SELECT * FROM tbl_glossar;";
+	$result = $db->query($sql);
+	return $result->fetchAll();
 }

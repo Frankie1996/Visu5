@@ -100,4 +100,13 @@ section.about {
         }
     }
 
+    .btn.btn-outline-light.active a {
+        color: black;
+    }
+    .btn.btn-outline-light a {
+        color: white;
+    }
+    .btn.btn-outline-light:hover a{
+        color: black;
+    }
 }

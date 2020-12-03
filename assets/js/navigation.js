@@ -16,8 +16,10 @@ function allEventListners() {
 
 // togglerClick function
 function togglerClick() {
-  navToggler.classList.toggle('toggler-open');
-  navMenu.classList.toggle('open');
+    navToggler.classList.toggle('toggler-open');
+    navMenu.classList.toggle('open');
+    navMenu.classList.toggle('d-flex');
+    navMenu.classList.toggle('justify-content-center');
 }
 
 // navLinkClick function

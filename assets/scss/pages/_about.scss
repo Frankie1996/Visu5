@@ -50,6 +50,9 @@ section.about {
                 opacity: 1;
                 visibility: visible;
                 transform: translateY(0);
+                h4{
+                    color:white;
+                }
             }
 
             .imgBx {
@@ -90,6 +93,9 @@ section.about {
 
             h3 {
                 padding: 2.5px 0;
+            }
+            h4{
+                color:white;
             }
         }
     }

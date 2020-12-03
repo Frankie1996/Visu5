@@ -3,7 +3,7 @@
 
 
         <a class="navbar-brand" href=".">
-            <img src="assets/logo/logo.png" alt="ökoLOGISCH" loading="lazy">
+            <img src="assets/logo/logo_christmas.png" alt="ökoLOGISCH" loading="lazy">
         </a>
 
 

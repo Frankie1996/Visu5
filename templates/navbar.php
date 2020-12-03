@@ -27,7 +27,7 @@
                         </span>
                     </a>
                 </li>
-                <li id="nav-abobut">
+                <li id="nav-about">
                     <a href="./about">
                         <span class="material-icons">
                             public

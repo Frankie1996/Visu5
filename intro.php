@@ -43,14 +43,14 @@ $next_lesson_id = $lesson['id'] + 1;
             <div class="info mb-4">
                 <?php
                 if ($lesson['einfuerung'] == true) { ?>
-                    <h3 class="mb-4">Lernziele</h3>
+                    <h4 class="mb-4">Lernziele</h4>
                     <ul>
                         <?php for ($i = 0; $i < count($learning_goal) - 1; ++$i) { ?>
                             <li><?php echo $learning_goal[$i] ?></li>
                         <?php }; ?>
                     </ul>
                     <?php if ($biggest_problems != "") { ?>
-                        <h3 class="mb-4">Grösste Probleme</h3>
+                        <h4 class="mb-4">Grösste Probleme</h4>
                         <ul>
                             <?php for ($i = 0; $i < count($biggest_problem) - 1; ++$i) { ?>
                                 <li><?php echo $biggest_problem[$i] ?></li>
@@ -59,7 +59,7 @@ $next_lesson_id = $lesson['id'] + 1;
                     <?php } ?>
 
                 <?php } else { ?>
-                    <h3 class="mb-4">Das Wichtigste in Kürze</h3>
+                    <h4 class="mb-4">Das Wichtigste in Kürze</h4>
                     <ul>
                         <?php for ($i = 0; $i < count($important) - 1; ++$i) { ?>
                             <li><?php echo $important[$i] ?></li>

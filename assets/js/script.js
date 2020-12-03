@@ -16,7 +16,7 @@ function activeClass(url) {
 }
 
 /* Support TouchScreen Swipe in Carousel */
-$( document ).ready(function() {
+/* $( document ).ready(function() {
 
     // Carousel
 
@@ -43,4 +43,4 @@ $( document ).ready(function() {
         return false;
     });  
 
-});
+}); */

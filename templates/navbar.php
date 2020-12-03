@@ -1,16 +1,14 @@
-<nav class="navbar navbar-icon-top navbar-expand navbar-light bg-light  <?php echo isset($category['title']) ? strtolower($category['title']) : ''; ?>">
+<!-- site-navbar start -->
+<div class="navbar-area <?php echo isset($category['title']) ? strtolower($category['title']) : ''; ?>">
     <div class="container">
+        <nav class="site-navbar">
+            <!-- site logo -->
+            <a href="index" class="site-logo"><img src="assets/logo/logo_christmas.png" alt="ökoLOGISCH" loading="lazy"></a>
 
-
-        <a class="navbar-brand" href=".">
-            <img src="assets/logo/logo_christmas.png" alt="ökoLOGISCH" loading="lazy">
-        </a>
-
-
-        <div class="navbar-expand">
-            <ul class="navbar-nav ">
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-home" href=".">
+            <!-- site menu/nav -->
+            <ul>
+                <li id="nav-home">
+                    <a href="." >
                         <span class="material-icons">
                             home
                         </span>
@@ -19,8 +17,8 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-lessons" href="./lessons">
+                <li id="nav-lessons">
+                    <a href="./lessons">
                         <span class="material-icons">
                             live_tv
                         </span>
@@ -29,8 +27,8 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-about" href="./about">
+                <li id="nav-abobut">
+                    <a href="./about">
                         <span class="material-icons">
                             public
                         </span>
@@ -40,7 +38,11 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
 
-</nav>
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+                <span></span>
+            </button>
+        </nav>
+    </div>
+</div><!-- navbar-area end -->

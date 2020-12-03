@@ -1,92 +1,286 @@
-.navbar {
-    
-    
+.navbar-area {
+    background-color: white;
     border-bottom: $fern-green 5px solid;
 
     &.energie {
         border-bottom-color: $orange-yellow-crayola;
+
+        .site-navbar ul {
+            li {
+                &:hover {
+                    background: $orange-yellow-crayola_opa;
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                &.active {
+                    background: $orange-yellow-crayola;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 
     &.food-waste {
         border-bottom-color: $congo-pink;
+
+        .site-navbar ul {
+            li {
+                &:hover {
+                    background: $congo-pink_opa;
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                &.active {
+                    background: $congo-pink;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 
     &.nachhaltigkeit {
         border-bottom-color: $beau-blue;
+
+        .site-navbar ul {
+            li {
+                &:hover {
+                    background: $beau-blue_opa;
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                &.active {
+                    background: $beau-blue;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 
     &.klimawandel {
         border-bottom-color: $green-sheen;
+
+        .site-navbar ul {
+            li {
+                &:hover {
+                    background: $green-sheen_opa;
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                &.active {
+                    background: $green-sheen;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 
     &.recycling {
         border-bottom-color: $english-vermillion;
+
+        .site-navbar ul {
+            li {
+                &:hover {
+                    background: $english-vermillion_opa;
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                &.active {
+                    background: $english-vermillion;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 
-    .navbar-brand img {
-        width: 250px;
-    }
+    .site-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    li a {
-        padding: 0px;
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-tap-highlight-color: black;
-        transition: background 0.1s linear,
-            color 0.1s linear;
-        padding: 50px;
+        a.site-logo {
+            font-size: 26px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: black;
+            text-decoration: none;
 
-        &:hover {
-            background: $fern-green_opa;
+            img {
+                width: 250px;
+            }
+        }
 
-            span {
-                color: white;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+
+            li {
+                &:hover {
+                    background: $fern-green_opa;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                &.active {
+                    background: $fern-green;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                a {
+                    color: black;
+                    font-weight: bolder;
+                    padding: 20px;
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    .material-icons {
+                        display: inline-block;
+                        vertical-align: sub;
+                    }
+
+                }
             }
         }
     }
 }
 
-.navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
-    text-align: center;
-    vertical-align: middle;
-}
-
-
-
-.navbar li .active {
-    background: $fern-green;
+.nav-toggler {
+    border: 3px solid $fern-green;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
 
     span {
-        color: white;
-    }
-}
-
-.navbar li .active:hover {
-    background: $fern-green;
-
-    span {
-        color: white;
-    }
-}
-
-.navbar-light .navbar-nav .nav-link {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: $fern-green;
-
-    span {
-        padding-top: 5px;
+        width: 28px;
+        height: 3px;
+        background-color: $fern-green;
         display: block;
+        transition: .3s;
+
+        &:before,
+        &:after {
+            width: 28px;
+            height: 3px;
+            background-color: $beau-blue;
+            display: block;
+            transition: .3s;
+        }
+
+        &:before {
+            content: '';
+            transform: translateY(-9px);
+        }
+
+        &:after {
+            content: '';
+            transform: translateY(6px);
+        }
+    }
+
+    &.toggler-open span {
+        background-color: transparent;
+
+        &:before {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &:after {
+            transform: translateY(-3px) rotate(-45deg);
+        }
     }
 }
 
-.nav-item {
-    margin: 0 8px;
-}
+@media screen and (max-width: 767px) {
+    .navbar-area {
+        .container {
+            max-width: 720px;
+        }
 
+
+        .nav-toggler {
+            display: block;
+        }
+
+        .site-navbar {
+            min-height: 60px;
+
+            ul {
+                position: absolute;
+                width: 100%;
+                height: calc(100vh - 60px);
+                left: 0;
+                top: 60px;
+                flex-direction: column;
+                align-items: center;
+                border-top: 1px solid #444;
+                background-color: rgba(0, 0, 0, 0.9);
+                max-height: 0;
+                overflow: hidden;
+                transition: .3s;
+                z-index: 16;
+
+                li {
+                    width: 100%;
+                    text-align: center;
+
+                    &.active {
+                        background: none !important;
+                    }
+
+                    a {
+                        color: white;
+                        padding: 25px;
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.1);
+                        }
+                    }
+                }
+
+                &.open {
+                    max-height: 100vh;
+                    overflow: visible;
+                }
+            }
+        }
+    }
+}

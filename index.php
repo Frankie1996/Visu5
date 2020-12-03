@@ -19,8 +19,8 @@ $topLessons = get_top_lessons();
 
 <section class="container-fluid my-5">
     <div class="container">
-        <h2 class="mb-2">Was wird dich erwarten?</h2>
-        <p>
+        <h3 class="mb-2">Was wird dich erwarten?</h3>
+        <p class="mb-4">
         <b>ökoLOGISCH!</b> ist eine E-Learning-Plattform für Schülerinnen und Schüler der vierten bis zur sechsten Klasse.
         Die Plattform zeigt die immense Bedeutung des Umweltschutzes auf.<br><br>
         Grundsätzlich wird auf dieser Plattform auf das <i>SDG-12</i>, also das <b>Nachhaltigkeitsziel 12 des 
@@ -37,8 +37,8 @@ $topLessons = get_top_lessons();
             <li><a href="./category?id=4">Foodwaste</a></li>
             <li><a href="./category?id=5">Recycling</a></li>
         </ul>
-        Starte noch jetzt und erfahre um was es beim SDG 12 geht.<br><br>
-        <a class="btn btn-outline-primary" href="./lessons" role="button"><h3 id="start-btn">Jetzt starten</h3></a>
+        Starte noch jetzt und erfahre um was es beim SDG 12 geht.
+        <a class="btn btn-outline-primary" href="./lessons" role="button"><h4 id="start-btn">Jetzt starten</h4></a>
         </p>
     </div>
 </section>

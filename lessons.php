@@ -23,7 +23,12 @@ $allCategories = get_all_categories();
 
 <section class="container lessons my-5">
     <h2 class="pb-4">Lektionen</h2>
-    <p>Hier findest du all unsere Lektionen.</p>
+    <p>
+        Hier findest du all unsere Lektionen. <br>
+        Die Lektionen wurden in verschiedene Themenbereiche aufgeteilt. <br><br>
+        Sobald du mit einem Thema fertig bist, erwarted dich ein spannendes Minispiel. <br><br>
+        Viel Spass!
+    </p>
 </section>
 
 <!-- Energie Lektionen -->

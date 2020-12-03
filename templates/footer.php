@@ -14,7 +14,7 @@
           <p class="text-left">© <?php echo date("Y"); ?> - <a href="./">ökoLOGISCH</a></p>
         </div>
         <div class="col">
-          <p class="text-right"><a href="./imprint.php">Impressum</a> | <a href="./data-protection.php">Datenschutz</a></p>
+          <p class="text-right"><a href="./imprint">Impressum</a> | <a href="./data-protection">Datenschutz</a></p>
         </div>
       </div>
     </div>

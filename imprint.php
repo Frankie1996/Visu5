@@ -1,7 +1,6 @@
 <!-- Controller -->
 <?php
 require_once('data/data.php');
-$about = get_about();
 ?>
 
 <!-- Head -->

@@ -33,5 +33,3 @@ $about = get_about();
 
 <!-- Footer -->
 <?php require_once('templates/footer.php'); ?>
-
-<h2 class="pb-4">Datenschutz</h2>

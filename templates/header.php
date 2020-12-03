@@ -35,13 +35,6 @@
 
 <div id="mobile-header">
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselIndicators" data-slide-to="4"></li>
-        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="assets/img/headerAccordion/sustainability.jpg" alt="Sketch Nachhaltigkeit">

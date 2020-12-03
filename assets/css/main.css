@@ -11484,17 +11484,11 @@ footer .footer-copyright a:hover {
     width: 3rem;
     height: 2rem;
   }
-  .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: rgba(90, 128, 79, 0.8);
-  }
-  ol.carousel-indicators li.active {
-    background-color: #5a804fff;
-  }
   .carousel-caption {
-    -webkit-text-stroke: 1px black;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .carousel-caption h5 {
+    color: white;
   }
   .carousel-indicators {
     background-color: rgba(255, 255, 255, 0.3);

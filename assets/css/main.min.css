@@ -11212,11 +11212,7 @@ body {
   cursor: url("../img/cursor/cursor.png"), auto !important;
 }
 
-a {
-  cursor: url("../img/cursor/cursor-link.png"), auto !important;
-}
-
-button {
+a, button, .btn {
   cursor: url("../img/cursor/cursor-link.png"), auto !important;
 }
 
@@ -12124,8 +12120,13 @@ section.about .btn.btn-outline-light.active a {
   color: black;
 }
 
+section.about .btn.btn-outline-light {
+  padding: unset;
+}
+
 section.about .btn.btn-outline-light a {
   color: white;
+  padding: 0.375rem 0.75rem;
 }
 
 section.about .btn.btn-outline-light:hover a {

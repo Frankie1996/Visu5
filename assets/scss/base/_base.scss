@@ -13,11 +13,7 @@ body{
     cursor: url("../img/cursor/cursor.png"), auto !important;
 }
 
-a {
-    cursor: url("../img/cursor/cursor-link.png"), auto !important;
-}
-
-button {
+a, button, .btn {
     cursor: url("../img/cursor/cursor-link.png"), auto !important;
 }
 

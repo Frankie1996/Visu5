@@ -26,7 +26,7 @@ $about = get_about();
         <div class="col-12">
             <h4>Datensammlung</h4>
             <p>
-               Auf dieser Website werden keinerlei persönlicher Daten gesammelt.
+               Auf dieser Website werden keinerlei persönliche Daten gesammelt.
             </p>
         </div>
 </section>

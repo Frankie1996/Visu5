@@ -12,3 +12,18 @@
 body{
     cursor:url(../img/cursor/cursor.cur), auto;
 }
+
+.btn-outline-primary {
+    border-color: $fern-green;
+    transition: all .3s ease;
+    background-color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: $fern-green;
+    border-color: $fern-green;
+}
+
+.btn-outline-primary:hover #start-btn{
+    color: white;
+}

@@ -17,6 +17,32 @@ $topLessons = get_top_lessons();
     <?php require_once('templates/header.php'); ?>
 </header>
 
+<section class="container-fluid my-5">
+    <div class="container">
+        <h2 class="mb-2">Was wird dich erwarten?</h2>
+        <p>
+        <b>ökoLOGISCH!</b> ist eine E-Learning-Plattform für Schülerinnen und Schüler der vierten bis zur sechsten Klasse.
+        Die Plattform zeigt die immense Bedeutung des Umweltschutzes auf.<br><br>
+        Grundsätzlich wird auf dieser Plattform auf das <i>SDG-12</i>, also das <b>Nachhaltigkeitsziel 12 des 
+        pariser Übereinkommens</b>, eingegangen. Anhand von verschiedener Lektionen, wird den Schülern dieses Thema näher gebracht.<br><br>
+        
+        Im Nachhaltigkeitsziel Nummer 12, geht es um das Thema <b>"Für nachhaltige Konsum- und Produktionsmuster sorgen"</b>. Wir haben dieses grosse Thema
+        in verschiedene Themenbereiche unterteilt und diese wiederum in verschiedene Minilektionen. <br><br>
+
+        Die Lektionen werden in folgende Themenbereiche unterteilt:
+        <ul>
+            <li><a href="./category?id=1">Energie</a></li>
+            <li><a href="./category?id=2">Nachhaltigkeit</a></li>
+            <li><a href="./category?id=3">Klimawandel</a></li>
+            <li><a href="./category?id=4">Foodwaste</a></li>
+            <li><a href="./category?id=5">Recycling</a></li>
+        </ul>
+        Starte noch jetzt und erfahre um was es beim SDG 12 geht.<br><br>
+        <a class="btn btn-outline-primary" href="./lessons" role="button"><h3 id="start-btn">Jetzt starten</h3></a>
+        </p>
+    </div>
+</section>
+
 <section class="container-fluid featured">
     <div class="container">
         <h2 class="mb-2">Aktuelle Themen</h2>

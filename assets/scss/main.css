@@ -11622,15 +11622,6 @@ div.signpost .signtext {
   font-size: 22px;
 }
 
-.video-wrapper {
-  overflow: hidden;
-}
-
-.video-wrapper #video {
-  position: relative;
-  /* could be absolute if needed */
-}
-
 section a:hover {
   text-decoration: none;
   color: black;

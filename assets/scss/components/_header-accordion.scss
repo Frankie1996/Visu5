@@ -133,36 +133,38 @@
     }
 }
 
+.carousel .carousel-control-prev-icon {
+    /* change fill="currentColor" to %23fff to make it white  */
+      background-image: url('../img/buttons/prev-icon.png');
+    }
+    
+    .carousel .carousel-control-next-icon {
+      /* change fill="currentColor" to %23fff to make it white  */
+        background-image: url('../img/buttons/next-icon.png');
+    }
+    
+    
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        /* Use to adjust size of icons */
+        width: 3rem;
+        height: 2rem;
+    }
+      .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.3);
+            h5{
+                color: white;
+            }
+        }
+      .carousel-indicators {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    
 /* Mobile */
 @media (max-width: 991.98px) {
     #mobile-header {
         display: inline;
     }
-    .carousel .carousel-control-prev-icon {
-        /* change fill="currentColor" to %23fff to make it white  */
-          background-image: url('../img/buttons/prev-icon.png');
-        }
-        
-        .carousel .carousel-control-next-icon {
-          /* change fill="currentColor" to %23fff to make it white  */
-            background-image: url('../img/buttons/next-icon.png');
-        }
-        
-        
-        .carousel-control-next-icon, .carousel-control-prev-icon {
-            /* Use to adjust size of icons */
-            width: 3rem;
-            height: 2rem;
-        }
-          .carousel-caption {
-                background-color: rgba(0, 0, 0, 0.3);
-                h5{
-                    color: white;
-                }
-            }
-          .carousel-indicators {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
+    
     #desktop-header {
         display: none;
     }

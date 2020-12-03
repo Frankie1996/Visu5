@@ -11232,6 +11232,12 @@ a, button, .btn {
   color: white;
 }
 
+.btn:focus, .btn:active {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .navbar-area {
   background-color: white;
   border-bottom: #5a804fff 5px solid;

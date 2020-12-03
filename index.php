@@ -38,7 +38,7 @@ $topLessons = get_top_lessons();
             <li><a href="./category?id=5">Recycling</a></li>
         </ul>
         Starte noch jetzt und erfahre um was es beim SDG 12 geht.<br><br>
-        <a class="btn btn-outline-primary" href="./lessons" role="button"><h4 id="start-btn">Jetzt starten</h4></a>
+        <a class="btn btn-outline-primary shadow-none" href="./lessons" role="button"><h4 id="start-btn">Jetzt starten</h4></a>
         </p>
     </div>
 </section>

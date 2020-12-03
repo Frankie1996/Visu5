@@ -11,7 +11,7 @@
   <meta name="author" content="Sandro Anderes, Frank Zinsli">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">

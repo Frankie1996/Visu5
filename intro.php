@@ -28,7 +28,9 @@ $next_lesson_id = $lesson['id'] + 1;
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row justify-content-center pb-4">
         <section class="col-12">
-            <video src="<?php echo $video; ?>" controls width=100%></video>
+            <div class="video-wrapper">
+                <video id="video" src="<?php echo $video; ?>" controls width=100%></video>
+            </div>
         </section>
     </div>
     <div class="row">

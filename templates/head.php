@@ -33,4 +33,4 @@
   <meta name="theme-color" content="#81b29aff">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">

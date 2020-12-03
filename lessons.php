@@ -23,6 +23,7 @@ $allCategories = get_all_categories();
 
 <section class="container lessons my-5">
     <h2 class="pb-4">Lektionen</h2>
+    <p>Hier findest du all unsere Lektionen.</p>
 </section>
 
 <!-- Energie Lektionen -->

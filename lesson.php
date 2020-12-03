@@ -27,7 +27,7 @@ $images = $lesson['img_url'];
 $img = explode(", ", $images);
 
 $importance = $lesson['important'];
-$important = explode(", ", $importance);
+$important = explode("; ", $importance);
 
 $learning_goals = $lesson['lernziele'];
 $learning_goal = explode(", ", $learning_goals);

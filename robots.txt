@@ -1,0 +1,12 @@
+# robots.txt zu ökoLOGISCH Plattform https://746784-8.web1.fh-htwchur.ch/
+
+User-agent: *
+Disallow: /assets/
+Disallow: /data/
+Disallow: /data-protection.php
+Disallow: /imprint.php
+Disallow: /.htaccess
+Disallow: /browserconfig.xml
+Disallow: /manifest.json
+
+Sitemap: https://746784-8.web1.fh-htwchur.ch/sitemap.xml

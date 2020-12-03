@@ -122,7 +122,7 @@ function get_last_lesson_id()
 function get_glossar()
 {
 	$db = get_db_connection();
-	$sql = "SELECT * FROM tbl_glossar;";
+	$sql = "SELECT * FROM tbl_glossar ORDER BY name ASC;";
 	$result = $db->query($sql);
 	return $result->fetchAll();
 }

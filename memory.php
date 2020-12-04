@@ -96,10 +96,10 @@ $topLessons = get_top_lessons();
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-3">
+            <div class="col-md-5 col-10 mb-2">
                 <a href="category?id=1"><img src="assets/img/buttons/uebersicht.svg" alt="Uebersicht"></a>
             </div>
-            <div class="col-3">
+            <div class="col-md-5 col-10 mb-2">
                 <a href="category?id=2"><img src="assets/img/buttons/next.svg" alt="Nächstes Modul"></a>
             </div>
         </div>

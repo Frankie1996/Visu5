@@ -25,8 +25,8 @@ $allCategories = get_all_categories();
     <h2 class="pb-4">Lektionen</h2>
     <p>
         Hier findest du all unsere Lektionen. <br>
-        Die Lektionen wurden in verschiedene Themenbereiche aufgeteilt. <br><br>
-        Sobald du mit einem Thema fertig bist, erwartet dich ein spannendes Minispiel. <br><br>
+        Die Lektionen wurden in verschiedene spannende Themenbereiche aufgeteilt. <br><br>
+        Arbeite diese Lektionen durch und teste anschliessend dein Wissen mit unseren Minispielen.<br><br>
         Viel Spass!
     </p>
 </section>

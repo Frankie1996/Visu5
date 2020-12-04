@@ -45,6 +45,22 @@ require_once('data/data.php');
                 Nutzungsausfall oder anderen Gründen aller Art ergeben könnte.
             </p>
         </div>
+        <div class="col-12">
+            <h4>Quellenangaben zu den Texten</h4>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            
+        </div>
 
     </div>
 </section>

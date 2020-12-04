@@ -43,6 +43,10 @@ section.memory {
         width: 125px;
     }
 
+    .deck .card {
+        cursor: url("../img/cursor/cursor-link.png"), auto !important;
+    }
+
     .deck .card.open {
         background: #02b3e4;
         cursor: default;

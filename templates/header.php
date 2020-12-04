@@ -9,7 +9,7 @@
         <li>
             <div> <a href="./category?id=3">
                     <h1>Klimawandel</h1>
-                    <p>Was passiert beim Klimawandel, was sind Ursachen und was kann ich bewirken?</p>
+                    <p>Was passiert beim Klimawandel, was sind die Ursachen davon und was kann ich bewirken?</p>
                 </a> </div>
         </li>
         <li>

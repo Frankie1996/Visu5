@@ -23,13 +23,13 @@ $topLessons = get_top_lessons();
         <p>
         <b>ökoLOGISCH!</b> ist eine E-Learning-Plattform für Schülerinnen und Schüler der vierten bis zur sechsten Klasse.
         Die Plattform zeigt die immense Bedeutung des Umweltschutzes auf.<br><br>
-        Grundsätzlich wird auf dieser Plattform auf das <i>SDG-12</i>, also das <b>Nachhaltigkeitsziel 12 des 
-        pariser Übereinkommens</b>, eingegangen. Anhand von verschiedener Lektionen, wird den Schülern dieses Thema näher gebracht.<br><br>
+        Grundsätzlich wird auf dieser Plattform auf das <b><u><a href="./glossar?name=SDG-12" >SDG-12</a></u></b>, also das Nachhaltigkeitsziel 12 des 
+        Übereinkommens von Paris, eingegangen. Anhand von verschiedenen Lektionen, wird den Schülern dieses Thema nähergebracht.<br><br>
         
-        Im Nachhaltigkeitsziel Nummer 12, geht es um das Thema <b>"Für nachhaltige Konsum- und Produktionsmuster sorgen"</b>. Wir haben dieses grosse Thema
-        in verschiedene Themenbereiche unterteilt und diese wiederum in verschiedene Minilektionen. <br><br>
+        Im Nachhaltigkeitsziel Nummer 12, geht es um das Thema <b>"Für nachhaltige Konsum- und Produktionsmuster sorgen"</b>. grosse Thema in Themenbereiche 
+        unterteilt und diese wiederum in verschiedene Lektionen.<br><br>
 
-        Die Lektionen werden in folgende Themenbereiche unterteilt:
+        Das Thema wurde in folgende Bereiche unterteilt:
         <ul>
             <li><a href="./category?id=1">Energie</a></li>
             <li><a href="./category?id=2">Nachhaltigkeit</a></li>
@@ -37,7 +37,7 @@ $topLessons = get_top_lessons();
             <li><a href="./category?id=4">Foodwaste</a></li>
             <li><a href="./category?id=5">Recycling</a></li>
         </ul>
-        Starte noch jetzt und erfahre um was es beim SDG 12 geht.<br><br>
+        Starte noch jetzt und erfahre, um was es beim SDG 12 geht.<br><br>
         <a class="btn btn-outline-primary shadow-none" href="./lessons" role="button"><h4 id="start-btn">Jetzt starten</h4></a>
         </p>
     </div>

@@ -1,0 +1,57 @@
+section.quiz {
+  background: $beau-blue_opa;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vw;
+
+  h2,
+  h4 {
+    color: $beau-blue;
+  }
+
+  .container {
+    .choices {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 3rem auto 1rem;
+      width: 500px;
+
+      button {
+        flex: 1 0 45%;
+        width: 200px;
+        height: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        margin: .4rem;
+        outline: none;
+        background: #dfe4ea;
+        user-select: none;
+        font-weight: 600;
+
+        &:hover {
+          background: $beau-blue;
+          transition: .5s;
+        }
+
+        &:active {
+          transform: scale(.9);
+          transition: transform .1s;
+        }
+
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+        }
+      }
+    }
+
+
+    #progress {
+      font-size: 1.3rem;
+      color: $beau-blue;
+    }
+  }
+}

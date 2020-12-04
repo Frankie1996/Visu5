@@ -12,9 +12,9 @@ $topLessons = get_top_lessons();
 <!-- Navigation -->
 <?php require_once('templates/navbar.php'); ?>
 
-<section class="memory">
+<section class="memory container-fluid">
     <div class="container py-5">
-        <h3 class="pb-4 text-center">Energie Memory</h3>
+        <h2 class="pb-4 text-center">Energie Memory</h2>
 
         <div class="row mb-4">
             <div class="col">

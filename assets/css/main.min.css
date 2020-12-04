@@ -12207,6 +12207,7 @@ section.memory .deck {
   padding: 32px;
   width: 660px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 section.memory .deck .card {
@@ -12246,6 +12247,11 @@ section.memory .deck .card.show {
 }
 
 section.memory .deck .card.show i {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 33px;
 }
 
@@ -12475,6 +12481,26 @@ section.memory .toBeReflipped {
 section.memory .match {
   -webkit-animation: matching-cards-color 1.2s;
           animation: matching-cards-color 1.2s;
+}
+
+/* Mobile Style */
+@media (max-width: 767.98px) {
+  section.memory .score-panel {
+    max-width: 100%;
+  }
+  section.memory .deck {
+    max-width: 100%;
+  }
+  section.memory .deck .card {
+    width: 22%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section.memory .deck .card {
+    width: 48% !important;
+    margin-bottom: 3vw;
+  }
 }
 
 .table-striped tbody tr:nth-of-type(2n+1) {

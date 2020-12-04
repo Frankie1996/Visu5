@@ -43,7 +43,7 @@ $topLessons = get_top_lessons();
                 </section>
 
                 <ul id="deck" class="deck">
-                    <li class="card sun">
+                    <li class="card sun" id="card-js">
                         <i class="fa fa-sun-o"></i>
                     </li>
                     <li class="card water">

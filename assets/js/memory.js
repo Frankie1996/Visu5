@@ -251,3 +251,12 @@ PREVIOUS_SCORE_CNT.style.display = 'block';
 DECK.addEventListener('click', flipCard);
 RESTART_BUTTON.addEventListener('click', restartGame);
 RESTART_BUTTON.addEventListener('mouseover', removeDeckShuffleClass);
+
+
+//Make responsive
+var card_width = document.getElementById('card-js').getBoundingClientRect().width;
+var all_cards = document.getElementsByClassName("card");
+
+for (var card of all_cards) {
+  card.style.height = card_width+"px";
+}

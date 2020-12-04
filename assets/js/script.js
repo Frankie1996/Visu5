@@ -49,10 +49,14 @@ $(document).ready(function () {
 
 /* Search Funktion Glossar */
 $(document).ready(function () {
-    $("#searchInput").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
-        $("#glossar_table tr").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
+    $("#searchInput").keyup(searchValue);
 });
+
+function searchValue(){
+    var value = $("#searchInput").val().toLowerCase();
+    $("#glossar_table tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+}
+
+searchValue();

@@ -13,7 +13,13 @@ $definitions = get_glossar();
     <h2 class="pb-4">Glossar</h2>
     <div class="row">
         <div class="col-12">
-            <input class="form-control shadow-none" id="searchInput" type="text" placeholder="Suchen...">
+            <input class="form-control shadow-none" id="searchInput" type="text" 
+            <?php 
+            if (isset($_GET["name"])) {
+                echo 'value='.$_GET["name"];
+                } else{
+                    echo 'placeholder="Suchen..."';
+                }?>>
             <br>
             <table class="table table-bordered table-striped">
                 <thead>

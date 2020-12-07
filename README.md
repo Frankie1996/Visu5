@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/
            /repo_name">
-    <img src="assets/img/headerAccordion/sustainability.jpg" alt="Logo" width="80" height="80">
+    <img src="assets/logo/logo.png" alt="Logo" width="1000" height="150">
   </a>
 
   <h3 align="center">ökoLOGISCH</h3>

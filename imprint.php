@@ -11,7 +11,7 @@ require_once('data/data.php');
 <section class="container imprint my-5">
     <h2 class="pb-4">Impressum</h2>
     <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12">
             <h4>Verantwortlich für den Inhalt der Seiten</h4>
             <b>Visualisieren - Team L</b>
             <ul>
@@ -22,7 +22,7 @@ require_once('data/data.php');
                 <li>Sandro Anderes - <a href="mailto:sandro.anderes@stud.fhgr.ch">sandro.anderes@stud.fhgr.ch</a></li>
             </ul>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12">
             <h4>Copyright</h4>
             <p>
                 Das Copyright für sämtliche Inhalte dieser Website liegt bei den unter "Verantwortlich für den Inhalt der Seite" genannten Personen, mit
@@ -46,7 +46,7 @@ require_once('data/data.php');
         </div>
         <div class="col-12">
             <h4>Quellenangaben zu den Texten</h4>
-            <ol class="row">
+            <ul class="row">
                 <div class="col-lg-6 col-md-12">
                     <li><a href="https://www.demokratiewebstatt.at/thema/abfall-und-muell/was-ist-recycling" target="_blank">Was ist Recycling?</a></li>
                     <li><a href="https://www.medienwerkstatt-online.de/lws_wissen/vorlagen/showcard.php?id=717&edit=0" target="_blank">Recycling hilft der Umwelt</a></li>
@@ -79,7 +79,7 @@ require_once('data/data.php');
                     <li><a href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/fachinformationen/waldbewirtschaftung/nachhaltige-waldbewirtschaftung.html" target="_blank">Nachhaltige Waldbewirtschaftung</a></li>
                     <li><a href="https://www.bmu.de/themen/wirtschaft-produkte-ressourcen-tourismus/ressourceneffizienz/ressourceneffizienz-worum-geht-es/" target="_blank">Ressourceneffizienz – Worum geht es? </a></li>
                 </div>
-            </ol>
+            </ul>
         </div>
     </div>
 </section>

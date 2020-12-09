@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>ökoLOGISCH</title>
-  <meta name="description" content="Description">
+  <meta name="description" content='The platform "ökoLOGISCH!" shows students the importance of environmental protection. With different lessons they learn how to deal with it in everyday life.'>
   <meta name="keywords" content="SDG, SDG12, Sustainability">
   <meta name="author" content="Sandro Anderes, Frank Zinsli">
 

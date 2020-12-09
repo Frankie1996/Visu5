@@ -44,7 +44,7 @@ $biggest_problem = explode(", ", $biggest_problems);
 <section class="container lesson <?php echo strtolower($category['title']); ?> my-5">
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row">
-        <article class="col-lg-6 col-sm-12 order-lg-first">
+        <div class="col-lg-6 col-sm-12 order-lg-first">
             <div class="text pb-3">
                 <p><?php echo $lesson['text']; ?></p>
             </div>
@@ -75,8 +75,8 @@ $biggest_problem = explode(", ", $biggest_problems);
                     </ul>
                 <?php } ?>
             </div>
-        </article>
-        <article class="col-lg-6 col-sm-12 order-md-first">
+        </div>
+        <div class="col-lg-6 col-sm-12 order-md-first">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -179,7 +179,7 @@ $biggest_problem = explode(", ", $biggest_problems);
                     <rect id="Rectangle_15_1_" x="254.36" y="14.24" class="post" width="21.08" height="12.19" />
                 </svg>
             </div>
-        </article>
+        </div>
     </div>
 </section>
 

@@ -24,22 +24,22 @@ $next_lesson_id = $lesson['id'] + 1;
 <!-- Navigation -->
 <?php require_once('templates/navbar.php'); ?>
 
-<section class="container lesson <?php echo strtolower($category['title']); ?> my-5">
+<div class="container lesson <?php echo strtolower($category['title']); ?> my-5">
     <h2 class="pb-4"><?php echo $lesson['title']; ?></h2>
     <div class="row justify-content-center pb-4">
-        <section class="col-12">
+        <div class="col-12">
             <div class="video-wrapper">
-                <video id="video" src="<?php echo $video; ?>" controls width=100%></video>
+                <video id="video" src="<?php echo $video; ?>" controls></video>
             </div>
-        </section>
+        </div>
     </div>
     <div class="row">
-        <article class="col-lg-6 col-sm-12 order-lg-first">
+        <div class="col-lg-6 col-sm-12 order-lg-first">
             <div class="text pb-3">
                 <p><?php echo $lesson['text']; ?></p>
             </div>
-        </article>
-        <article class="col-lg-6 col-sm-12 order-sm-first">
+        </div>
+        <div class="col-lg-6 col-sm-12 order-sm-first">
             <div class="info mb-4">
                 <?php
                 if ($lesson['einfuerung'] == true) { ?>
@@ -75,9 +75,9 @@ $next_lesson_id = $lesson['id'] + 1;
                     <a href="<?php echo "lesson?id=$next_lesson_id"; ?>"><img src="assets/img/buttons/starten.svg" alt="Modul starten"></a>
                 </div>
             </div>
-        </article>
+        </div>
     </div>
-</section>
+</div>
 
 
 <!-- Footer -->

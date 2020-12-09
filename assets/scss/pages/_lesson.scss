@@ -1,4 +1,4 @@
-section.lesson {
+div.lesson {
     .info {
         border: 3px solid $fern-green;
         border-radius: calc(0.25rem - 1px);
@@ -13,6 +13,10 @@ section.lesson {
         width: 100%;
         height: 350px;
         margin-bottom: 1rem;
+    }
+
+    video{
+        width: 100%;
     }
 
     &.energie {

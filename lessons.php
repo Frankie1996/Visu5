@@ -31,237 +31,278 @@ $allCategories = get_all_categories();
     </p>
 </section>
 
-<!-- Energie Lektionen -->
-<section class="energy-section container-fluid">
-    <article class="container">
-        <a href="category?id=1">
-            <h4 class="pb-4 energie">Thema Energie</h4>
-        </a>
+<div class="lessons">
+    <!-- Energie Lektionen -->
+    <div class="energy-section container-fluid">
+        <article class="container">
+            <a href="category?id=1">
+                <h4 class="pb-4 energie">Thema Energie</h4>
+            </a>
 
-        <div class="row">
-            <?php
-            foreach ($energy_lessons as $lesson) {
-                $category =  get_category_by_id($lesson['category_id']);
-            ?>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <?php
-                    if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
-                    } else {
-                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
-                    }
-                    ?>
-                    <div class="card <?php echo strtolower($category['title']); ?>">
-                        <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
-                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                            <p class="card-text small text-center">
-                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
-                                        <?php echo "#" . $category['title']; ?>
-                                    </a></b>
-                                •
+            <div class="row">
+                <?php
+                foreach ($energy_lessons as $lesson) {
+                    $category =  get_category_by_id($lesson['category_id']);
+                ?>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card <?php echo strtolower($category['title']); ?>">
+                            <?php
+                            if ($lesson['einfuerung'] == 1) {
+                                echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
+                            } else {
+                                echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
+                            }
+                            ?>
+                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static" alt="<?php echo strtolower($category['title']); ?>">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif" alt="<?php echo strtolower($category['title']); ?>">
+                            </a>
+                            <div class="card-body">
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
-                                    echo "Einführung ";
+                                    echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                                 } else {
-                                    echo "Lektion ";
-                                    echo $lesson['lesson_nr'];
+                                    echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                                 }
-                                ?></p>
+                                ?>
+                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                                </a>
+                                <p class="card-text small text-center">
+                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
+                                            <?php echo "#" . $category['title']; ?>
+                                        </a></b>
+                                    •
+                                    <?php
+                                    if ($lesson['einfuerung'] == 1) {
+                                        echo "Einführung ";
+                                    } else {
+                                        echo "Lektion ";
+                                        echo $lesson['lesson_nr'];
+                                    }
+                                    ?></p>
+                            </div>
                         </div>
                     </div>
-                    </a>
-                </div>
-            <?php } ?>
-        </div>
-    </article>
-</section>
+                <?php } ?>
+            </div>
+        </article>
+    </div>
 
-<!-- Lektionen Nachhaltigkeit -->
-<section class="sustainability-section container-fluid">
-    <article class="container">
-        <a href="category?id=2">
-            <h4 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h4>
-        </a>
-        <div class="row">
-            <?php
-            foreach ($sustainability_lessons as $lesson) {
-                $category =  get_category_by_id($lesson['category_id']);
-            ?>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <?php
-                    if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
-                    } else {
-                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
-                    }
-                    ?>
-                    <div class="card <?php echo strtolower($category['title']); ?>">
-                        <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
-                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                            <p class="card-text small text-center">
-                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
-                                        <?php echo "#" . $category['title']; ?>
-                                    </a></b>
-                                •
+    <!-- Lektionen Nachhaltigkeit -->
+    <div class="sustainability-section container-fluid">
+        <article class="container">
+            <a href="category?id=2">
+                <h4 class="pb-4 nachhaltigkeit">Thema Nachhaltigkeit</h4>
+            </a>
+            <div class="row">
+                <?php
+                foreach ($sustainability_lessons as $lesson) {
+                    $category =  get_category_by_id($lesson['category_id']);
+                ?>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card <?php echo strtolower($category['title']); ?>">
+                            <?php
+                            if ($lesson['einfuerung'] == 1) {
+                                echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
+                            } else {
+                                echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
+                            }
+                            ?>
+                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static" alt="<?php echo strtolower($category['title']); ?>">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif" alt="<?php echo strtolower($category['title']); ?>">
+                            </a>
+                            <div class="card-body">
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
-                                    echo "Einführung ";
+                                    echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                                 } else {
-                                    echo "Lektion ";
-                                    echo $lesson['lesson_nr'];
+                                    echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                                 }
-                                ?></p>
+                                ?>
+                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                                </a>
+                                <p class="card-text small text-center">
+                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
+                                            <?php echo "#" . $category['title']; ?>
+                                        </a></b>
+                                    •
+                                    <?php
+                                    if ($lesson['einfuerung'] == 1) {
+                                        echo "Einführung ";
+                                    } else {
+                                        echo "Lektion ";
+                                        echo $lesson['lesson_nr'];
+                                    }
+                                    ?></p>
+                            </div>
                         </div>
                     </div>
-                    </a>
-                </div>
-            <?php } ?>
-        </div>
-    </article>
-</section>
+                <?php } ?>
+            </div>
+        </article>
+    </div>
 
-<!-- Lektionen Klimawandel -->
-<section class="climate-section container-fluid">
-    <article class="container">
-        <a href="category?id=3">
-            <h4 class="pb-4 klimawandel">Thema Klimawandel</h4>
-        </a>
-        <div class="row">
-            <?php
-            foreach ($climate_lessons as $lesson) {
-                $category =  get_category_by_id($lesson['category_id']);
-            ?>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <?php
-                    if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
-                    } else {
-                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
-                    }
-                    ?>
-                    <div class="card <?php echo strtolower($category['title']); ?>">
-                        <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
-                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                            <p class="card-text small text-center">
-                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
-                                        <?php echo "#" . $category['title']; ?>
-                                    </a></b>
-                                •
+    <!-- Lektionen Klimawandel -->
+    <div class="climate-section container-fluid">
+        <article class="container">
+            <a href="category?id=3">
+                <h4 class="pb-4 klimawandel">Thema Klimawandel</h4>
+            </a>
+            <div class="row">
+                <?php
+                foreach ($climate_lessons as $lesson) {
+                    $category =  get_category_by_id($lesson['category_id']);
+                ?>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card <?php echo strtolower($category['title']); ?>">
+                            <?php
+                            if ($lesson['einfuerung'] == 1) {
+                                echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
+                            } else {
+                                echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
+                            }
+                            ?>
+                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static" alt="<?php echo strtolower($category['title']); ?>">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif" alt="<?php echo strtolower($category['title']); ?>">
+                            </a>
+                            <div class="card-body">
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
-                                    echo "Einführung ";
+                                    echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                                 } else {
-                                    echo "Lektion ";
-                                    echo $lesson['lesson_nr'];
+                                    echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                                 }
-                                ?></p>
+                                ?>
+                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                                </a>
+                                <p class="card-text small text-center">
+                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
+                                            <?php echo "#" . $category['title']; ?>
+                                        </a></b>
+                                    •
+                                    <?php
+                                    if ($lesson['einfuerung'] == 1) {
+                                        echo "Einführung ";
+                                    } else {
+                                        echo "Lektion ";
+                                        echo $lesson['lesson_nr'];
+                                    }
+                                    ?></p>
+                            </div>
                         </div>
                     </div>
-                    </a>
-                </div>
-            <?php } ?>
-        </div>
-    </article>
-</section>
+                <?php } ?>
+            </div>
+        </article>
+    </div>
 
-<!-- Lektionen FoodWaste -->
-<section class="food-waste-section container-fluid">
-    <article class="container">
-        <a href="category?id=4">
-            <h4 class="pb-4 food-waste">Thema Food-Waste</h4>
-        </a>
-        <div class="row">
-            <?php
-            foreach ($food_waste_lessons as $lesson) {
-                $category =  get_category_by_id($lesson['category_id']);
-            ?>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <?php
-                    if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
-                    } else {
-                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
-                    }
-                    ?>
-                    <div class="card <?php echo strtolower($category['title']); ?>">
-                        <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
-                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                            <p class="card-text small text-center">
-                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
-                                        <?php echo "#" . $category['title']; ?>
-                                    </a></b>
-                                •
+    <!-- Lektionen FoodWaste -->
+    <div class="food-waste-section container-fluid">
+        <article class="container">
+            <a href="category?id=4">
+                <h4 class="pb-4 food-waste">Thema Food-Waste</h4>
+            </a>
+            <div class="row">
+                <?php
+                foreach ($food_waste_lessons as $lesson) {
+                    $category =  get_category_by_id($lesson['category_id']);
+                ?>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card <?php echo strtolower($category['title']); ?>">
+                            <?php
+                            if ($lesson['einfuerung'] == 1) {
+                                echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
+                            } else {
+                                echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
+                            }
+                            ?>
+                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static" alt="<?php echo strtolower($category['title']); ?>">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif" alt="<?php echo strtolower($category['title']); ?>">
+                            </a>
+                            <div class="card-body">
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
-                                    echo "Einführung ";
+                                    echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                                 } else {
-                                    echo "Lektion ";
-                                    echo $lesson['lesson_nr'];
+                                    echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                                 }
-                                ?></p>
+                                ?>
+                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                                </a>
+                                <p class="card-text small text-center">
+                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
+                                            <?php echo "#" . $category['title']; ?>
+                                        </a></b>
+                                    •
+                                    <?php
+                                    if ($lesson['einfuerung'] == 1) {
+                                        echo "Einführung ";
+                                    } else {
+                                        echo "Lektion ";
+                                        echo $lesson['lesson_nr'];
+                                    }
+                                    ?></p>
+                            </div>
                         </div>
                     </div>
-                    </a>
-                </div>
-            <?php } ?>
-        </div>
-    </article>
-</section>
+                <?php } ?>
+            </div>
+        </article>
+    </div>
 
-<!-- Lektionen Recycling -->
-<section class="recycling-section container-fluid">
-    <article class="container">
-        <a href="category?id=5">
-            <h4 class="pb-4 recycling">Thema Recycling</h4>
-        </a>
-        <div class="row">
-            <?php
-            foreach ($recycling_lessons as $lesson) {
-                $category =  get_category_by_id($lesson['category_id']);
-            ?>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <?php
-                    if ($lesson['einfuerung'] == 1) {
-                        echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
-                    } else {
-                        echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
-                    }
-                    ?>
-                    <div class="card <?php echo strtolower($category['title']); ?>">
-                        <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static">
-                        <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
-                            <p class="card-text small text-center">
-                                <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
-                                        <?php echo "#" . $category['title']; ?>
-                                    </a></b>
-                                •
+    <!-- Lektionen Recycling -->
+    <div class="recycling-section container-fluid">
+        <article class="container">
+            <a href="category?id=5">
+                <h4 class="pb-4 recycling">Thema Recycling</h4>
+            </a>
+            <div class="row">
+                <?php
+                foreach ($recycling_lessons as $lesson) {
+                    $category =  get_category_by_id($lesson['category_id']);
+                ?>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card <?php echo strtolower($category['title']); ?>">
+                            <?php
+                            if ($lesson['einfuerung'] == 1) {
+                                echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
+                            } else {
+                                echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
+                            }
+                            ?>
+                            <img src="<?php echo $lesson['gif_url_static'] ?>" class="card-img-top gif_static" alt="<?php echo strtolower($category['title']); ?>">
+                            <img src="<?php echo $lesson['gif_url'] ?>" class="card-img-top gif" alt="<?php echo strtolower($category['title']); ?>">
+                            </a>
+                            <div class="card-body">
                                 <?php
                                 if ($lesson['einfuerung'] == 1) {
-                                    echo "Einführung ";
+                                    echo '<a class="link-title" href="intro?id=' . $lesson["id"] . '">';
                                 } else {
-                                    echo "Lektion ";
-                                    echo $lesson['lesson_nr'];
+                                    echo '<a class="link-title" href="lesson?id=' . $lesson["id"] . '">';
                                 }
-                                ?></p>
+                                ?>
+                                <h5 class="card-title text-center"><?php echo $lesson['title'] ?></h5>
+                                </a>
+                                <p class="card-text small text-center">
+                                    <b><a href="category?id=<?php echo $lesson['category_id']; ?>">
+                                            <?php echo "#" . $category['title']; ?>
+                                        </a></b>
+                                    •
+                                    <?php
+                                    if ($lesson['einfuerung'] == 1) {
+                                        echo "Einführung ";
+                                    } else {
+                                        echo "Lektion ";
+                                        echo $lesson['lesson_nr'];
+                                    }
+                                    ?></p>
+                            </div>
                         </div>
                     </div>
-                    </a>
-                </div>
-            <?php } ?>
-        </div>
-    </article>
-</section>
-
+                <?php } ?>
+            </div>
+        </article>
+    </div>
+</div>
 
 
 <!-- Footer -->

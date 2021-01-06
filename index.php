@@ -23,13 +23,12 @@ $topLessons = get_top_lessons();
         <p>
             <b>ökoLOGISCH!</b> ist eine E-Learning-Plattform für Schülerinnen und Schüler der vierten bis zur sechsten Klasse.
             Die Plattform zeigt die immense Bedeutung des Umweltschutzes auf.<br><br>
-            Grundsätzlich wird auf dieser Plattform auf das <b><u><a href="./glossar?name=SDG-12">SDG-12</a></u></b>, also das Nachhaltigkeitsziel 12 des
+            Grundsätzlich wird auf dieser Plattform auf das <b><u><a href="./glossar?name='SDG-12'">SDG-12</a></u></b>, also das Nachhaltigkeitsziel 12 des
             Übereinkommens von Paris, eingegangen. Anhand von verschiedenen Lektionen, wird den Schülern dieses Thema nähergebracht.<br><br>
 
-            Im Nachhaltigkeitsziel Nummer 12, geht es um das Thema <b>"Für nachhaltige Konsum- und Produktionsmuster sorgen"</b>. grosse Thema in Themenbereiche
-            unterteilt und diese wiederum in verschiedene Lektionen.<br><br>
+            Im Nachhaltigkeitsziel Nummer 12, geht es um das Thema <b>"Für nachhaltige Konsum- und Produktionsmuster sorgen"</b>. Dieses grosse Thema wurde in verschiedene Themenbereiche
+            unterteilt und diese wiederum in verschiedene Lektionen.
 
-            Das Thema wurde in folgende Bereiche unterteilt:
         </p>
         <ul>
             <li><a href="./category?id=1">Energie</a></li>

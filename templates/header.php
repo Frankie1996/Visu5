@@ -35,7 +35,7 @@
 
 <div id="mobile-header">
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner carousel-inner-mobile">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="assets/img/headerAccordion/sustainability.jpg" alt="Sketch Nachhaltigkeit">
                 <div class="carousel-caption">

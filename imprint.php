@@ -25,9 +25,7 @@ require_once('data/data.php');
         <div class="col-lg-6 col-md-12">
             <h4>Copyright</h4>
             <p>
-                Das Copyright für sämtliche Inhalte dieser Website liegt bei den unter "Verantwortlich für den Inhalt der Seite" genannten Personen, mit
-                Ausnahme der Bilder in den jeweiligen Lektionen. Diese wurden aus von der frei zugänglichen
-                Plattform Unsplash hinzugefügt. Die Verwendung dieser Fotos ist kostenlos.
+            Das Copyright für sämtliche Inhalte dieser Website liegt bei den unter "Verantwortlich für den Inhalt der Seiten" genannten Personen, mit Ausnahme der Bilder in den jeweiligen Lektionen. Diese wurden aus der frei zugänglichen Plattform Unsplash hinzugefügt. Die Verwendung dieser Fotos ist kostenlos.
             </p>
         </div>
         <div class="col-12">
